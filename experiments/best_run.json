@@ -1,0 +1,25 @@
+{
+  "score": 2.948526966725367,
+  "previous_score": 2.9485270638716834,
+  "first_place_score": 2.9485269238856113,
+  "gap_to_first": 4.28397557428184e-08,
+  "configuration": {
+    "input": "experiments/branch-3.141616-3.141592.json",
+    "keep_seed": true,
+    "target": 2.94852698,
+    "goal": 2.9485269238,
+    "regularization": 1e-05,
+    "movement": 50,
+    "concentration": 10,
+    "boundary_bias": 5,
+    "block_size": 20,
+    "seed": 500305
+  },
+  "replay": "uv run --extra lattice python search.py chase --seconds 60 --seed 500305",
+  "first_valid_seconds": 24.7,
+  "python": "3.13.1",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "validation": "api_best.json",
+  "submitted": false
+}

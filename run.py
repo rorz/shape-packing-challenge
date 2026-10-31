@@ -42,7 +42,7 @@ def main() -> None:
 
 def _load_solution(path: str) -> list:
     """Load a solution from a JSON file: [{"x": ..., "y": ..., "theta": ...}, ...]"""
-    from semicircle_packing.geometry import Semicircle
+    from semicircle_packing.geometry import Semicircle, canonicalize_theta
 
     with open(path) as f:
         data = json.load(f)
@@ -68,7 +68,7 @@ def _load_solution(path: str) -> list:
         semicircles.append(Semicircle(
             x=round(float(item["x"]), 6),
             y=round(float(item["y"]), 6),
-            theta=round(theta, 6),
+            theta=canonicalize_theta(theta),
         ))
 
     return semicircles

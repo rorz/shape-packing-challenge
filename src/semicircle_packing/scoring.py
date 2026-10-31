@@ -168,10 +168,10 @@ def print_report(result: ValidationResult) -> None:
 
     if result.valid:
         print(f"  Status:  VALID")
-        print(f"  Score:   {result.score:.6f}  (enclosing circle radius)")
+        print(f"  Score:   {result.score:.15f}  (enclosing circle radius)")
         if result.mec:
             cx, cy, cr = result.mec
-            print(f"  MEC:     center=({cx:.4f}, {cy:.4f})  radius={cr:.6f}")
+            print(f"  MEC:     center=({cx:.8f}, {cy:.8f})  radius={cr:.15f}")
     else:
         print(f"  Status:  INVALID")
         for err in result.errors:

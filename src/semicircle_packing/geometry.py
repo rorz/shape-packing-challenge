@@ -24,6 +24,17 @@ class Semicircle:
     theta: float
 
 
+def canonicalize_theta(theta: float) -> float:
+    """Match the arena's round, wrap, round treatment of input radians.
+
+    Rounding before wrapping matters: for example, pi maps to -3.141592,
+    whereas 3*pi maps to -3.141593. The final decimal rounding can put an
+    angle a fraction outside [-pi, pi], so this is a single input pass.
+    """
+    rounded = round(float(theta), 6)
+    return round(math.atan2(math.sin(rounded), math.cos(rounded)), 6)
+
+
 def semicircle_polygon(sc: Semicircle, n_arc: int = POLYGON_ARC_POINTS) -> Polygon:
     """Build a Shapely Polygon for the given semicircle."""
     from .config import RADIUS

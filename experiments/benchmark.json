@@ -1,0 +1,11 @@
+{
+  "sat_and_jacobian_us": 20.959124999353662,
+  "areas_and_jacobian_us": 25.39823749975767,
+  "polygon_areas_and_jacobian_us": 38.43491669977084,
+  "enclosing_circle_us": 421.560000104364,
+  "reference_validation_us": 165691.36133572707,
+  "continuous_polish_seconds": 0.3648229579848703,
+  "continuous_radius": 2.9485265494417576,
+  "continuous_feasible": true,
+  "rounded_valid": false
+}
