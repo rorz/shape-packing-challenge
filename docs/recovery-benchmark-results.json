@@ -1,0 +1,598 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "command": "uv run --extra lattice --extra constraint python search.py recovery --output experiments/recovery/run-001 --require-recovery",
+  "scope": "Target-assisted local frame coverage and unhinted finite-domain recovery; not blind search or global exclusion",
+  "fixture_manifest_sha256": "07ce18a488f5328369f5af975014809b565a3799554e350744a45ed38e0b2616",
+  "source_hashes": {
+    "benchmark_recovery.py": "e9e64df7784daee40da714c827a8493b5ab57465ce76466a5cfd31b98d6e82fb",
+    "experiment_lazy_phases.py": "653701943545eea49816ed863759ceddee8b7300cc0c9eeeb47a908888fe3f14",
+    "experiment_mirror_family.py": "d645d98d1f20b3295b47f8a57684b494f293f84e93b2a36b2f3988e151c099bf",
+    "lazy_phase_solver.py": "9412bd94db438c80bca1ecb4e715b2f84ff3ba70dbeb69b9d05a296c03606971",
+    "lazy_pair_oracle.py": "f09fe6edf264b19f79ea3b4cf74d33d72d56ccccc3c4af265ce303b00c6b429c",
+    "separable_support.py": "d489f44092db4ece91c9525ac8fe2cece48ff3993fcd6844a15051599ba51b6d",
+    "experiment_support_bundle.py": "bbd4b4bb387e12e05dee0162881a2acef1c4431641c8da718930fc2f973bb23f",
+    "_conflict_area_band.cpp": "3f9800250f328733333f29148835e73b8e1ad4bfb5e57781c0b9e92b411ab5fa"
+  },
+  "runtime": {
+    "python": "3.13.1",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "shapely": "2.2.0",
+      "ortools": "9.15.6755",
+      "fpylll": "0.6.4"
+    }
+  },
+  "parameters": {
+    "current_profile": {
+      "xy": 1,
+      "angle": 12
+    },
+    "solve": true,
+    "seconds_per_case": 15,
+    "max_poses_per_piece": 2000,
+    "score_guard": 1e-11
+  },
+  "calibrated_profile": {
+    "xy": 1,
+    "angle": 12
+  },
+  "summary": {
+    "cases": 4,
+    "current_covered": 4,
+    "calibrated_covered": 4,
+    "solver_recovered": 4,
+    "seconds": 10.227293125004508
+  },
+  "verification": {
+    "workspace_tests": "189 passed in 11.14s",
+    "commit_export_tests": "186 passed, 3 optional archive tests skipped in 10.92s",
+    "benchmark_from_commit_export": true,
+    "external_api_calls": 0,
+    "global_solution_written": false
+  },
+  "cases": [
+    {
+      "id": "incumbent",
+      "split": "calibration",
+      "target_sha256": "d0300c4a563c2443dc01c489a788a308e1b1725a0e7bf6d67d4014e9c83e6980",
+      "reference_score": 2.948526962953499,
+      "branch": [
+        3.14157,
+        3.141593
+      ],
+      "alignments": {
+        "rigid": {
+          "required_widths": {
+            "xy": 210,
+            "angle": 385
+          },
+          "fit": {
+            "method": "local nonlinear least squares; target-assisted alignment",
+            "success": true,
+            "message": "`ftol` termination condition is satisfied.",
+            "evaluations": 2,
+            "rms_grid_units": 105.494840025359,
+            "max_xy_grid_units": 209.78957922146435,
+            "max_angle_microradians": 384.5649222071757,
+            "angle": 0.28193680290270257,
+            "translation": [
+              1.6014846792579673e-05,
+              5.635239698276768e-05
+            ],
+            "alpha": null,
+            "section": null,
+            "seconds": 0.0006136250449344516
+          },
+          "covered_by_current_profile": false
+        },
+        "family": {
+          "required_widths": {
+            "xy": 1,
+            "angle": 1
+          },
+          "fit": {
+            "method": "local nonlinear least squares; target-assisted alignment",
+            "success": true,
+            "message": "`xtol` termination condition is satisfied.",
+            "evaluations": 15,
+            "rms_grid_units": 0.43457415516224124,
+            "max_xy_grid_units": 1.4805754497970725,
+            "max_angle_microradians": 0.6813000483774089,
+            "angle": 0.2819374563763333,
+            "translation": [
+              8.455974456261321e-06,
+              3.741799453340604e-05
+            ],
+            "alpha": [
+              -0.0006024592757737072,
+              0.00037954374028112604
+            ],
+            "section": {
+              "raw": [
+                3.14157,
+                3.141593
+              ],
+              "alpha": [
+                -0.0006024592757737072,
+                0.00037954374028112604
+              ],
+              "radius": 2.948526566146161,
+              "violation": 3.914350226215167e-13,
+              "residual": 8.474470515568299e-13,
+              "iterations": 4,
+              "min_stress": 0.02330298202880926
+            },
+            "seconds": 0.0742763330345042
+          },
+          "covered_by_current_profile": true
+        },
+        "saved_origin": {
+          "required_widths": {
+            "xy": 196,
+            "angle": 320
+          },
+          "fit": {
+            "method": "local nonlinear least squares; target-assisted alignment",
+            "success": true,
+            "message": "`ftol` termination condition is satisfied.",
+            "evaluations": 5,
+            "rms_grid_units": 103.19785545610569,
+            "max_xy_grid_units": 195.93381527882593,
+            "max_angle_microradians": 319.88443556496543,
+            "angle": 0.28193686297726117,
+            "translation": [
+              1.2663094963635756e-05,
+              5.438748489109783e-05
+            ],
+            "alpha": null,
+            "section": null,
+            "seconds": 0.0005016250070184469,
+            "origin_kind": "unposed_section"
+          },
+          "covered_by_current_profile": false
+        }
+      },
+      "domain_sha256": "8da96280ebf3432ad8b3d46f2fefd2b42ed45d1392d51d32d6b120c7e9fff36a",
+      "domain_sizes": [
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225
+      ],
+      "recovery": {
+        "status": "LOCAL_FEASIBLE",
+        "valid": true,
+        "score": 2.948526962953499,
+        "seconds": 1.86756670800969,
+        "counts": {
+          "iterations": 3,
+          "pair_nogoods": 2,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 1
+        },
+        "same_target_geometry": false,
+        "same_target_centers_mod_translation": true
+      }
+    },
+    {
+      "id": "random-d",
+      "split": "heldout",
+      "target_sha256": "593a123f74aa20c4eb6925837707ee2be06df2cd6d916af8eebe3fa3a59e15ac",
+      "reference_score": 2.9485269867883153,
+      "branch": [
+        3.14157,
+        -3.141592
+      ],
+      "alignments": {
+        "rigid": {
+          "required_widths": {
+            "xy": 109,
+            "angle": 229
+          },
+          "fit": {
+            "method": "local nonlinear least squares; target-assisted alignment",
+            "success": true,
+            "message": "`ftol` termination condition is satisfied.",
+            "evaluations": 2,
+            "rms_grid_units": 73.87987656793733,
+            "max_xy_grid_units": 109.32924176265679,
+            "max_angle_microradians": 228.63029121822365,
+            "angle": 2.5861548036373896,
+            "translation": [
+              0.00021397797075849132,
+              -2.1214579870953027e-06
+            ],
+            "alpha": null,
+            "section": null,
+            "seconds": 0.0005126660107634962
+          },
+          "covered_by_current_profile": false
+        },
+        "family": {
+          "required_widths": {
+            "xy": 1,
+            "angle": 1
+          },
+          "fit": {
+            "method": "local nonlinear least squares; target-assisted alignment",
+            "success": true,
+            "message": "`xtol` termination condition is satisfied.",
+            "evaluations": 16,
+            "rms_grid_units": 0.4136853206982925,
+            "max_xy_grid_units": 0.7579156688919397,
+            "max_angle_microradians": 1.284574346005485,
+            "angle": 2.586154378860938,
+            "translation": [
+              0.00020293520793606575,
+              -8.010236540485246e-06
+            ],
+            "alpha": [
+              0.00033064212256114214,
+              -0.00037232605946408554
+            ],
+            "section": {
+              "raw": [
+                3.14157,
+                -3.141592
+              ],
+              "alpha": [
+                0.00033064212256114214,
+                -0.00037232605946408554
+              ],
+              "radius": 2.9485265572039188,
+              "violation": 9.30920590450328e-13,
+              "residual": 9.30920590450328e-13,
+              "iterations": 3,
+              "min_stress": 0.023371027142624012
+            },
+            "seconds": 0.09371420799288899
+          },
+          "covered_by_current_profile": true
+        },
+        "saved_origin": {
+          "required_widths": {
+            "xy": 160,
+            "angle": 316
+          },
+          "fit": {
+            "method": "local nonlinear least squares; target-assisted alignment",
+            "success": true,
+            "message": "`ftol` termination condition is satisfied.",
+            "evaluations": 3,
+            "rms_grid_units": 77.48005473777394,
+            "max_xy_grid_units": 159.84632100796148,
+            "max_angle_microradians": 316.1762546648461,
+            "angle": 0.00025733931850460614,
+            "translation": [
+              0.00021856362998695867,
+              -4.9706463035719965e-06
+            ],
+            "alpha": null,
+            "section": null,
+            "seconds": 0.00043591600842773914,
+            "origin_kind": "posed_frame"
+          },
+          "covered_by_current_profile": false
+        }
+      },
+      "domain_sha256": "07b1facf5e9f6d09c9bc3c34e05ea60667f2f5d1e1bca0bd89a65a8b5694b439",
+      "domain_sizes": [
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225
+      ],
+      "recovery": {
+        "status": "LOCAL_FEASIBLE",
+        "valid": true,
+        "score": 2.9485269867883153,
+        "seconds": 1.7018575420370325,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 2,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 1
+        },
+        "same_target_geometry": false,
+        "same_target_centers_mod_translation": true
+      }
+    },
+    {
+      "id": "neighbor-g",
+      "split": "heldout",
+      "target_sha256": "5af73ec9c153c43d080a889233b1b6e4c00189970af8dadc49428830d2e5746f",
+      "reference_score": 2.9485269864331265,
+      "branch": [
+        3.141569,
+        3.141593
+      ],
+      "alignments": {
+        "rigid": {
+          "required_widths": {
+            "xy": 102,
+            "angle": 167
+          },
+          "fit": {
+            "method": "local nonlinear least squares; target-assisted alignment",
+            "success": true,
+            "message": "`ftol` termination condition is satisfied.",
+            "evaluations": 2,
+            "rms_grid_units": 48.893763714696284,
+            "max_xy_grid_units": 102.43348509553219,
+            "max_angle_microradians": 166.7684388420021,
+            "angle": 2.489140908841323,
+            "translation": [
+              -0.00025563411031693503,
+              -3.168165897372014e-05
+            ],
+            "alpha": null,
+            "section": null,
+            "seconds": 0.0004380829632282257
+          },
+          "covered_by_current_profile": false
+        },
+        "family": {
+          "required_widths": {
+            "xy": 1,
+            "angle": 1
+          },
+          "fit": {
+            "method": "local nonlinear least squares; target-assisted alignment",
+            "success": true,
+            "message": "`xtol` termination condition is satisfied.",
+            "evaluations": 19,
+            "rms_grid_units": 0.26578229828239813,
+            "max_xy_grid_units": 0.5530062913150502,
+            "max_angle_microradians": 0.75001756272286,
+            "angle": 2.4891407172055793,
+            "translation": [
+              -0.000259318553311092,
+              -3.558306449265901e-05
+            ],
+            "alpha": [
+              7.555929940243539e-05,
+              -0.0003198347676393258
+            ],
+            "section": {
+              "raw": [
+                3.141569,
+                3.141593
+              ],
+              "alpha": [
+                7.555929940243539e-05,
+                -0.0003198347676393258
+              ],
+              "radius": 2.9485265550290256,
+              "violation": 4.479042538881588e-13,
+              "residual": 7.785211738814531e-13,
+              "iterations": 3,
+              "min_stress": 0.02329560046340806
+            },
+            "seconds": 0.08768387499731034
+          },
+          "covered_by_current_profile": true
+        },
+        "saved_origin": {
+          "required_widths": {
+            "xy": 58,
+            "angle": 149
+          },
+          "fit": {
+            "method": "local nonlinear least squares; target-assisted alignment",
+            "success": true,
+            "message": "`ftol` termination condition is satisfied.",
+            "evaluations": 2,
+            "rms_grid_units": 41.74976687326557,
+            "max_xy_grid_units": 58.209279180099216,
+            "max_angle_microradians": 149.0071575925844,
+            "angle": -0.0003035011282182416,
+            "translation": [
+              -0.0002516620902514537,
+              -3.3428665666184425e-05
+            ],
+            "alpha": null,
+            "section": null,
+            "seconds": 0.0003625419922173023,
+            "origin_kind": "posed_frame"
+          },
+          "covered_by_current_profile": false
+        }
+      },
+      "domain_sha256": "81a31930eb6c90efe084b14dde607516d1d2bf926c8c666a47738bb14f11e794",
+      "domain_sizes": [
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225
+      ],
+      "recovery": {
+        "status": "LOCAL_FEASIBLE",
+        "valid": true,
+        "score": 2.9485269864331265,
+        "seconds": 2.0412337919697165,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 1,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 1
+        },
+        "same_target_geometry": false,
+        "same_target_centers_mod_translation": true
+      }
+    },
+    {
+      "id": "fresh-baseline",
+      "split": "heldout",
+      "target_sha256": "757141db6c4c5720b8c7e4d3ce760205055cc28ce77c1b4f7dd4bc26a41a9a55",
+      "reference_score": 2.9485270133102732,
+      "branch": [
+        3.141566,
+        3.141593
+      ],
+      "alignments": {
+        "rigid": {
+          "required_widths": {
+            "xy": 232,
+            "angle": 404
+          },
+          "fit": {
+            "method": "local nonlinear least squares; target-assisted alignment",
+            "success": true,
+            "message": "`ftol` termination condition is satisfied.",
+            "evaluations": 2,
+            "rms_grid_units": 99.20392554892419,
+            "max_xy_grid_units": 232.43935179451114,
+            "max_angle_microradians": 403.8185899410962,
+            "angle": 1.6956122162775908,
+            "translation": [
+              -0.00016025698568839227,
+              4.105560331998907e-05
+            ],
+            "alpha": null,
+            "section": null,
+            "seconds": 0.0004583330010063946
+          },
+          "covered_by_current_profile": false
+        },
+        "family": {
+          "required_widths": {
+            "xy": 1,
+            "angle": 1
+          },
+          "fit": {
+            "method": "local nonlinear least squares; target-assisted alignment",
+            "success": true,
+            "message": "`xtol` termination condition is satisfied.",
+            "evaluations": 14,
+            "rms_grid_units": 0.34450462984354924,
+            "max_xy_grid_units": 0.8822464391267104,
+            "max_angle_microradians": 0.8953363428432226,
+            "angle": 1.6956116185683705,
+            "translation": [
+              -0.00017603561022375464,
+              5.399823896858748e-05
+            ],
+            "alpha": [
+              0.000658413297336775,
+              -0.00012479761494840863
+            ],
+            "section": {
+              "raw": [
+                3.141566,
+                3.141593
+              ],
+              "alpha": [
+                0.000658413297336775,
+                -0.00012479761494840863
+              ],
+              "radius": 2.9485265695971656,
+              "violation": 9.330175628847392e-13,
+              "residual": 9.330175628847392e-13,
+              "iterations": 4,
+              "min_stress": 0.02318042290688757
+            },
+            "seconds": 0.06373545801034197
+          },
+          "covered_by_current_profile": true
+        },
+        "saved_origin": {
+          "required_widths": {
+            "xy": 231,
+            "angle": 395
+          },
+          "fit": {
+            "method": "local nonlinear least squares; target-assisted alignment",
+            "success": true,
+            "message": "`xtol` termination condition is satisfied.",
+            "evaluations": 24,
+            "rms_grid_units": 96.8275695222849,
+            "max_xy_grid_units": 231.38790252885678,
+            "max_angle_microradians": 394.8364918071601,
+            "angle": -0.0001501515699856577,
+            "translation": [
+              -0.00016156009922459018,
+              4.061570106436707e-05
+            ],
+            "alpha": null,
+            "section": null,
+            "seconds": 0.0010701670544221997,
+            "origin_kind": "posed_frame"
+          },
+          "covered_by_current_profile": false
+        }
+      },
+      "domain_sha256": "4c687ba3e3854494a04fe899009fa0cbb4031c08e8a99ab23d1e729466035b24",
+      "domain_sizes": [
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225,
+        225
+      ],
+      "recovery": {
+        "status": "LOCAL_FEASIBLE",
+        "valid": true,
+        "score": 2.9485270133102732,
+        "seconds": 2.9055225419579074,
+        "counts": {
+          "iterations": 7,
+          "pair_nogoods": 16,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 1
+        },
+        "same_target_geometry": false,
+        "same_target_centers_mod_translation": true
+      }
+    }
+  ]
+}

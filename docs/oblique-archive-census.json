@@ -1,0 +1,828 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-11-04T14:35:04.651234+00:00",
+  "scope": "Read-only census of saved circle, geometry, GEOS-area and normalization-scale arrays in seven mirror frontier directories. No search, fresh GEOS/reference validation, API call, or promotion.",
+  "limitations": [
+    "Stored radii and GEOS areas are historical evidence, not freshly recomputed acceptance results.",
+    "The four original orbit fixtures and this census do not exhaust the full research archive.",
+    "Center classes ignore angles and are reporting groups only; never use them to exclude angular realizations.",
+    "already_tested=true means an identical raw-file SHA256 occurs among the four completed orbit-test inputs. null means unknown, not untested.",
+    "Actual angle-domain coverage/containment against earlier finite models remains unverified.",
+    "Normalized deficit depends on each source frame area_scale; it is a ranking heuristic, not a geometric impossibility bound."
+  ],
+  "leader_radius": 2.9485269238856113,
+  "incumbent_radius": 2.948526950912552,
+  "normalization": {
+    "radius": "float(sidecar[circle][2])",
+    "deficit_nm": "float(max(maximum(sidecar[geos_areas]-1e-6,0)/sidecar[area_scale])*1e9)",
+    "violated_pair_count": "count(sidecar[geos_areas] > 1e-6)",
+    "strict_thresholds": true,
+    "pair_order": "lexicographic (i,j) for 0 <= i < j < 15",
+    "labeled_center_hash": "SHA256 of little-endian int64 round(geometry[:,:2]*1e6), subtract row0, C-order bytes",
+    "d4_center_hash": "For swapped/unswapped XY and each sign pair, lexicographically sort XY rows, subtract first row, take lexicographically smallest flattened integer tuple; SHA256 of little-endian int64 C-order bytes",
+    "json_digest": "SHA256 of UTF-8 json.dumps(value, sort_keys=True, separators=(comma,colon), allow_nan=False)"
+  },
+  "aggregate": {
+    "directory_count": 7,
+    "sidecar_count": 1281,
+    "below_incumbent_records": 900,
+    "below_incumbent_labeled_center_classes": 672,
+    "below_leader_records": 421,
+    "below_leader_labeled_center_classes": 319,
+    "below_leader_unlabeled_d4_center_classes": 319,
+    "below_leader_stored_geos_valid_records": 0,
+    "below_leader_violated_pair_histogram": {
+      "3": 19,
+      "4": 46,
+      "5": 70,
+      "6": 92,
+      "7": 76,
+      "8": 67,
+      "9": 35,
+      "10": 13,
+      "11": 1,
+      "12": 1,
+      "13": 1
+    },
+    "below_leader_deficit_thresholds_nm": {
+      "10": {
+        "records": 0,
+        "labeled_center_classes": 0,
+        "unlabeled_d4_center_classes": 0
+      },
+      "20": {
+        "records": 1,
+        "labeled_center_classes": 1,
+        "unlabeled_d4_center_classes": 1
+      },
+      "30": {
+        "records": 3,
+        "labeled_center_classes": 3,
+        "unlabeled_d4_center_classes": 3
+      },
+      "50": {
+        "records": 17,
+        "labeled_center_classes": 13,
+        "unlabeled_d4_center_classes": 13
+      },
+      "100": {
+        "records": 421,
+        "labeled_center_classes": 319,
+        "unlabeled_d4_center_classes": 319
+      }
+    }
+  },
+  "all_source_inventory_sha256": "fd1ba49b2bed3b29f5af871f4307c029a5fb86e36cbc7839b5cfc7cc7ec7a0a9",
+  "schemas": [
+    {
+      "id": "schema-00",
+      "schema_sha256": "431431dc9f25405c4836c098bfc23edf2590a2dffb38a50d2fef5d357fdfc511",
+      "arrays": {
+        "active": {
+          "dtype": "bool",
+          "shape": [
+            150
+          ]
+        },
+        "alpha": {
+          "dtype": "float64",
+          "shape": [
+            2
+          ]
+        },
+        "anchor_units": {
+          "dtype": "int64",
+          "shape": [
+            15,
+            3
+          ]
+        },
+        "area_scale": {
+          "dtype": "float64",
+          "shape": [
+            105
+          ]
+        },
+        "branch": {
+          "dtype": "float64",
+          "shape": [
+            2
+          ]
+        },
+        "center": {
+          "dtype": "float64",
+          "shape": [
+            2
+          ]
+        },
+        "circle": {
+          "dtype": "float64",
+          "shape": [
+            3
+          ]
+        },
+        "coefficients": {
+          "dtype": "int64",
+          "shape": [
+            43
+          ]
+        },
+        "geometry": {
+          "dtype": "float64",
+          "shape": [
+            15,
+            3
+          ]
+        },
+        "geos_areas": {
+          "dtype": "float64",
+          "shape": [
+            105
+          ]
+        },
+        "moves": {
+          "dtype": "int64",
+          "shape": [
+            43,
+            15,
+            3
+          ]
+        },
+        "origin": {
+          "dtype": "float64",
+          "shape": [
+            15,
+            3
+          ]
+        },
+        "placements": {
+          "dtype": "float64",
+          "shape": [
+            15,
+            3
+          ]
+        },
+        "target": {
+          "dtype": "float64",
+          "shape": []
+        },
+        "weights": {
+          "dtype": "float64",
+          "shape": [
+            41
+          ]
+        }
+      }
+    }
+  ],
+  "directories": [
+    {
+      "path": "experiments/2026-11-04/round3/mirror/frontier-smoke/frontier",
+      "sidecar_count": 141,
+      "inventory_sha256": "5bb68b671abc2550076079406fa3751c55aededc1a01f3b4bb6c0631054908f3",
+      "source_row_fields": [
+        "filename",
+        "file_sha256",
+        "schema_id"
+      ]
+    },
+    {
+      "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier",
+      "sidecar_count": 421,
+      "inventory_sha256": "f04ccfca3e75b5dedc1c916764782ce0557be4f56f7986e0a743000f508e9998",
+      "source_row_fields": [
+        "filename",
+        "file_sha256",
+        "schema_id"
+      ]
+    },
+    {
+      "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/frontier",
+      "sidecar_count": 335,
+      "inventory_sha256": "3c2c2e56b78ccefc7ae4a49a59cfa7d378e158aa98d5a0da4a74d0ae64c0d8dd",
+      "source_row_fields": [
+        "filename",
+        "file_sha256",
+        "schema_id"
+      ]
+    },
+    {
+      "path": "experiments/2026-11-04/round3/mirror/slack-kernel43-smoke/frontier",
+      "sidecar_count": 19,
+      "inventory_sha256": "dd328977e2567a8f772f5916f94b1bf0669fdf0d57bda21b80850dc6bfa6e866",
+      "source_row_fields": [
+        "filename",
+        "file_sha256",
+        "schema_id"
+      ]
+    },
+    {
+      "path": "experiments/2026-11-04/round3/mirror/slack-matched-baseline/frontier",
+      "sidecar_count": 198,
+      "inventory_sha256": "cab52628373cde8a956da43acd14067f83f6c6c4da7a683f22ecfc2fa578cd92",
+      "source_row_fields": [
+        "filename",
+        "file_sha256",
+        "schema_id"
+      ]
+    },
+    {
+      "path": "experiments/2026-11-04/round3/mirror/slack-matched-learned/frontier",
+      "sidecar_count": 166,
+      "inventory_sha256": "434b63d6aacd23768e06af088796aa97f2320a7982c13fdb689d76ce187c543e",
+      "source_row_fields": [
+        "filename",
+        "file_sha256",
+        "schema_id"
+      ]
+    },
+    {
+      "path": "experiments/2026-11-04/round3/mirror/slack-trained43-smoke/frontier",
+      "sidecar_count": 1,
+      "inventory_sha256": "d8d1e049bab0896522567ed2a47b0351943316e501a8f3e7999e58e40d2b812b",
+      "source_row_fields": [
+        "filename",
+        "file_sha256",
+        "schema_id"
+      ]
+    }
+  ],
+  "known_orbit_evidence": {
+    "manifest": "tests/fixtures/angle-orbits/manifest.json",
+    "manifest_sha256": "7c1dd765960b84c7936bcd5e7f7b2ef2e58e44eb2f253007945e00139c94454d",
+    "result": "docs/angle-orbit-results.json",
+    "result_sha256": "2e25b07f7e4db0506703d37908b237b11df113c794066abfb9ed3e7dea2200aa",
+    "target": 2.9485269238806113,
+    "angle_widths": [
+      3,
+      12
+    ],
+    "d4_orientations": 8,
+    "scope": "All four frozen raw inputs completed all16 finite models each as INFEASIBLE at this target."
+  },
+  "under_50nm_class_shortlist": [
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00366.npz",
+      "sidecar_sha256": "440f1693524c6a7b6f7182e2da8c163414abd24d9dc4ade17ed538a0623f4c88",
+      "schema_id": "schema-00",
+      "radius": 2.9485269135930903,
+      "normalized_max_geos_deficit_nm": 18.920772260093447,
+      "violated_pair_count": 3,
+      "violated_pairs": [
+        [
+          2,
+          11
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          12,
+          14
+        ]
+      ],
+      "labeled_center_sha256": "0b68cf3f297eb76bacdd9ecafcb1ca6437e959a95861387f3be9d0337f8a3a95",
+      "d4_center_sha256": "5ae746b7946721a74953d9fdfa39ed8f9e06c9ed514161662c2eb86b34f7c57c",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00366.json",
+      "raw_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "same_center_records_under_50nm": 1,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00366.npz"
+      ],
+      "already_tested": true,
+      "known_orbit_fixture": "baseline-three",
+      "actual_angle_domain_coverage": "Known identical raw input in angle-orbits-v1; original input hash verified. Exact domain containment against all historical models remains unaudited."
+    },
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00341.npz",
+      "sidecar_sha256": "571a7708c4c8c17b52f732332d60827714d1753540ef5093010910d92192e496",
+      "schema_id": "schema-00",
+      "radius": 2.948526918717083,
+      "normalized_max_geos_deficit_nm": 25.91623153892763,
+      "violated_pair_count": 5,
+      "violated_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "labeled_center_sha256": "3e12a7fcdf20502b596b8c4dff40f82d44660d67799212a3dc43203f6f5f3b20",
+      "d4_center_sha256": "dd54b0c0b0728d694a1c167bc5c5a54c863d00b0410ba5bd227ba00b572d0eae",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00341.json",
+      "raw_sha256": "107470a1aa5ed06ac21562120d05a0844492d3df03089194a3526ca4943cea0e",
+      "same_center_records_under_50nm": 1,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00341.npz"
+      ],
+      "already_tested": null,
+      "known_orbit_fixture": null,
+      "actual_angle_domain_coverage": "Not established by this census; no exhaustive historical domain-coverage lookup performed."
+    },
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00307.npz",
+      "sidecar_sha256": "0ac70df35963e61dcf72122fae7494898c5cedffd9b3857bd9c02e4a315f09d8",
+      "schema_id": "schema-00",
+      "radius": 2.948526913855463,
+      "normalized_max_geos_deficit_nm": 28.682434028931524,
+      "violated_pair_count": 6,
+      "violated_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "labeled_center_sha256": "722be93f012b6dc992df87c714e1a3701aa3d42927de33c6c7c2a1b3466c9234",
+      "d4_center_sha256": "122c3e5888870181854cbf2b7cd1031ec882a59a6b7755b7dda0d622d7d14b6c",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00307.json",
+      "raw_sha256": "b3d5dcea02fecbb890567d955305e2eec87f14c63afec2eedb01b48cbb61ffce",
+      "same_center_records_under_50nm": 1,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00307.npz"
+      ],
+      "already_tested": null,
+      "known_orbit_fixture": null,
+      "actual_angle_domain_coverage": "Not established by this census; no exhaustive historical domain-coverage lookup performed."
+    },
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00356.npz",
+      "sidecar_sha256": "dfca4ecae9a3a5c59d1d9138fe92f6b8bfe284211ba68612b892aeac9f7087ed",
+      "schema_id": "schema-00",
+      "radius": 2.9485269228585427,
+      "normalized_max_geos_deficit_nm": 37.38299163070188,
+      "violated_pair_count": 7,
+      "violated_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "labeled_center_sha256": "d7f5bda8a6f18ca6be5674e2136e79e8aa11fb1411824f2dee5a3573655c5de8",
+      "d4_center_sha256": "2976677da59b939d20f80156fbc4a8e0ef2b29d55a87308d91abd6434f977516",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00356.json",
+      "raw_sha256": "0d7a4350173b17337551d77a918acbfd50917eec78a1bf65c26b5afe0b524d0d",
+      "same_center_records_under_50nm": 1,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00356.npz"
+      ],
+      "already_tested": null,
+      "known_orbit_fixture": null,
+      "actual_angle_domain_coverage": "Not established by this census; no exhaustive historical domain-coverage lookup performed."
+    },
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00222.npz",
+      "sidecar_sha256": "c72d04f4365fbb859d7203699f516d1792c5e8d8bc0e4dabfc69a45515f182b7",
+      "schema_id": "schema-00",
+      "radius": 2.9485269191154715,
+      "normalized_max_geos_deficit_nm": 38.82174362216634,
+      "violated_pair_count": 4,
+      "violated_pairs": [
+        [
+          1,
+          13
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "labeled_center_sha256": "04a981702cc88b59dd935c29a7364fe49ab18416e670eb3de398490bed557b0c",
+      "d4_center_sha256": "05d88cab98873e7ccea0fd95417f556ddc4d96054b49dcd0c18773dcb214b377",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00222.json",
+      "raw_sha256": "4734b52eb5d94b81d768f3ee19b2893021b835769d6e54b84e0800929099a115",
+      "same_center_records_under_50nm": 1,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00222.npz"
+      ],
+      "already_tested": null,
+      "known_orbit_fixture": null,
+      "actual_angle_domain_coverage": "Not established by this census; no exhaustive historical domain-coverage lookup performed."
+    },
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00385.npz",
+      "sidecar_sha256": "a9be6a324cd710c094b3c92d23d56642a794d347016325b9ff640a75b55d175b",
+      "schema_id": "schema-00",
+      "radius": 2.948526900876999,
+      "normalized_max_geos_deficit_nm": 41.17390726968053,
+      "violated_pair_count": 6,
+      "violated_pairs": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          12,
+          14
+        ]
+      ],
+      "labeled_center_sha256": "e9057981e22816c2d7552b6ad47c10849cda7f12a1b979a2cf165e40c7ff8735",
+      "d4_center_sha256": "9234677df682c08a93291a3799cc1bcd4af62a99ee5a446009cd3df5cea60ce3",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00385.json",
+      "raw_sha256": "676ec04f29d25aff698f36383d9645e4195c800752c6a7e727901c10f3d275a3",
+      "same_center_records_under_50nm": 2,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00385.npz",
+        "experiments/2026-11-04/round3/mirror/quality-matched-learned/frontier/witness-00323.npz"
+      ],
+      "already_tested": null,
+      "known_orbit_fixture": null,
+      "actual_angle_domain_coverage": "Not established by this census; no exhaustive historical domain-coverage lookup performed."
+    },
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00373.npz",
+      "sidecar_sha256": "0d4835f70ca8dd0086ae8ae37b2f672398a0efb329442ecbd938d9578615a077",
+      "schema_id": "schema-00",
+      "radius": 2.9485269076245553,
+      "normalized_max_geos_deficit_nm": 43.27141969925528,
+      "violated_pair_count": 4,
+      "violated_pairs": [
+        [
+          1,
+          14
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "labeled_center_sha256": "65bccf813644cfb53c0c86ae7ab581232bf6303a58692f3ed7c6d10c81985adf",
+      "d4_center_sha256": "1677d0a7ea78363a0ecd79b995a7030a1f8f143bed849fd9e9037c75b3a75a73",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00373.json",
+      "raw_sha256": "e964d40b405768a7ec7635e9106de9ef2226fffb08cbccd74b5d55200d33a0ae",
+      "same_center_records_under_50nm": 3,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00373.npz",
+        "experiments/2026-11-04/round3/mirror/slack-matched-baseline/frontier/witness-00132.npz",
+        "experiments/2026-11-04/round3/mirror/slack-matched-learned/frontier/witness-00117.npz"
+      ],
+      "already_tested": null,
+      "known_orbit_fixture": null,
+      "actual_angle_domain_coverage": "Not established by this census; no exhaustive historical domain-coverage lookup performed."
+    },
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00358.npz",
+      "sidecar_sha256": "06bef95842164db0cc5362cee5aeaa007f2df1dbaedef07fe3f1ed6ec7a1d8e7",
+      "schema_id": "schema-00",
+      "radius": 2.948526911671162,
+      "normalized_max_geos_deficit_nm": 44.095552267356645,
+      "violated_pair_count": 7,
+      "violated_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "labeled_center_sha256": "30e7893c92ec39f7c5a8d76f880b7511c37a3224730a0f93ac537d6c109c6153",
+      "d4_center_sha256": "0476aeb80869aacf9f5f88059e7e38c345459776f9004601c109f0d9adec1386",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00358.json",
+      "raw_sha256": "649920e4ceab050cedb05050c27aa8987dedcbee269e11ecbb0c84ccc532e9ea",
+      "same_center_records_under_50nm": 1,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00358.npz"
+      ],
+      "already_tested": null,
+      "known_orbit_fixture": null,
+      "actual_angle_domain_coverage": "Not established by this census; no exhaustive historical domain-coverage lookup performed."
+    },
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00277.npz",
+      "sidecar_sha256": "00f6245704caf140d0ca3cd150bb7bf398ff846b55f76d91e692a6acedc9a736",
+      "schema_id": "schema-00",
+      "radius": 2.948526899340351,
+      "normalized_max_geos_deficit_nm": 44.98522321529953,
+      "violated_pair_count": 6,
+      "violated_pairs": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          12,
+          14
+        ]
+      ],
+      "labeled_center_sha256": "eb1201a565454a317670f505fda601d8bd3d81e042ff1b535622142a165e4bf0",
+      "d4_center_sha256": "decc25ed14664636f6326811fc24fb539e3d0f4c99351b4a653da6253ace1116",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00277.json",
+      "raw_sha256": "c71966dd280a923ad9de837e9873a88d28ac5659b051f50e7c3e874a8ea50a50",
+      "same_center_records_under_50nm": 1,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00277.npz"
+      ],
+      "already_tested": null,
+      "known_orbit_fixture": null,
+      "actual_angle_domain_coverage": "Not established by this census; no exhaustive historical domain-coverage lookup performed."
+    },
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00335.npz",
+      "sidecar_sha256": "af701985f61f95eb2258fab92388ecd915ef45c81bed4dfc4c3f1b61548ee3ab",
+      "schema_id": "schema-00",
+      "radius": 2.9485268899728077,
+      "normalized_max_geos_deficit_nm": 45.990114878295586,
+      "violated_pair_count": 4,
+      "violated_pairs": [
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "labeled_center_sha256": "79a5662899a458ceb31f27f28f463e6f141df86c01ad4b74ae29b668421ad548",
+      "d4_center_sha256": "d5552a75a6323da5c8ce355b691a1c0c336a17a1200f9fb52769f50502cc092f",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00335.json",
+      "raw_sha256": "6c7aad134a5eecca5d8778792c2aee083ae4befa29bed3639d7f12fc45e4badf",
+      "same_center_records_under_50nm": 2,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00335.npz",
+        "experiments/2026-11-04/round3/mirror/quality-matched-learned/frontier/witness-00284.npz"
+      ],
+      "already_tested": null,
+      "known_orbit_fixture": null,
+      "actual_angle_domain_coverage": "Not established by this census; no exhaustive historical domain-coverage lookup performed."
+    },
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00226.npz",
+      "sidecar_sha256": "61e394101a74d69c919c152eadb4acb0893105f9a5c20f12c1e8b490bef1529d",
+      "schema_id": "schema-00",
+      "radius": 2.9485268848356716,
+      "normalized_max_geos_deficit_nm": 46.29910601197377,
+      "violated_pair_count": 7,
+      "violated_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "labeled_center_sha256": "3d1ac928ab8352658b148e0ae5401f541cf38d361cf585c96ed317d35cf969d6",
+      "d4_center_sha256": "34a7ce03e3d571ba0c74625e125209feadaa9590a9c2efab2b4e0d75f68d11e7",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00226.json",
+      "raw_sha256": "db7d6114014ab1f7550bc8747219f9e3c5fece6b45a956aa4ed2e19830cc5ead",
+      "same_center_records_under_50nm": 1,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00226.npz"
+      ],
+      "already_tested": null,
+      "known_orbit_fixture": null,
+      "actual_angle_domain_coverage": "Not established by this census; no exhaustive historical domain-coverage lookup performed."
+    },
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00093.npz",
+      "sidecar_sha256": "98f229d9477276205abafcc14e7e81e8c275899132f70b11eeb24edb0decaa12",
+      "schema_id": "schema-00",
+      "radius": 2.9485269158811738,
+      "normalized_max_geos_deficit_nm": 48.9905872672887,
+      "violated_pair_count": 6,
+      "violated_pairs": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "labeled_center_sha256": "e17f79f72a873fd09617de295a1b9af2117cf2e26cffc335f14bf2d99da36877",
+      "d4_center_sha256": "082e8e8bf91ef75fbc6589299b925ab87a0a0238b275c82c5b2f7a88ee6cf0fc",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00093.json",
+      "raw_sha256": "d130ee93144ab31b1df544cf65dfb820d33c3cd48f54593837142ae590d5ce33",
+      "same_center_records_under_50nm": 1,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00093.npz"
+      ],
+      "already_tested": null,
+      "known_orbit_fixture": null,
+      "actual_angle_domain_coverage": "Not established by this census; no exhaustive historical domain-coverage lookup performed."
+    },
+    {
+      "sidecar": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00295.npz",
+      "sidecar_sha256": "c36ebb553377d5abece593450bb8fb185df6a8fa88b3cabd0e578631603622c3",
+      "schema_id": "schema-00",
+      "radius": 2.9485269117218986,
+      "normalized_max_geos_deficit_nm": 49.571731789936905,
+      "violated_pair_count": 3,
+      "violated_pairs": [
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "labeled_center_sha256": "d1fd625fafa7b87dddaf85a52579a7d7df5239cbc3383619196d707e8c345e91",
+      "d4_center_sha256": "70af5ffd2b841683cf9c2fc16323e7c21736306685e965afa7089dce6ed8cf84",
+      "raw_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00295.json",
+      "raw_sha256": "d2aac23dd88c5a677dba1662ff0f957aa1e7abb05a9ebf2c59dd6e8b79996119",
+      "same_center_records_under_50nm": 1,
+      "same_center_record_paths": [
+        "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00295.npz"
+      ],
+      "already_tested": null,
+      "known_orbit_fixture": null,
+      "actual_angle_domain_coverage": "Not established by this census; no exhaustive historical domain-coverage lookup performed."
+    }
+  ],
+  "reproduction_algorithm": [
+    "Run from repo root with .venv/bin/python and NumPy; no solver or network is needed.",
+    "Sort directories matching experiments/2026-11-04/round3/mirror/*/frontier, then sort witness-*.npz in each directory.",
+    "Hash every sidecar file; load with np.load(allow_pickle=False); record exact key/dtype/shape schema and require finite arrays and strictly positive area_scale.",
+    "Apply the formulas and strict radius/deficit comparisons in normalization. Rebuild labeled and D4 center keys exactly as specified.",
+    "For each below-leader D4 class with deficit<50nm, select minimum(deficit,radius,path); record all matching under-50nm paths and hash the representative raw JSON.",
+    "Compare representative raw SHA256 to tests/fixtures/angle-orbits/manifest.json. Mark only exact matches already_tested=true; leave others null.",
+    "Recreate per-directory [filename,sha256,schema_id] lists and the global [path,sha256,schema_id] list; verify canonical JSON digests before comparing aggregate counts."
+  ],
+  "full_source_inventory": {
+    "path": "experiments/pantheon-pilot/oblique-review/archive-census-full.json",
+    "sha256": "0247e90ed16c3a799bb2b8323f978bcb75dba9778fe10be152cbf84598dd6ff0",
+    "scope": "Full census including all1281 sidecar hashes; ignored local artifact. Compact record retains eachdirectory digest and all13 shortlisted candidate hashes."
+  }
+}

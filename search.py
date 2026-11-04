@@ -22,8 +22,17 @@ RECIPES = {
     'continuation': ROOT / 'scripts/experiment_continuation.py',
     'feasibility': ROOT / 'scripts/experiment_frames.py',
     'lll': ROOT / 'scripts/experiment_lll.py',
+    'cpsat': ROOT / 'scripts/experiment_cpsat.py',
+    'projection': ROOT / 'scripts/experiment_difference_map.py',
+    'positions': ROOT / 'scripts/experiment_position_projection.py',
+    'family': ROOT / 'scripts/experiment_family_lattice.py',
+    'kbest': ROOT / 'scripts/experiment_oblique_kbest.py',
+    'breakout': ROOT / 'scripts/experiment_breakout.py',
+    'neutral': ROOT / 'scripts/experiment_neutral_network.py',
+    'slack-plot': ROOT / 'scripts/plot_contact_slack.py',
     'chase': ROOT / 'scripts/experiment_lll.py',
     'arena': ROOT / 'scripts/arena.py',
+    'recovery': ROOT / 'scripts/benchmark_recovery.py',
 }
 
 
@@ -35,6 +44,7 @@ def benchmark():
     from semicircle_packing.fast_mec import compute_mec_fast
     from semicircle_packing.fast_geometry import FastGeometry
     from semicircle_packing.polish import checked, load, polish
+    from scripts.breakout_geometry import evaluate_batch
 
     p = load('solution.json')
     geometry = FastGeometry()
@@ -64,6 +74,13 @@ def benchmark():
     timings['continuous_radius'] = float(result.x[-1])
     timings['continuous_feasible'] = result.max_violation < 1e-9
     timings['rounded_valid'] = checked(result.x[:-1].reshape(-1, 3)).valid
+    center=compute_mec_fast(p)[:2]
+    evaluate_batch(p[None],center)
+    batch=p+np.random.default_rng(110458).normal(0,.002,(1000,15,3))
+    start=time.perf_counter()
+    _,_,native=evaluate_batch(batch,center)
+    timings['batch_polygon_areas_and_mec_us']=1e6*(time.perf_counter()-start)/len(batch)
+    timings['batch_mec_fallbacks']=int((native==0).sum())
     print(json.dumps(timings, indent=2))
 
 
@@ -73,6 +90,7 @@ def main():
         print(__doc__)
         print('''
   uv run python search.py benchmark
+  uv run --extra lattice --extra constraint python search.py recovery --output experiments/recovery/run-001 --require-recovery
   uv run python search.py polish solution.json
   uv run python search.py lattice --input solution.json --steps 5 --seconds 10 --rounds 5
   uv run python search.py basins --seconds 60 --seed 11
@@ -80,7 +98,10 @@ def main():
   uv run python search.py arena leaderboard
   uv run python search.py arena check CANDIDATE.json --save experiments/check.json
 
-Additional recipes: lll, feasibility, rounding, compression, symmetry, continuation.
+Additional recipes: lll, feasibility, rounding, compression, symmetry, continuation,
+projection, positions, family, kbest, breakout, neutral, slack-plot, recovery;
+cpsat requires the constraint extra, breakout requires the lattice extra.
+recovery is an offline benchmark requiring both lattice and constraint extras.
 Pass --help after a recipe for its parameters. Search output is experimental;
 use run.py and arena check to validate any candidate before promotion.
 ''')

@@ -1,0 +1,60 @@
+{
+  "scope": "Frozen invalid near-winners for fixed-center angular-grid orbit tests; not submission files",
+  "inputs": [
+    {
+      "id": "tied-three",
+      "path": "tied-three.json",
+      "source": "experiments/2026-11-04/round3/rescue-frontier/winning-section/nearest-raw.json",
+      "sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "scored_radius": 2.9485269048383675,
+      "valid": false,
+      "errors": [
+        "Semicircles 0 and 9 overlap",
+        "Semicircles 1 and 2 overlap",
+        "Semicircles 2 and 10 overlap"
+      ]
+    },
+    {
+      "id": "mirror-five",
+      "path": "mirror-five.json",
+      "source": "experiments/2026-11-04/round3/mirror/campaign-a/nearest-raw.json",
+      "sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "scored_radius": 2.9485268737802435,
+      "valid": false,
+      "errors": [
+        "Semicircles 0 and 1 overlap",
+        "Semicircles 1 and 2 overlap",
+        "Semicircles 2 and 10 overlap",
+        "Semicircles 3 and 9 overlap",
+        "Semicircles 11 and 13 overlap"
+      ]
+    },
+    {
+      "id": "broad-four",
+      "path": "broad-four.json",
+      "source": "experiments/2026-11-04/round3/mirror/broad-l/nearest-raw.json",
+      "sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "scored_radius": 2.948526907809462,
+      "valid": false,
+      "errors": [
+        "Semicircles 1 and 2 overlap",
+        "Semicircles 1 and 14 overlap",
+        "Semicircles 5 and 6 overlap",
+        "Semicircles 5 and 7 overlap"
+      ]
+    },
+    {
+      "id": "baseline-three",
+      "path": "baseline-three.json",
+      "source": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/frontier/witness-00366.json",
+      "sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "scored_radius": 2.948526913593101,
+      "valid": false,
+      "errors": [
+        "Semicircles 2 and 11 overlap",
+        "Semicircles 6 and 10 overlap",
+        "Semicircles 12 and 14 overlap"
+      ]
+    }
+  ]
+}

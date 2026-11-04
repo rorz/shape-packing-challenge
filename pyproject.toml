@@ -13,6 +13,9 @@ dependencies = [
 
 [project.optional-dependencies]
 lattice = ["fpylll>=0.6.4", "cysignals>=1.12"]
+constraint = ["ortools>=9.15"]
+quadratic = ["pyscipopt>=6.3"]
+topology = ["networkx>=3.0"]
 
 [dependency-groups]
 dev = [

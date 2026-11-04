@@ -1,0 +1,434 @@
+{
+  "started_at_utc": "2026-11-04T14:59:46.154590+00:00",
+  "source_hashes": {
+    "experiment_branch_strata.py": "e5ab2d9495c87d14650ca5e68b612425fee43d234936926e1ef6b25b9ee395d6",
+    "experiment_mirror_family.py": "d645d98d1f20b3295b47f8a57684b494f293f84e93b2a36b2f3988e151c099bf",
+    "experiment_tied_batch.py": "b7db6cdf887e599ee7b4b2806707c701414cbf389b2bc8f6d1e0bf7d9d343905",
+    "experiment_batch_lattice.py": "892d7d99e204099245e64570eb815542fc5e2a37061f8daebc1b9e54c3c03741",
+    "_batch_lattice.cpp": "122fa0995e49d93da3b99fbe4a53af6c521e4572513bb56d83bca320f3aeff20",
+    "experiment_mirror_frontier.py": "85a5ef483cd1035449ea935fdb9ce28827d351b5321880ea21593b97ce0d0fc1",
+    "breakout_geometry.py": "677f4d37afe5f839dbb5bb3c80a739fc98cdb884160e7395e0eaa686b077522f",
+    "_breakout_geometry.cpp": "c7b766c0a8d9e5d93087afe7b995c1aee29ae4870fea56e2d5d0701464bbaa95",
+    "benchmark_recovery.py": "e9e64df7784daee40da714c827a8493b5ab57465ce76466a5cfd31b98d6e82fb"
+  },
+  "inputs": {
+    "experiments/2026-11-04/round3/mirror/branch-map/branches.json": "19908511c64de0756aca1fb501474ed5c9a47c56e786df9b6fca187f82d6db83",
+    "tests/fixtures/recovery/mirror-continuous.json": "88d33e4a36c1406de98c02c41caccfdaa45934e4eb877f518da0923b2ab8eacd",
+    "experiments/pantheon-pilot/candidate-2.948526950912552.json": "cefac3368caae7f9dea0c4cdc0e87d869f3a9bd76ba75292b1cd4b7fff7c8fb9"
+  },
+  "seed": 3111701,
+  "seconds_per_stratum": 90.0,
+  "control_seconds": 8.0,
+  "sampling_policy": "Shuffled round-robin, one attempt per branch/pass; no cost-weighted sampling",
+  "scope": "Offline coverage intervention; no API/global promotion; costs are nominal alpha0 section costs, not causal performance estimates",
+  "command": [
+    "/Users/rorz/repos/forks/shape-packing-challenge/.venv/bin/python",
+    "scripts/experiment_branch_strata.py",
+    "--output",
+    "experiments/pantheon-pilot/deadline-branch-strata-v2",
+    "--seconds",
+    "90",
+    "--control-seconds",
+    "8",
+    "--seed",
+    "3111701"
+  ],
+  "full_report": "experiments/pantheon-pilot/deadline-branch-strata-v2/report.json",
+  "full_report_sha256": "5586fa0489fc8c072dfb1bb34258f934fd622ae76d34245e47012a6533fe0c47",
+  "control": {
+    "budget_seconds": 8.0,
+    "seconds": 10.806677957996726,
+    "best_score": 2.948526950912552,
+    "counts": {
+      "frames": 122,
+      "proposals": 249856,
+      "ambiguous_patches": 6,
+      "branch_rejected": 0,
+      "duplicates": 43328,
+      "unique_evaluated": 206528,
+      "reference_checks": 7,
+      "reference_valid": 7
+    },
+    "coverage": {
+      "branches": 1,
+      "attempted_branches": 1,
+      "minimum_attempts": 122,
+      "maximum_attempts": 122
+    },
+    "first_valid_seconds": 0.48378529195906594
+  },
+  "strata": {
+    "cost20-50": {
+      "budget_seconds": 90.0,
+      "seconds": 90.49073816696182,
+      "best_score": 2.948527009207927,
+      "best_native_combined_deficit": 3.508282819808528e-08,
+      "counts": {
+        "frames": 1527,
+        "proposals": 3127296,
+        "ambiguous_patches": 60,
+        "branch_rejected": 11709,
+        "duplicates": 689796,
+        "unique_evaluated": 2425791,
+        "reference_checks": 4,
+        "reference_valid": 3
+      },
+      "coverage": {
+        "branches": 135,
+        "attempted_branches": 135,
+        "minimum_attempts": 11,
+        "maximum_attempts": 12
+      },
+      "orientations": {
+        "global": 371,
+        "global_fallback": 872,
+        "local": 284
+      },
+      "rejections": {},
+      "frontier_counts": {
+        "in_radius_window": 335582,
+        "native_under20nm": 1,
+        "geos_checked": 270,
+        "geos_under20nm": 1,
+        "saved": 258,
+        "distant_nominations": 616,
+        "distant_superseded": 182,
+        "seconds_geos": 10.380500124709215
+      },
+      "accepted_frames_with_negative_full_J_stress": 598,
+      "minimum_actual_tied_stress": 0.023347491051279035,
+      "nominal_cost_min_nm": 20.360642505323767,
+      "nominal_cost_max_nm": 49.855478856386526,
+      "actual_continuous_radius_min": 2.9485265698565923,
+      "actual_continuous_radius_max": 2.9485266164003057,
+      "valid_records": [
+        {
+          "file": "valid-0000.json",
+          "sha256": "9a37f81964ed2c17d85347a87ee6a7608ec8e43357f61c760fbbc7ba69085bed",
+          "score": 2.948527009207927,
+          "seconds": 85.51138091698522,
+          "branch_index": 88,
+          "source": "native",
+          "validation_after_deadline": false
+        },
+        {
+          "file": "valid-0001.json",
+          "sha256": "9b83a47a76490c6d49d7c248341fefbc89b3e84418b506ae8201bc994ca4546e",
+          "score": 2.948527009207927,
+          "seconds": 85.6720217919792,
+          "branch_index": 88,
+          "source": "native",
+          "validation_after_deadline": false
+        },
+        {
+          "file": "valid-0002.json",
+          "sha256": "d7bae797b39a8801afe12723340b55ee7c3c857338bbf0456511724587fd424c",
+          "score": 2.948527009207927,
+          "seconds": 85.83128858398413,
+          "branch_index": 88,
+          "source": "native",
+          "validation_after_deadline": false
+        }
+      ],
+      "frontier_manifest_sha256": "4a73dbb4c70cafe2feae45219be71de604f1c9c700583c3125e913bafade4062",
+      "best_stored_below_leader_geos_witness": {
+        "file": "witness-00247.json",
+        "sidecar": "witness-00247.npz",
+        "radius": 2.9485269050110583,
+        "radius_delta_nm": -18.874553031622554,
+        "max_overlap_nm": 48.514666848088254,
+        "sum_overlap_nm2": 7422.77662277229,
+        "violated_pairs": 8,
+        "pairs": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ]
+        ],
+        "max_area": 1.0016982022967736e-06,
+        "native_max_overlap_nm": 48.49573732146214,
+        "raw_sha256": "fef2afe10c84044feca430086fd28ce1684decc4c656c618c7c858e222a6c7de",
+        "path": "experiments/pantheon-pilot/deadline-branch-strata-v2/cost20-50/frontier/witness-00247.json"
+      }
+    },
+    "cost50-100": {
+      "budget_seconds": 90.0,
+      "seconds": 90.10004008299438,
+      "best_score": 2.948527045780615,
+      "best_native_combined_deficit": 3.58657916699201e-08,
+      "counts": {
+        "frames": 1638,
+        "proposals": 3354624,
+        "ambiguous_patches": 59,
+        "branch_rejected": 14895,
+        "duplicates": 934321,
+        "unique_evaluated": 2405408,
+        "reference_checks": 6,
+        "reference_valid": 6
+      },
+      "coverage": {
+        "branches": 166,
+        "attempted_branches": 166,
+        "minimum_attempts": 9,
+        "maximum_attempts": 10
+      },
+      "orientations": {
+        "global_fallback": 907,
+        "local": 295,
+        "global": 436
+      },
+      "rejections": {},
+      "frontier_counts": {
+        "in_radius_window": 269212,
+        "native_under20nm": 0,
+        "geos_checked": 215,
+        "geos_under20nm": 0,
+        "saved": 214,
+        "distant_nominations": 476,
+        "distant_superseded": 126,
+        "seconds_geos": 8.269224084331654
+      },
+      "accepted_frames_with_negative_full_J_stress": 1619,
+      "minimum_actual_tied_stress": 0.02332335700683469,
+      "nominal_cost_min_nm": 50.088608816167834,
+      "nominal_cost_max_nm": 99.89473559457451,
+      "actual_continuous_radius_min": 2.948526599524148,
+      "actual_continuous_radius_max": 2.9485266657325457,
+      "valid_records": [
+        {
+          "file": "valid-0000.json",
+          "sha256": "eda9d5bd69a4a230d94f9ba9bb151fecde372f66fe2ab0a09dfd9fc5a14b9d47",
+          "score": 2.948527045780615,
+          "seconds": 40.71727483300492,
+          "branch_index": 135,
+          "source": "native",
+          "validation_after_deadline": false
+        },
+        {
+          "file": "valid-0001.json",
+          "sha256": "e19c904812ef1e1ffd6d510353f3d6eb82a896fd8cab8596cd82f6db0fc0f5ee",
+          "score": 2.948527045780615,
+          "seconds": 40.91557266598102,
+          "branch_index": 135,
+          "source": "native",
+          "validation_after_deadline": false
+        },
+        {
+          "file": "valid-0002.json",
+          "sha256": "ef1f551122c9190576a9ed9e23399fc1008cccfe81744ac66e48c195fce6186d",
+          "score": 2.948527045780615,
+          "seconds": 59.19416741596069,
+          "branch_index": 109,
+          "source": "native",
+          "validation_after_deadline": false
+        },
+        {
+          "file": "valid-0003.json",
+          "sha256": "34284de7fd38dd43d154101e0a02fce46749d06b8eddba8b538d11507861fc90",
+          "score": 2.948527045780615,
+          "seconds": 59.350496332976036,
+          "branch_index": 109,
+          "source": "native",
+          "validation_after_deadline": false
+        },
+        {
+          "file": "valid-0004.json",
+          "sha256": "ca41301874e64809e52e93055c11c03d64ce51b0d130f41ab07261b364710a54",
+          "score": 2.948527045780615,
+          "seconds": 59.50695479096612,
+          "branch_index": 109,
+          "source": "native",
+          "validation_after_deadline": false
+        },
+        {
+          "file": "valid-0005.json",
+          "sha256": "56947ce0d31956d32725f3c4b3cfa7e928a0112f2cb96ea6ac061fd2e81cc6a2",
+          "score": 2.948527045780615,
+          "seconds": 59.66761541599408,
+          "branch_index": 109,
+          "source": "native",
+          "validation_after_deadline": false
+        }
+      ],
+      "frontier_manifest_sha256": "91665fa359e6114fdc1b0b567e867258ca9e2e11e509c6a5fb16864f423d5056",
+      "best_stored_below_leader_geos_witness": {
+        "file": "witness-00164.json",
+        "sidecar": "witness-00164.npz",
+        "radius": 2.948526901082883,
+        "radius_delta_nm": -22.80272815013973,
+        "max_overlap_nm": 41.803805061219755,
+        "sum_overlap_nm2": 4436.712505561917,
+        "violated_pairs": 8,
+        "pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            13
+          ]
+        ],
+        "max_area": 1.0448333081069378e-06,
+        "native_max_overlap_nm": 41.7905200640522,
+        "raw_sha256": "60c7c9afa03a399a186c5926ca1aaedc1d7c4ae220e3b771b401ead6ce918fe9",
+        "path": "experiments/pantheon-pilot/deadline-branch-strata-v2/cost50-100/frontier/witness-00164.json"
+      }
+    },
+    "cost100-126": {
+      "budget_seconds": 90.0,
+      "seconds": 90.38313108298462,
+      "best_score": null,
+      "best_native_combined_deficit": 4.899542405029521e-08,
+      "counts": {
+        "frames": 1753,
+        "proposals": 3590144,
+        "ambiguous_patches": 71,
+        "branch_rejected": 13874,
+        "duplicates": 1011832,
+        "unique_evaluated": 2564438
+      },
+      "coverage": {
+        "branches": 89,
+        "attempted_branches": 89,
+        "minimum_attempts": 19,
+        "maximum_attempts": 20
+      },
+      "orientations": {
+        "local": 332,
+        "global_fallback": 981,
+        "global": 440
+      },
+      "rejections": {},
+      "frontier_counts": {
+        "in_radius_window": 231209,
+        "native_under20nm": 0,
+        "geos_checked": 136,
+        "geos_under20nm": 0,
+        "saved": 134,
+        "distant_nominations": 276,
+        "distant_superseded": 34,
+        "seconds_geos": 5.164748293347657
+      },
+      "accepted_frames_with_negative_full_J_stress": 1753,
+      "minimum_actual_tied_stress": 0.023293825270527674,
+      "nominal_cost_min_nm": 100.00062466986037,
+      "nominal_cost_max_nm": 125.98577647793263,
+      "actual_continuous_radius_min": 2.948526649434908,
+      "actual_continuous_radius_max": 2.948526698562239,
+      "valid_records": [],
+      "frontier_manifest_sha256": "f5f1d9044157cef6b8469714462ed4c6ea3b8a5702a7a169c17d787f2bceb1c7",
+      "best_stored_below_leader_geos_witness": {
+        "file": "witness-00027.json",
+        "sidecar": "witness-00027.npz",
+        "radius": 2.9485268979139088,
+        "radius_delta_nm": -25.97170256635195,
+        "max_overlap_nm": 58.80231546691503,
+        "sum_overlap_nm2": 11853.818597984937,
+        "violated_pairs": 10,
+        "pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            10
+          ]
+        ],
+        "max_area": 1.0042061559272686e-06,
+        "native_max_overlap_nm": 58.792955095784585,
+        "raw_sha256": "fcc862914f7fde3b93737014d9ba272a8d9b82b92644783af80c141284072ee0",
+        "path": "experiments/pantheon-pilot/deadline-branch-strata-v2/cost100-126/frontier/witness-00027.json"
+      }
+    }
+  },
+  "total_unique_geometry_checks_excluding_control": 7395637,
+  "total_stratum_seconds_including_geos_flush": 270.9739093329408,
+  "interpretation": "No verified improvement in this finite equal-allocation sample. Higher continuous cost did not help under this policy; this does not exclude every frame or imply a causal cost-quality ordering. No API or global promotion.",
+  "provenance_note": "v1 completed the short control then failed parent-report serialization before any cost stratum ran. v2 fixes only a NumPy branch argument to a Python list and repeats the declared control before all three untouched stratum budgets."
+}

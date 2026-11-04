@@ -1,0 +1,1073 @@
+{
+  "incumbent": 2.948526966725367,
+  "leader": 2.9485269238856113,
+  "gap": 4.28397557428184e-08,
+  "valid_improvement": false,
+  "solution_sha256": "088950a795745e2757fd462e6a9085220777ca00422bca66fb3d9c6bba0e475e",
+  "runs": [
+    {
+      "hypothesis": "CP-SAT may repair the best prior projected near-solution with learned clauses.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_cpsat.py",
+        "--checkpoint",
+        "experiments/lll_hillclimb_projected_state.npz",
+        "--seconds",
+        "120",
+        "--solve-seconds",
+        "20",
+        "--coefficients",
+        "3",
+        "--movement",
+        "50",
+        "--slack",
+        "all",
+        "--output",
+        "experiments/2026-11-04/cpsat/projected.json"
+      ],
+      "seconds": 150.6079839579761,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T010412.json",
+      "log": "experiments/2026-11-04/runs/20261104T010412.log",
+      "sources_changed_during_run": null,
+      "result": {
+        "event": "finished",
+        "seconds": 120.00893854198512,
+        "iterations": 6,
+        "best_score": 2.948526966725367,
+        "best_violation": 2.3871743714599943e-08
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Hard overlap constraints with radius minimization may preserve validity while improving the incumbent.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_cpsat.py",
+        "--checkpoint",
+        "experiments/lll_hillclimb_best_state.npz",
+        "--seconds",
+        "120",
+        "--solve-seconds",
+        "20",
+        "--coefficients",
+        "3",
+        "--movement",
+        "50",
+        "--slack",
+        "radius",
+        "--seed",
+        "110402",
+        "--output",
+        "experiments/2026-11-04/cpsat/radius.json"
+      ],
+      "seconds": 149.45575787499547,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T010413.json",
+      "log": "experiments/2026-11-04/runs/20261104T010413.log",
+      "sources_changed_during_run": null,
+      "result": {
+        "event": "finished",
+        "seconds": 120.0019973749877,
+        "iterations": 6,
+        "best_score": 2.948526966725367,
+        "best_violation": null
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "An incumbent-aligned reduced basis and valid warm start may let CP-SAT reduce radius rather than search blindly for first feasibility.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_cpsat.py",
+        "--input",
+        "solution.json",
+        "--seconds",
+        "120",
+        "--solve-seconds",
+        "20",
+        "--coefficients",
+        "2",
+        "--movement",
+        "50",
+        "--slack",
+        "radius",
+        "--seed",
+        "110403",
+        "--output",
+        "experiments/2026-11-04/cpsat/valid-warm.json"
+      ],
+      "seconds": 121.43601179099642,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T010538_261277Z-cpsat-valid-warm.json",
+      "log": "experiments/2026-11-04/runs/20261104T010538_261277Z-cpsat-valid-warm.log",
+      "sources_changed_during_run": null,
+      "result": {
+        "event": "finished",
+        "seconds": 120.16422608302673,
+        "iterations": 8,
+        "best_score": 2.948526966725367,
+        "best_violation": 4.292536948113934e-08
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Remove translation duplicates and widen the incumbent-aligned basis box to test coordinated moves beyond the first local optimum.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_cpsat.py",
+        "--input",
+        "solution.json",
+        "--seconds",
+        "120",
+        "--solve-seconds",
+        "30",
+        "--coefficients",
+        "8",
+        "--movement",
+        "200",
+        "--slack",
+        "radius",
+        "--seed",
+        "110404",
+        "--output",
+        "experiments/2026-11-04/cpsat/gauge.json"
+      ],
+      "seconds": 121.34583816694794,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T010647_595737Z-cpsat-gauge.json",
+      "log": "experiments/2026-11-04/runs/20261104T010647_595737Z-cpsat-gauge.log",
+      "sources_changed_during_run": null,
+      "result": {
+        "event": "finished",
+        "seconds": 120.16826662502717,
+        "iterations": 4,
+        "best_score": 2.948526966725367,
+        "best_violation": 4.292536948113934e-08
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Residual-feedback projections can cross nearest-point barriers while preserving knowledge of failed contact allocations.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_difference_map.py",
+        "--seconds",
+        "120",
+        "--seed",
+        "110411"
+      ],
+      "seconds": 120.53272341605043,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T010843_749264Z-difference-map.json",
+      "log": "experiments/2026-11-04/runs/20261104T010843_749264Z-difference-map.log",
+      "sources_changed_during_run": null,
+      "result": {
+        "event": "finished",
+        "frames": 830,
+        "trials": 829055,
+        "actuals": 797900,
+        "best_score": 2.948526966725367,
+        "best_violation": 2.61979056483795e-08,
+        "seconds": 120.0001332500251
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "The newly mapped first-flat 27.35-microradian branch may yield better quantization despite its slightly worse continuous radius.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_difference_map.py",
+        "--input",
+        "experiments/2026-11-04/alternative/grid-branches/f+027p35_s+00p35.json",
+        "--seconds",
+        "180",
+        "--seed",
+        "110412",
+        "--beta",
+        "1.2",
+        "--target",
+        "2.948526945",
+        "--output",
+        "experiments/2026-11-04/difference-map/broader.json"
+      ],
+      "seconds": 180.6289048329927,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T010917_821835Z-projection-broader-branch.json",
+      "log": "experiments/2026-11-04/runs/20261104T010917_821835Z-projection-broader-branch.log",
+      "sources_changed_during_run": null,
+      "result": {
+        "event": "finished",
+        "frames": 1187,
+        "trials": 1186580,
+        "actuals": 1184635,
+        "best_score": 2.948526966725367,
+        "best_violation": 2.0121694371294565e-08,
+        "seconds": 180.00012004101882
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Test a second unsearched flat-angle branch with a more permissive flat-angle box and smaller regularization.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_difference_map.py",
+        "--input",
+        "experiments/2026-11-04/alternative/grid-branches/f+032p35_s+00p35.json",
+        "--seconds",
+        "180",
+        "--seed",
+        "110413",
+        "--beta",
+        "0.7",
+        "--regularization",
+        "0.000001",
+        "--flat-width",
+        "0.4",
+        "--target",
+        "2.94852694",
+        "--output",
+        "experiments/2026-11-04/difference-map/broader32.json"
+      ],
+      "seconds": 180.5108287499752,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T010918_965743Z-projection-broader-32.json",
+      "log": "experiments/2026-11-04/runs/20261104T010918_965743Z-projection-broader-32.log",
+      "sources_changed_during_run": null,
+      "result": {
+        "event": "finished",
+        "frames": 1240,
+        "trials": 1239560,
+        "actuals": 1147229,
+        "best_score": 2.948526966725367,
+        "best_violation": 3.6913062960927976e-08,
+        "seconds": 180.00001154100755
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Correcting contact offsets with actual nonlinear geometry on every iteration can follow the curved family missed by fixed tangent models.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_difference_map.py",
+        "--seconds",
+        "180",
+        "--seed",
+        "110414",
+        "--beta",
+        "0.8",
+        "--target",
+        "2.94852694",
+        "--nonlinear",
+        "--output",
+        "experiments/2026-11-04/difference-map/nonlinear.json"
+      ],
+      "seconds": 180.65271741698962,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T011027_211560Z-projection-nonlinear.json",
+      "log": "experiments/2026-11-04/runs/20261104T011027_211560Z-projection-nonlinear.log",
+      "sources_changed_during_run": null,
+      "result": {
+        "event": "finished",
+        "frames": 1176,
+        "trials": 1175794,
+        "actuals": 1175794,
+        "best_score": 2.948526966725367,
+        "best_violation": 2.986109329114672e-08,
+        "seconds": 180.00048012501793
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Solve curved 2D family sections at 0.5-1 milliradian/millimetric generalized offsets, then use LLL near each instead of extrapolating a single tangent.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_family_lattice.py",
+        "--count",
+        "12",
+        "--seconds-per-seed",
+        "20",
+        "--amplitude",
+        "0.001",
+        "--seed",
+        "110420"
+      ],
+      "seconds": 248.21539091697196,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T011256_198594Z-curved-family.json",
+      "log": "experiments/2026-11-04/runs/20261104T011256_198594Z-curved-family.log",
+      "sources_changed_during_run": null,
+      "result": {
+        "index": 11,
+        "alpha": [
+          0.0004330127018922192,
+          -0.0002500000000000002
+        ],
+        "radius": 2.948526565048203,
+        "violation": 4.6959059457331375e-12,
+        "success": false,
+        "singular_values": [
+          0.2771247025544462,
+          0.17591424366840866,
+          0.005074356480548341
+        ],
+        "seconds": 227.15155391703593,
+        "command": [
+          "/Users/rorz/repos/forks/shape-packing-challenge/.venv/bin/python",
+          "scripts/experiment_lll.py",
+          "--input",
+          "experiments/2026-11-04/family/seed-11.json",
+          "--keep-seed",
+          "--seconds",
+          "20.0",
+          "--seed",
+          "110431",
+          "--target",
+          "2.948526945",
+          "--goal",
+          "2.9485269238",
+          "--incumbent",
+          "solution.json",
+          "--movement",
+          "50",
+          "--concentration",
+          "10",
+          "--boundary-bias",
+          "5",
+          "--block-size",
+          "20",
+          "--output",
+          "experiments/2026-11-04/family/best-11.json",
+          "--checkpoint-prefix",
+          "seed-11"
+        ],
+        "exit_code": 0
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Global rotation changes which rounded raw-angle difference is representable; snap those branches continuously before searching a41-dimensional lattice with both flat differences fixed.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_difference_map.py",
+        "--seconds",
+        "180",
+        "--seed",
+        "110415",
+        "--beta",
+        "0.8",
+        "--target",
+        "2.948526945",
+        "--nonlinear",
+        "--lock-flat",
+        "--movement",
+        "50",
+        "--output",
+        "experiments/2026-11-04/difference-map/locked.json"
+      ],
+      "seconds": 180.50107987504452,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T011526_076038Z-projection-locked-flat.json",
+      "log": "experiments/2026-11-04/runs/20261104T011526_076038Z-projection-locked-flat.log",
+      "sources_changed_during_run": [
+        "scripts/experiment_alt_quadratic.py",
+        "scripts/experiment_oblique_kbest.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 1204,
+        "trials": 1203354,
+        "actuals": 1203354,
+        "best_score": 2.948526966725367,
+        "best_violation": 3.996564269312011e-08,
+        "seconds": 180.00003858399577
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "New DR near-solutions have new grid phases; exact local pair compatibility with support-derived free-center scans may repair overlaps missed by approximate projections.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/audit_repair.py",
+        "--seconds",
+        "180",
+        "--seed",
+        "110414",
+        "--centers",
+        "96",
+        "--nodes",
+        "10000"
+      ],
+      "seconds": 37.61503487499431,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T011543_580066Z-audit-dr-exact-repair.json",
+      "log": "experiments/2026-11-04/runs/20261104T011543_580066Z-audit-dr-exact-repair.log",
+      "sources_changed_during_run": [
+        "scripts/experiment_oblique_kbest.py"
+      ],
+      "result": {
+        "event": "done",
+        "seconds": 37.20090320898453,
+        "best": 2.948526966725367,
+        "models": 15
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Verify fresh repair machinery can recover a known valid packing at its true MEC center with one nanometer of radius slack before interpreting repair failures.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/audit_repair.py",
+        "--directory",
+        "experiments/2026-11-04/repair-sanity-input",
+        "--output",
+        "experiments/2026-11-04/repair-sanity",
+        "--seconds",
+        "30",
+        "--steps",
+        "1",
+        "--centers",
+        "0",
+        "--nodes",
+        "10000",
+        "--targets",
+        "2.948526967725367"
+      ],
+      "seconds": 0.8363933329819702,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T011736_363505Z-audit-repair-sanity.json",
+      "log": "experiments/2026-11-04/runs/20261104T011736_363505Z-audit-repair-sanity.log",
+      "sources_changed_during_run": [],
+      "result": {
+        "event": "done",
+        "seconds": 0.28330495802219957,
+        "best": 2.948526966725367,
+        "models": 1
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Eliminate15angularintegers from lattice search; solve fixed-position adjacent-angle compatibility with exact2SAT.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--seconds",
+        "180",
+        "--seed",
+        "110430",
+        "--target",
+        "2.94852695"
+      ],
+      "seconds": 180.85017300001346,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T011937_377544Z-integer-centers-2sat.json",
+      "log": "experiments/2026-11-04/runs/20261104T011937_377544Z-integer-centers-2sat.log",
+      "sources_changed_during_run": [
+        "scripts/angular_rounder.py",
+        "scripts/experiment_position_projection.py",
+        "scripts/research_run.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 253,
+        "trials": 252184,
+        "rounded": 246092,
+        "assignments": 0,
+        "best_score": 2.948526966725367,
+        "best_violation": -1.910184344033894e-08,
+        "seconds": 180.00016212498304
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Split integer projections:28 center variables decoded jointly,15 scalar angles snapped in the reflected constraint projection, with2SAT as final exact compatibility.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--seconds",
+        "300",
+        "--seed",
+        "110431",
+        "--target",
+        "2.948526966",
+        "--snap-angular",
+        "--angle-reg",
+        "0.001",
+        "--output",
+        "experiments/2026-11-04/positions/angular-feedback.json"
+      ],
+      "seconds": 300.777639042004,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T012007_948805Z-integer-centers-angular-feedback.json",
+      "log": "experiments/2026-11-04/runs/20261104T012007_948805Z-integer-centers-angular-feedback.log",
+      "sources_changed_during_run": [
+        "scripts/angular_rounder.py",
+        "scripts/experiment_oblique_angle_rounder_check.py",
+        "scripts/experiment_position_projection.py",
+        "scripts/research_run.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 957,
+        "trials": 956480,
+        "rounded": 294417,
+        "assignments": 0,
+        "best_score": 2.948526966725367,
+        "best_violation": -2.6543771966590482e-08,
+        "seconds": 300.0001779579907
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "A stronger reflected angular-grid penalty may steer center proposals toward angle-roundable geometry instead of continuously feasible but unroundable positions.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--seconds",
+        "300",
+        "--seed",
+        "110432",
+        "--target",
+        "2.94852696",
+        "--snap-angular",
+        "--angle-reg",
+        "0.01",
+        "--beta",
+        "0.5",
+        "--output",
+        "experiments/2026-11-04/positions/strong-angular.json"
+      ],
+      "seconds": 300.72440570796607,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T012033_330914Z-integer-centers-strong-angular.json",
+      "log": "experiments/2026-11-04/runs/20261104T012033_330914Z-integer-centers-strong-angular.log",
+      "sources_changed_during_run": [
+        "scripts/angular_rounder.py",
+        "scripts/experiment_position_projection.py",
+        "scripts/research_run.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 648,
+        "trials": 647109,
+        "rounded": 359790,
+        "assignments": 0,
+        "best_score": 2.948526966725367,
+        "best_violation": -1.1146982907006107e-08,
+        "seconds": 300.00068379199365
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Verify source snapshots, environment records, command capture, and clean command completion.",
+      "command": [
+        ".venv/bin/python",
+        "-c",
+        "print(\"research runner smoke check\")"
+      ],
+      "seconds": 0.04782020900165662,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T012216_174590Z-verify-research-runner.json",
+      "log": "experiments/2026-11-04/runs/20261104T012216_174590Z-verify-research-runner.log",
+      "sources_changed_during_run": [],
+      "result": {},
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Verify that a timeout terminates the entire owned process group and records a124exit.",
+      "command": [
+        ".venv/bin/python",
+        "-c",
+        "import subprocess,time; subprocess.Popen([\"sleep\",\"10\"]); time.sleep(10)"
+      ],
+      "seconds": 0.210327209031675,
+      "exit_code": 124,
+      "record": "experiments/2026-11-04/runs/20261104T012237_812505Z-verify-timeout.json",
+      "log": "experiments/2026-11-04/runs/20261104T012237_812505Z-verify-timeout.log",
+      "sources_changed_during_run": [],
+      "result": {},
+      "status": "failed_or_expected_timeout"
+    },
+    {
+      "hypothesis": "Replay angle-seam guidance, center projection, CP-SAT row rounding and exhaustive small 2-SAT checks independently of the search algorithms.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/audit_search_models.py",
+        "--input",
+        "solution.json",
+        "--output",
+        "experiments/2026-11-04/model-audit-replay.json"
+      ],
+      "seconds": 0.7793424159754068,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T012244_606034Z-audit-model-probes.json",
+      "log": "experiments/2026-11-04/runs/20261104T012244_606034Z-audit-model-probes.log",
+      "sources_changed_during_run": [],
+      "result": {},
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Fresh integer-center continuous-angle solutions are native-feasible; allow neighboring integer center moves and angle grids together, with support-derived MEC-center scans, rather than duplicate fixed-center angular rounding.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/audit_repair.py",
+        "--directory",
+        "experiments/2026-11-04/repair-continuous-input",
+        "--output",
+        "experiments/2026-11-04/repair-continuous",
+        "--seconds",
+        "180",
+        "--seed",
+        "110431",
+        "--centers",
+        "256",
+        "--nodes",
+        "20000",
+        "--targets",
+        "2.94852695",
+        "2.9485269238"
+      ],
+      "seconds": 40.3441018339945,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T012344_120839Z-audit-continuous-exact-repair.json",
+      "log": "experiments/2026-11-04/runs/20261104T012344_120839Z-audit-continuous-exact-repair.log",
+      "sources_changed_during_run": [
+        "scripts/experiment_position_projection.py"
+      ],
+      "result": {
+        "event": "done",
+        "seconds": 39.899806957982946,
+        "best": 2.948526966725367,
+        "models": 6
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Piece14endpoint containment causes a discrete radius lower bound; retain its angle jointly in the integer lattice while eliminating the other14angles.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--seconds",
+        "300",
+        "--seed",
+        "110433",
+        "--target",
+        "2.94852696",
+        "--integer-boundary-angle",
+        "--output",
+        "experiments/2026-11-04/positions/boundary-angle.json"
+      ],
+      "seconds": 300.70438941702014,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T012402_917975Z-integer-boundary-angle.json",
+      "log": "experiments/2026-11-04/runs/20261104T012402_917975Z-integer-boundary-angle.log",
+      "sources_changed_during_run": [
+        "scripts/angular_rounder.py",
+        "scripts/experiment_position_projection.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 421,
+        "trials": 420858,
+        "rounded": 409435,
+        "assignments": 0,
+        "best_score": 2.948526966725367,
+        "best_violation": -2.0255297377663454e-08,
+        "seconds": 300.00065483298386
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Combine joint piece14 integer containment with weaker reflected angular feedback for the remaining14angles.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--seconds",
+        "300",
+        "--seed",
+        "110434",
+        "--target",
+        "2.94852696",
+        "--integer-boundary-angle",
+        "--snap-angular",
+        "--angle-reg",
+        "0.0001",
+        "--output",
+        "experiments/2026-11-04/positions/boundary-feedback.json"
+      ],
+      "seconds": 300.6935235830024,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T012404_066998Z-integer-boundary-angle-feedback.json",
+      "log": "experiments/2026-11-04/runs/20261104T012404_066998Z-integer-boundary-angle-feedback.log",
+      "sources_changed_during_run": [
+        "scripts/angular_rounder.py",
+        "scripts/experiment_position_projection.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 554,
+        "trials": 553012,
+        "rounded": 191109,
+        "assignments": 0,
+        "best_score": 2.948526966725367,
+        "best_violation": -1.356465107803148e-08,
+        "seconds": 300.00040637498023
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Angular CSP isolates a contradiction along pieces12-13-2; retain2and13 jointly with endpoint14 in the integer lattice.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--seconds",
+        "180",
+        "--seed",
+        "110435",
+        "--target",
+        "2.94852696",
+        "--integer-boundary-angle",
+        "--integer-angle-indices",
+        "2,13",
+        "--output",
+        "experiments/2026-11-04/positions/conflict-angles.json"
+      ],
+      "seconds": 180.71953779098112,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T012807_227912Z-integer-conflict-angles.json",
+      "log": "experiments/2026-11-04/runs/20261104T012807_227912Z-integer-conflict-angles.log",
+      "sources_changed_during_run": [
+        "scripts/experiment_position_projection.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 251,
+        "trials": 250004,
+        "rounded": 242159,
+        "assignments": 0,
+        "best_score": 2.948526966725367,
+        "best_violation": -8.775139483816177e-09,
+        "seconds": 180.0006364590372
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Retain all9anglecolumns with normalized contact sensitivity above0.5 in the integer lattice; eliminate only the6 less-sensitive angular degrees.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--seconds",
+        "300",
+        "--seed",
+        "110436",
+        "--target",
+        "2.948526966",
+        "--integer-boundary-angle",
+        "--integer-angle-indices",
+        "0,1,2,3,4,11,12,13",
+        "--output",
+        "experiments/2026-11-04/positions/sensitive-angles.json"
+      ],
+      "seconds": 300.72840187500697,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T012923_367484Z-integer-sensitive-angles.json",
+      "log": "experiments/2026-11-04/runs/20261104T012923_367484Z-integer-sensitive-angles.log",
+      "sources_changed_during_run": [
+        "scripts/experiment_position_projection.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 2670,
+        "trials": 2669831,
+        "rounded": 777,
+        "assignments": 0,
+        "best_score": 2.948526966725367,
+        "best_violation": 1.897118058202807e-07,
+        "seconds": 300.0000924160122
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Use only the two independently demonstrated integer-angle obstructions13and14; avoid overconstraining other floating angular degrees.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--seconds",
+        "180",
+        "--seed",
+        "110437",
+        "--target",
+        "2.94852696",
+        "--integer-boundary-angle",
+        "--integer-angle-indices",
+        "13",
+        "--output",
+        "experiments/2026-11-04/positions/angles13-14.json"
+      ],
+      "seconds": 180.70872820797376,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T012924_518682Z-integer-13-14.json",
+      "log": "experiments/2026-11-04/runs/20261104T012924_518682Z-integer-13-14.log",
+      "sources_changed_during_run": [
+        "scripts/experiment_position_projection.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 249,
+        "trials": 248514,
+        "rounded": 241368,
+        "assignments": 0,
+        "best_score": 2.948526966725367,
+        "best_violation": -8.568798500760036e-09,
+        "seconds": 180.00059395900462
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Correct the omitted integer-angle contribution to paired-flat embedding rows; rerun sensitivity-based37dimensional search with the complete model.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--seconds",
+        "180",
+        "--seed",
+        "110438",
+        "--target",
+        "2.948526966",
+        "--integer-boundary-angle",
+        "--integer-angle-indices",
+        "0,1,2,3,4,11,12,13",
+        "--output",
+        "experiments/2026-11-04/positions/sensitive-corrected.json"
+      ],
+      "seconds": 180.6867464579991,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T013040_660638Z-integer-sensitive-angles-corrected.json",
+      "log": "experiments/2026-11-04/runs/20261104T013040_660638Z-integer-sensitive-angles-corrected.log",
+      "sources_changed_during_run": [
+        "scripts/_angular_min_cost.cpp",
+        "scripts/experiment_position_projection.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 249,
+        "trials": 248449,
+        "rounded": 238380,
+        "assignments": 0,
+        "best_score": 2.948526966725367,
+        "best_violation": 2.434776247284276e-08,
+        "seconds": 180.00070191698615
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Complete each integer-center proposal with the exact least-violating15bit angle assignment, and feed that geometry back to the residual map.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--seconds",
+        "300",
+        "--seed",
+        "110439",
+        "--target",
+        "2.948526966",
+        "--mincost-projection",
+        "--integer-boundary-angle",
+        "--integer-angle-indices",
+        "13",
+        "--output",
+        "experiments/2026-11-04/positions/mincost.json"
+      ],
+      "seconds": 300.7062559580081,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T013102_118943Z-minimum-violation-angle-feedback.json",
+      "log": "experiments/2026-11-04/runs/20261104T013102_118943Z-minimum-violation-angle-feedback.log",
+      "sources_changed_during_run": [
+        "scripts/_angular_min_cost.cpp",
+        "scripts/experiment_position_projection.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 126,
+        "trials": 125527,
+        "rounded": 0,
+        "assignments": 0,
+        "best_score": 2.948526966725367,
+        "best_violation": 3.6226965903879727e-08,
+        "seconds": 300.0020694169798
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Let exact angular energy enumeration complete all15angles while28integercenter coordinates move jointly; compare against keeping13and14integer.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--seconds",
+        "300",
+        "--seed",
+        "110440",
+        "--target",
+        "2.948526966",
+        "--mincost-projection",
+        "--beta",
+        "1.1",
+        "--output",
+        "experiments/2026-11-04/positions/mincost-floating.json"
+      ],
+      "seconds": 300.7266294169822,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T013103_277989Z-minimum-violation-all-floating.json",
+      "log": "experiments/2026-11-04/runs/20261104T013103_277989Z-minimum-violation-all-floating.log",
+      "sources_changed_during_run": [
+        "scripts/_angular_min_cost.cpp",
+        "scripts/experiment_position_projection.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 125,
+        "trials": 124240,
+        "rounded": 0,
+        "assignments": 0,
+        "best_score": 2.948526966725367,
+        "best_violation": 3.548921769577827e-08,
+        "seconds": 300.0025456660078
+      },
+      "status": "completed"
+    },
+    {
+      "hypothesis": "Start the new angular-energy projection from the known valid packing at fixed orientation, so residual feedback searches outward from a real feasible lattice point.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--input",
+        "solution.json",
+        "--seconds",
+        "180",
+        "--iterations",
+        "100000",
+        "--frame-angle",
+        "0",
+        "--seed",
+        "110441",
+        "--target",
+        "2.948526966",
+        "--mincost-projection",
+        "--integer-boundary-angle",
+        "--integer-angle-indices",
+        "13",
+        "--output",
+        "experiments/2026-11-04/positions/mincost-incumbent.json"
+      ],
+      "seconds": 5.369205874972977,
+      "exit_code": 1,
+      "record": "experiments/2026-11-04/runs/20261104T013145_851048Z-minimum-violation-incumbent.json",
+      "log": "experiments/2026-11-04/runs/20261104T013145_851048Z-minimum-violation-incumbent.log",
+      "sources_changed_during_run": [],
+      "result": {
+        "event": "reference",
+        "valid": true,
+        "score": 2.948526966725367,
+        "errors": [],
+        "rounded": 1,
+        "seconds": 0.1914314579917118
+      },
+      "status": "failed_or_expected_timeout"
+    },
+    {
+      "hypothesis": "Compress the known valid packing toward the leader with stronger residual pressure and a1000microunit neighborhood, retaining valid intermediate improvements.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--input",
+        "solution.json",
+        "--seconds",
+        "180",
+        "--iterations",
+        "100000",
+        "--frame-angle",
+        "0",
+        "--seed",
+        "110442",
+        "--target",
+        "2.9485269238",
+        "--movement",
+        "1000",
+        "--beta",
+        "1.1",
+        "--mincost-projection",
+        "--integer-boundary-angle",
+        "--integer-angle-indices",
+        "13",
+        "--output",
+        "experiments/2026-11-04/positions/incumbent-compression.json"
+      ],
+      "seconds": 0.8208444580086507,
+      "exit_code": 1,
+      "record": "experiments/2026-11-04/runs/20261104T013253_451956Z-incumbent-compression-long-moves.json",
+      "log": "experiments/2026-11-04/runs/20261104T013253_451956Z-incumbent-compression-long-moves.log",
+      "sources_changed_during_run": [],
+      "result": {
+        "event": "nearest_continuous",
+        "frames": 1,
+        "trials": 1,
+        "violation": 4.846960399883619e-07,
+        "seconds": 0.014282500022090971
+      },
+      "status": "failed_or_expected_timeout"
+    },
+    {
+      "hypothesis": "Repeat the failed long-move compression after explicit integer reconstruction and a bounded restart for divergent local proposals.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--input",
+        "solution.json",
+        "--seconds",
+        "180",
+        "--iterations",
+        "100000",
+        "--frame-angle",
+        "0",
+        "--seed",
+        "110442",
+        "--target",
+        "2.9485269238",
+        "--movement",
+        "1000",
+        "--beta",
+        "1.1",
+        "--mincost-projection",
+        "--integer-boundary-angle",
+        "--integer-angle-indices",
+        "13",
+        "--output",
+        "experiments/2026-11-04/positions/incumbent-compression-bounded.json"
+      ],
+      "seconds": 180.73830624995753,
+      "exit_code": 0,
+      "record": "experiments/2026-11-04/runs/20261104T013346_439940Z-incumbent-compression-bounded.json",
+      "log": "experiments/2026-11-04/runs/20261104T013346_439940Z-incumbent-compression-bounded.log",
+      "sources_changed_during_run": [
+        "scripts/experiment_position_projection.py"
+      ],
+      "result": {
+        "event": "finished",
+        "frames": 12929,
+        "trials": 51714,
+        "rounded": 0,
+        "assignments": 0,
+        "best_score": 2.948526966725367,
+        "best_violation": 4.846960399883619e-07,
+        "seconds": 180.00095966696972
+      },
+      "status": "completed"
+    }
+  ],
+  "root_runs": 30,
+  "pending": [],
+  "all_searches_finished": true,
+  "tests_passed": 78,
+  "final_api": "api-final.json",
+  "final_leaderboard": "leaderboard-final.json"
+}

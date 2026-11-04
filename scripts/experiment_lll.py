@@ -7,6 +7,7 @@ import os
 for key in ('VECLIB_MAXIMUM_THREADS', 'OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS'):
     os.environ.setdefault(key, '1')
 import argparse
+import itertools
 import json
 from pathlib import Path
 import time
@@ -15,6 +16,13 @@ from fpylll import BKZ, CVP, GSO, IntegerMatrix, LLL
 from semicircle_packing.polish import AreaConstraints, checked, load, polish, save
 from semicircle_packing.geometry import canonicalize_theta
 from semicircle_packing.fast_mec import compute_mec_fast
+
+
+def flat_contact_pairs(p, constraints, gaps):
+    """Detect opposed active flats without assuming a piece numbering."""
+    return [(i,j)for row,(i,j)in enumerate(itertools.combinations(range(len(p)),2))
+            if np.cos(p[i,2]-p[j,2]) < -.999999 and gaps[row] < 1e-6
+            and constraints.scale[row] > .1]
 
 
 def main():
@@ -28,6 +36,8 @@ def main():
     parser.add_argument('--regularization', type=float, default=1e-5)
     parser.add_argument('--movement', type=float, default=500)
     parser.add_argument('--flat-weight', type=float, default=.1)
+    parser.add_argument('--flat-pairs', default='auto',
+                        help='auto detects opposed active flats; alternatively i:j,k:l or none')
     parser.add_argument('--block-size', type=int, default=0)
     parser.add_argument('--exact-every', type=int, default=0)
     parser.add_argument('--keep-seed', action='store_true')
@@ -99,8 +109,11 @@ def main():
             prior = offset.ravel()/1e-6
         b0 = -g0/1e-6 - J @ ((anchor-p).ravel()/1e-6)
         # Keep the two opposed-flat relative angles in a locally smooth range.
-        angle_rows = np.zeros((2,45))
-        for row,(i,j) in enumerate([(1,5),(6,10)]):
+        pairs=(flat_contact_pairs(p,c,gaps) if args.flat_pairs=='auto' else
+               [] if args.flat_pairs=='none' else
+               [tuple(map(int,pair.split(':')))for pair in args.flat_pairs.split(',')])
+        angle_rows = np.zeros((len(pairs),45))
+        for row,(i,j) in enumerate(pairs):
             angle_rows[row,3*i+2] = args.flat_weight
             angle_rows[row,3*j+2] = -args.flat_weight
         center_jac = -np.column_stack([J[:,0::3].sum(axis=1),J[:,1::3].sum(axis=1)])
@@ -140,7 +153,8 @@ def main():
                 coefficients = M.babai(integer_target)
                 nearest = np.array(B.multiply_left(coefficients),dtype=float)
             delta = np.rint(nearest[:45]/identity).reshape(-1,3)
-            candidate = anchor + delta*1e-6
+            raw_candidate = anchor + delta*1e-6
+            candidate = raw_candidate.copy()
             candidate[:,2] = [canonicalize_theta(t) for t in candidate[:,2]]
             actual,_ = c.evaluate(np.r_[candidate.ravel(),args.target])
             fitted_center = np.zeros(2)
@@ -154,10 +168,10 @@ def main():
                 best_violation = violation
                 print(json.dumps(dict(trials=trial,violation=violation,
                     movement=float(np.abs(delta).max()),seconds=time.monotonic()-started)),flush=True)
-                save(Path(args.output).with_name(args.checkpoint_prefix+'_nearest.json'),candidate)
+                save(Path(args.output).with_name(args.checkpoint_prefix+'_nearest.json'),raw_candidate)
                 state = Path(args.output).with_name(args.checkpoint_prefix+'_basis.npz')
                 temporary = state.with_suffix('.tmp.npz')
-                np.savez(temporary, placements=candidate, origin=p,
+                np.savez(temporary, placements=raw_candidate, geometry=candidate, origin=p,
                          moves=np.rint(reduced[:,:45]/identity).reshape(45,15,3),
                          center=fitted_center,
                          target=args.target)
@@ -166,10 +180,10 @@ def main():
                 _,_,quick_radius = compute_mec_fast(candidate)
                 if quick_radius >= min(best_score,args.target):
                     continue
-                result = checked(candidate)
+                result = checked(raw_candidate)
                 if result.valid and result.score < min(best_score,args.target):
                     best_score = result.score
-                    save(args.output,candidate)
+                    save(args.output,raw_candidate)
                     print(json.dumps(dict(best=result.score,goal=goal,seconds=time.monotonic()-started)),flush=True)
                     if result.score < goal:
                         finish()

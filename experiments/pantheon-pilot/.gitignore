@@ -1,0 +1,8 @@
+# Keep verified promotion evidence; all control and blind-run output stays local.
+*
+!.gitignore
+!candidate-2.948526950912552.json
+!candidate-api.json
+!leaderboard-current.json
+!previous-incumbent.json
+!promotion.json

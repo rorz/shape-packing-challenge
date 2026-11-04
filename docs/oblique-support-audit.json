@@ -1,0 +1,250 @@
+{
+  "checked_at": "2026-11-04T14:34:23.105974+00:00",
+  "scope": "Read-only finite diagnostic; no conditional completion or optimization campaign.",
+  "input": {
+    "path": "solution.json",
+    "sha256": "cefac3368caae7f9dea0c4cdc0e87d869f3a9bd76ba75292b1cd4b7fff7c8fb9",
+    "reference_valid": true,
+    "reference_score": 2.948526950912552,
+    "native_mec": [
+      -0.000181908061730773,
+      0.00013448996992149187,
+      2.9485269509127003
+    ]
+  },
+  "recorded_leader": 2.9485269238856113,
+  "strict_enumeration_threshold": 2.9485269238826115,
+  "support_indices_zero_based": [
+    5,
+    10,
+    14
+  ],
+  "radial_support_angular_margins_radians": {
+    "5": 0.3959082631168991,
+    "10": 0.9557630761908427,
+    "14": 1.034066397201212
+  },
+  "enumerations": [
+    {
+      "width_micro_units": 2,
+      "fixed_pose_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13
+      ],
+      "varying_coordinates": [
+        "x10",
+        "y10",
+        "x14",
+        "y14"
+      ],
+      "all_angles_fixed": true,
+      "relative_triangle_count": 625,
+      "all_triangles_acute": true,
+      "minimum_radial_support_margin_radians": 0.39590695374375073,
+      "support_subleader_count": 305,
+      "unchanged_other_shapes_fit_triangle_circle_count": 0,
+      "full_native_mec_subleader_count": 144,
+      "minimum_native_bad_pairs_among_full_subleader": 2,
+      "native_permissive_valid_subleader_count": 0,
+      "minimum_unchanged_other_containment_excess": 6.1357761538261e-08,
+      "best_native_full_radius": 2.948526910829708,
+      "native_fallback_count": 0
+    },
+    {
+      "width_micro_units": 4,
+      "fixed_pose_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13
+      ],
+      "varying_coordinates": [
+        "x10",
+        "y10",
+        "x14",
+        "y14"
+      ],
+      "all_angles_fixed": true,
+      "relative_triangle_count": 6561,
+      "all_triangles_acute": true,
+      "minimum_radial_support_margin_radians": 0.3959056443709186,
+      "support_subleader_count": 3233,
+      "unchanged_other_shapes_fit_triangle_circle_count": 0,
+      "full_native_mec_subleader_count": 1600,
+      "minimum_native_bad_pairs_among_full_subleader": 2,
+      "native_permissive_valid_subleader_count": 0,
+      "minimum_unchanged_other_containment_excess": 6.1357761538261e-08,
+      "best_native_full_radius": 2.948526910829708,
+      "native_fallback_count": 0
+    }
+  ],
+  "invalid_example": {
+    "center_offsets_micro_units": {
+      "10": [
+        1,
+        -2
+      ],
+      "14": [
+        -1,
+        -1
+      ]
+    },
+    "raw_placements": [
+      {
+        "x": 0.545425,
+        "y": 0.67215,
+        "theta": -0.570778
+      },
+      {
+        "x": 1.135484,
+        "y": -1.23874,
+        "theta": 2.227365
+      },
+      {
+        "x": -0.584124,
+        "y": -0.217653,
+        "theta": -1.671787
+      },
+      {
+        "x": 1.843118,
+        "y": 0.631801,
+        "theta": -0.722762
+      },
+      {
+        "x": 0.278186,
+        "y": 1.928675,
+        "theta": 2.264578
+      },
+      {
+        "x": -0.723715,
+        "y": 1.809349,
+        "theta": 3.126118
+      },
+      {
+        "x": -1.624637,
+        "y": 1.076193,
+        "theta": -2.992325
+      },
+      {
+        "x": -0.56981,
+        "y": 0.785952,
+        "theta": -1.682231
+      },
+      {
+        "x": 0.032918,
+        "y": 1.724683,
+        "theta": -0.877015
+      },
+      {
+        "x": 1.261991,
+        "y": 1.484613,
+        "theta": 0.453135
+      },
+      {
+        "x": -1.944932,
+        "y": -0.121113,
+        "theta": -2.464295
+      },
+      {
+        "x": -1.573106,
+        "y": -1.149938,
+        "theta": -1.641622
+      },
+      {
+        "x": 1.049635,
+        "y": -2.567295,
+        "theta": 1.95895
+      },
+      {
+        "x": -0.789401,
+        "y": -1.781407,
+        "theta": -0.792106
+      },
+      {
+        "x": 1.811165,
+        "y": -0.718042,
+        "theta": -0.914204
+      }
+    ],
+    "reference_valid": false,
+    "reference_errors": [
+      "Semicircles 10 and 11 overlap",
+      "Semicircles 12 and 14 overlap"
+    ],
+    "reference_score": null,
+    "reference_mec_even_though_invalid": [
+      -0.00018191899052713662,
+      0.00013452876878703384,
+      2.9485269108296706
+    ],
+    "exact_bad_pairs": [
+      {
+        "pair": [
+          10,
+          11
+        ],
+        "area": 1.0369408536857948e-06
+      },
+      {
+        "pair": [
+          12,
+          14
+        ],
+        "area": 1.0219880029124834e-06
+      }
+    ],
+    "native_mec": [
+      -0.00018191899037534043,
+      0.0001345287688300223,
+      2.948526910829708
+    ],
+    "maximum_native_normalized_overlap_deficit": 1.0912006136433063e-06
+  },
+  "interpretation": [
+    "At the incumbent, three radial supports locally make radius depend only on their integer centers. Small angular repairs cannot lower that radius.",
+    "Moving two supporting centers can put the full packing MEC below the leader, after the active support set changes, but every enumerated subleader example fails the permissive native overlap screen.",
+    "The explicit two-conflict example is GEOS-invalid and has about 1091 billionths of normalized overlap deficit, much worse than archived near-winners. Low conflict count does not establish closeness to feasibility.",
+    "Support-first search would require conditional coordinated repacking. These diagnostic results do not establish that such completion exists."
+  ],
+  "arithmetic_scope": {
+    "circumcircles": "Float64 formula, verified acute triangles and positive radial support margins throughout each finite enumeration; not an interval-certified global lower bound.",
+    "containment": "Analytic farthest radial or endpoint boundary distance at each support-triangle circumcenter; 2e-12 reporting guard.",
+    "native_screen": "Empirical chord-corrected overlap estimate with permissive 1e-11 area guard; only the saved example received independent full GEOS/reference checks.",
+    "threshold": "Recorded leader minus 3e-12; no claim about every score in the omitted tiny interval.",
+    "gauge": "Piece 5 stays fixed. All other pieces except 10 and 14 stay fixed in this diagnostic. A future completion may move them; this enumeration does not rule such completions out."
+  },
+  "reproducer": {
+    "working_directory": "repository root",
+    "command": "VECLIB_MAXIMUM_THREADS=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python - <<'PY'\nimport hashlib, itertools, json, sys\nfrom datetime import datetime, timezone\nfrom pathlib import Path\nimport numpy as np\nsys.path.insert(0, 'scripts')\nfrom semicircle_packing.polish import load, checked, AreaConstraints\nfrom semicircle_packing.fast_mec import compute_mec_fast\nfrom semicircle_packing.geometry import Semicircle, semicircle_polygon\nfrom semicircle_packing.scoring import compute_mec\nfrom breakout_geometry import evaluate_batch\n\npath = Path('solution.json')\np = load(path)\nleader = 2.9485269238856113\nthreshold = leader - 3e-12\nsupport = [5, 10, 14]\nc0 = np.array(compute_mec_fast(p))\ninitial = checked(p)\nscale = AreaConstraints(p).scale\n\ndef margin(poses, centers):\n    direction = np.arctan2(poses[..., 1] - centers[..., 1], poses[..., 0] - centers[..., 0])\n    delta = np.arctan2(np.sin(direction - poses[..., 2]), np.cos(direction - poses[..., 2]))\n    return np.pi / 2 - np.abs(delta)\n\nreport = {\n    'checked_at': datetime.now(timezone.utc).isoformat(),\n    'scope': 'Read-only finite diagnostic; no conditional completion or optimization campaign.',\n    'input': {'path': str(path), 'sha256': hashlib.sha256(path.read_bytes()).hexdigest(),\n              'reference_valid': initial.valid, 'reference_score': initial.score,\n              'native_mec': c0.tolist()},\n    'recorded_leader': leader,\n    'strict_enumeration_threshold': threshold,\n    'support_indices_zero_based': support,\n    'radial_support_angular_margins_radians': {\n        str(i): float(margin(p[i], c0[:2])) for i in support},\n    'enumerations': []}\n\nfor width in [2, 4]:\n    changes = np.array(list(itertools.product(range(-width, width + 1), repeat=4)))\n    q = np.tile(p, (len(changes), 1, 1))\n    q[:, 10, :2] += changes[:, :2] * 1e-6\n    q[:, 14, :2] += changes[:, 2:] * 1e-6\n    triples = q[:, support, :2]\n    A, B, C = triples[:, 0], triples[:, 1], triples[:, 2]\n    d = 2 * (A[:, 0] * (B[:, 1] - C[:, 1]) + B[:, 0] * (C[:, 1] - A[:, 1]) + C[:, 0] * (A[:, 1] - B[:, 1]))\n    aa, bb, cc = (np.sum(v * v, axis=1) for v in [A, B, C])\n    center = np.column_stack(((aa * (B[:, 1] - C[:, 1]) + bb * (C[:, 1] - A[:, 1]) + cc * (A[:, 1] - B[:, 1])) / d,\n                              (aa * (C[:, 0] - B[:, 0]) + bb * (A[:, 0] - C[:, 0]) + cc * (B[:, 0] - A[:, 0])) / d))\n    radii = np.linalg.norm(A - center, axis=1) + 1\n    # Acute triangles: the three-center MEC is their circumcircle.\n    acute = np.all(np.column_stack([np.sum((B-A)*(C-A), axis=1), np.sum((A-B)*(C-B), axis=1), np.sum((A-C)*(B-C), axis=1)]) > 0)\n    assert acute\n    sub = np.flatnonzero(radii < threshold)\n    candidates = q[sub]\n    direction = np.arctan2(candidates[:, :, 1] - center[sub, None, 1], candidates[:, :, 0] - center[sub, None, 0])\n    delta = np.arctan2(np.sin(direction - candidates[:, :, 2]), np.cos(direction - candidates[:, :, 2]))\n    radial = np.linalg.norm(candidates[:, :, :2] - center[sub, None, :], axis=2) + 1\n    angles = candidates[:, :, 2, None] + np.array([-np.pi/2, np.pi/2])\n    endpoints = candidates[:, :, :2, None] + np.stack([np.cos(angles), np.sin(angles)], axis=2)\n    enddist = np.linalg.norm(endpoints - center[sub, None, :, None], axis=2).max(axis=2)\n    extent = np.where(np.abs(delta) <= np.pi/2, radial, enddist)\n    excess = np.max(extent - radii[sub, None], axis=1)\n    areas, circles, ok = evaluate_batch(candidates, centers=[0., 0.])\n    bad = (areas > 1e-6 + 1e-11).sum(axis=1)\n    full_sub = circles[:, 2] < threshold\n    report['enumerations'].append({\n        'width_micro_units': width,\n        'fixed_pose_indices': [i for i in range(15) if i not in [10, 14]],\n        'varying_coordinates': ['x10', 'y10', 'x14', 'y14'],\n        'all_angles_fixed': True,\n        'relative_triangle_count': len(changes),\n        'all_triangles_acute': bool(acute),\n        'minimum_radial_support_margin_radians': float(margin(q[:, support], center[:, None, :]).min()),\n        'support_subleader_count': len(sub),\n        'unchanged_other_shapes_fit_triangle_circle_count': int((excess <= 2e-12).sum()),\n        'full_native_mec_subleader_count': int(full_sub.sum()),\n        'minimum_native_bad_pairs_among_full_subleader': int(bad[full_sub].min()),\n        'native_permissive_valid_subleader_count': int(((bad == 0) & full_sub).sum()),\n        'minimum_unchanged_other_containment_excess': float(excess.min()),\n        'best_native_full_radius': float(circles[:, 2].min()),\n        'native_fallback_count': int((ok == 0).sum())})\n\nexample = p.copy()\nexample[10, :2] += np.array([1, -2]) * 1e-6\nexample[14, :2] += np.array([-1, -1]) * 1e-6\nexample = np.round(example, 6)\nshapes = [Semicircle(*row) for row in example]\npolygons = [semicircle_polygon(shape) for shape in shapes]\nexact_bad = []\nfor i in range(15):\n    for j in range(i + 1, 15):\n        area = polygons[i].intersection(polygons[j]).area\n        if area > 1e-6:\n            exact_bad.append({'pair': [i, j], 'area': area})\nareas, circles, _ = evaluate_batch(example[None], centers=[0., 0.])\nvalidation = checked(example)\nreport['invalid_example'] = {\n    'center_offsets_micro_units': {'10': [1, -2], '14': [-1, -1]},\n    'raw_placements': [dict(zip(['x', 'y', 'theta'], map(float, row))) for row in example],\n    'reference_valid': validation.valid,\n    'reference_errors': validation.errors,\n    'reference_score': validation.score,\n    'reference_mec_even_though_invalid': list(compute_mec(shapes)),\n    'exact_bad_pairs': exact_bad,\n    'native_mec': circles[0].tolist(),\n    'maximum_native_normalized_overlap_deficit': float((np.maximum(areas[0] - 1e-6, 0) / scale).max())}\nreport['interpretation'] = [\n    'At the incumbent, three radial supports locally make radius depend only on their integer centers. Small angular repairs cannot lower that radius.',\n    'Moving two supporting centers can put the full packing MEC below the leader, after the active support set changes, but every enumerated subleader example fails the permissive native overlap screen.',\n    'The explicit two-conflict example is GEOS-invalid and has about 1091 billionths of normalized overlap deficit, much worse than archived near-winners. Low conflict count does not establish closeness to feasibility.',\n    'Support-first search would require conditional coordinated repacking. These diagnostic results do not establish that such completion exists.']\nreport['arithmetic_scope'] = {\n    'circumcircles': 'Float64 formula, verified acute triangles and positive radial support margins throughout each finite enumeration; not an interval-certified global lower bound.',\n    'containment': 'Analytic farthest radial or endpoint boundary distance at each support-triangle circumcenter; 2e-12 reporting guard.',\n    'native_screen': 'Empirical chord-corrected overlap estimate with permissive 1e-11 area guard; only the saved example received independent full GEOS/reference checks.',\n    'threshold': 'Recorded leader minus 3e-12; no claim about every score in the omitted tiny interval.',\n    'gauge': 'Piece 5 stays fixed. All other pieces except 10 and 14 stay fixed in this diagnostic. A future completion may move them; this enumeration does not rule such completions out.'}\nprint(json.dumps(report, indent=2))\nPY",
+    "writes_files": false
+  },
+  "source_sha256": {
+    "scripts/breakout_geometry.py": "677f4d37afe5f839dbb5bb3c80a739fc98cdb884160e7395e0eaa686b077522f",
+    "scripts/_breakout_geometry.cpp": "c7b766c0a8d9e5d93087afe7b995c1aee29ae4870fea56e2d5d0701464bbaa95",
+    "src/semicircle_packing/fast_mec.py": "0abcfb73cec3be9ced92be2b5774a5ac7c1c8992fa26f4027b9aef742f2f2518",
+    "src/semicircle_packing/geometry.py": "c238265c2adc0cb90f75c81f7d04870f28c97831a6d0bb7e5d5bdd8ba07a5339",
+    "src/semicircle_packing/scoring.py": "d3f3200f755f723c9e8a21ebd70cb7d12737879623d5fc02a54549bf6fb551a1",
+    "src/semicircle_packing/polish.py": "cf2256022195d3231a40f98d4ec0d191f32a8a8ea9d30bab2b40ed42cf37c520",
+    "src/semicircle_packing/config.py": "c694f258859152ddf3c7857a7b968c0d40d601e8e0fd6091fd58d351c433bfb8"
+  }
+}

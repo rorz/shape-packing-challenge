@@ -1,0 +1,147 @@
+{
+  "quality-matched-baseline": {
+    "report": {
+      "best": 2.948526962953499,
+      "nearest": 3.360970612931169e-09,
+      "counts": {
+        "frames": 4787,
+        "sections": 4787,
+        "rejected_sections": 0,
+        "proposals": 9803776,
+        "unique": 8229626,
+        "duplicates": 1538569,
+        "branch_rejected": 35581,
+        "ambiguous": 212,
+        "checks": 38,
+        "valid": 37,
+        "api": 0,
+        "elites": 37,
+        "fallbacks": 0,
+        "branch_crossings": 35581
+      },
+      "seconds": 300.0142586249858,
+      "goal_met": false,
+      "frontier": {
+        "in_radius_window": 564004,
+        "native_under20nm": 33,
+        "geos_checked": 477,
+        "geos_under20nm": 33,
+        "saved": 421,
+        "distant_nominations": 896,
+        "distant_superseded": 160,
+        "seconds_geos": 19.00562982086558
+      }
+    },
+    "best_saved_valid": 2.948527010752072,
+    "best_subfirst_frontier": {
+      "file": "witness-00366.json",
+      "sidecar": "witness-00366.npz",
+      "radius": 2.9485269135930903,
+      "radius_delta_nm": -10.292521057664317,
+      "max_overlap_nm": 18.920772260093447,
+      "sum_overlap_nm2": 755.139274254108,
+      "violated_pairs": 3,
+      "pairs": [
+        [
+          2,
+          11
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          12,
+          14
+        ]
+      ],
+      "max_area": 1.0007308198783015e-06,
+      "native_max_overlap_nm": 18.90890156731554,
+      "raw_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca"
+    },
+    "geos_under20nm_per_second": 0.10999477208598142,
+    "frontier_saved_reconstruction_checks": 421
+  },
+  "quality-matched-learned": {
+    "report": {
+      "best": 2.948526962953499,
+      "nearest": 3.360970612931169e-09,
+      "counts": {
+        "frames": 4254,
+        "sections": 4254,
+        "rejected_sections": 0,
+        "proposals": 8712192,
+        "unique": 8310605,
+        "duplicates": 368018,
+        "branch_rejected": 33569,
+        "ambiguous": 175,
+        "checks": 45,
+        "valid": 39,
+        "api": 0,
+        "elites": 39,
+        "fallbacks": 0,
+        "branch_crossings": 33569
+      },
+      "seconds": 300.1202279580175,
+      "goal_met": false,
+      "frontier": {
+        "in_radius_window": 268660,
+        "native_under20nm": 9,
+        "geos_checked": 356,
+        "geos_under20nm": 8,
+        "saved": 335,
+        "distant_nominations": 712,
+        "distant_superseded": 120,
+        "seconds_geos": 14.280131633684505
+      }
+    },
+    "best_saved_valid": 2.9485269867883153,
+    "best_subfirst_frontier": {
+      "file": "witness-00323.json",
+      "sidecar": "witness-00323.npz",
+      "radius": 2.948526900876999,
+      "radius_delta_nm": -23.008612348718316,
+      "max_overlap_nm": 41.17390726968053,
+      "sum_overlap_nm2": 5663.398332899442,
+      "violated_pairs": 6,
+      "pairs": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          12,
+          14
+        ]
+      ],
+      "max_area": 1.0195125398230958e-06,
+      "native_max_overlap_nm": 41.17390753771582,
+      "raw_sha256": "8b2cdf7e24f08b256dc16b2b80d1442e8ab8b3b0e3bb60256d3406773fe026f2"
+    },
+    "geos_under20nm_per_second": 0.0266559840182418,
+    "frontier_saved_reconstruction_checks": 335
+  },
+  "audit": {
+    "identical_fullprecision_frames": 64,
+    "reconstructed_frontier_snapshots": {
+      "quality-matched-baseline": 421,
+      "quality-matched-learned": 335
+    }
+  }
+}

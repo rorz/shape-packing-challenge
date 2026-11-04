@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-04T03:34:04.275772+00:00",
+  "solution": "experiments/2026-11-04/round3/candidate-2.948526962953499.json",
+  "sha256": "d0300c4a563c2443dc01c489a788a308e1b1725a0e7bf6d67d4014e9c83e6980",
+  "response": {
+    "valid": true,
+    "errors": [],
+    "score": 2.948526962953499
+  }
+}

@@ -1,0 +1,1190 @@
+{
+  "definition": "Exact integer-micro XY centers, shape indices fixed, quotient common translation. Angle differences ignored. No rotation/reflection/permutation quotient.",
+  "training_unique_xy": 135,
+  "prior_mirror_unique_xy": 2214,
+  "excluded_groups": [
+    "quality-matched-baseline",
+    "quality-matched-learned"
+  ],
+  "groups": {
+    "quality-matched-baseline": {
+      "saved_valid_records": 37,
+      "unique_valid_xy": 37,
+      "training_xy_recovery": 13,
+      "prior_xy_recovery": 13,
+      "new_xy_against_training": 24,
+      "new_xy_against_prior": 24,
+      "raw_sha_training_matches": 0,
+      "records": [
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0000.json",
+          "xy_hash": "6dec9849a046d859e80ff4549732147cfcb3958e83ab05d0c5cb486ff6b936f8",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0003.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0006.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0006.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0002.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0006.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0003.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0006.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0002.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0001.json",
+          "xy_hash": "dfb4d63cd4801ef5ebfb74a5c86541e16a5d34c1f5d2b5cfb428d7c9e46316bc",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0002.json",
+          "xy_hash": "e266009364d4fa0eb1b0485db4508991f80e5cc975837944fd5c057772d0ba7d",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0003.json",
+          "xy_hash": "2ed5a049165c1a06af53b094dde9d2b8002eba36a34815d03f7108050603d624",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0010.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0019.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0022.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0010.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0019.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0004.json",
+          "xy_hash": "a788132c8e9e4fb453f59de7107615e20a1e49e0a351da496c9381e0fa25b947",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0020.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0020.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0005.json",
+          "xy_hash": "77c975b5d02df61615a20bfc794b74fac10f222b0f72b5912e5d184dfd85516d",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0006.json",
+          "xy_hash": "a4311f90422358a3512c9a7c58f2791706c256daa8140bca250988ab9bac1efd",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0025.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0021.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0025.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0014.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0021.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0007.json",
+          "xy_hash": "3a2527cb3a66511ad6a74eb4230f3c0c0e05f88e95a6e2d3baf080a1ea43288a",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0028.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0012.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0028.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0008.json",
+          "xy_hash": "fbf6362a20125521bd28715ca47a599ca8aa89535244b00b3100cc7f38e35751",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0012.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0028.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0015.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0012.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0028.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0009.json",
+          "xy_hash": "5244c9a42c31df06c1e74cfa0b8b6d87f5f5a355c27ff1bbdf85c02a547c9db4",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0010.json",
+          "xy_hash": "e8faae224e6a078cc823d1b3b88369d58d0736534776db0e4fdf2ed8bc852ad5",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0011.json",
+          "xy_hash": "8c4a45b65045652abba256b3ef142f3976a5fba81e1f65d6090356f3c41cbae1",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0030.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0000.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0015.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0003.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0030.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0000.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0015.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0003.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0012.json",
+          "xy_hash": "8ee9de95e141bb92d4cec57afbc8c4cb9b139d7434158241d27b95bd376259cf",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0024.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0024.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0013.json",
+          "xy_hash": "796700ccade824725278e979893b8a4829bb641cc135df6b4d7316faf72420a2",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0014.json",
+          "xy_hash": "821e34d389090579704631fee31b26ab0de9e57826b7768f59968f6f9c9c3843",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0015.json",
+          "xy_hash": "4cf7da0ab6707131b2ecef8959744a8f8d6e0fde368e2bc1a66c7d2702519848",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0016.json",
+          "xy_hash": "fd8e3a914c2501dbc0d43062be3726f59a1a8fd30ae84ca231cf7db790f04d2f",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0017.json",
+          "xy_hash": "eacf223c6058032486f06f5eafd2ea76a86dcf7629362b4ee7b2e484d77323a5",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0027.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0008.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0016.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0004.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0019.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0016.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0007.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0027.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0008.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0004.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0019.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0018.json",
+          "xy_hash": "57c6ef6e496819b2c30424c26e80cf5ebfbd2016becb56bfb2e4f3dff39d854f",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0019.json",
+          "xy_hash": "32ee8f1aee2567d71b6709f9b4d6fdde95ff520c679a4341b48e61748b2f89cb",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0020.json",
+          "xy_hash": "d2beb8996e28b07d0c80eb29b3971a750ca4dea28405ef141fb532fa6a85278a",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0021.json",
+          "xy_hash": "3287e0982d165dbbccf19e8806c89de756617f1ebecd5c3691578a19448f5beb",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0022.json",
+          "xy_hash": "156565fd648b31f0b9a98d8eb94d8774980cdc8213cae6aa8462c71cf34a33a4",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0023.json",
+          "xy_hash": "30f6219e63380e4563b38823ae45b2bd0da0ecd357805da6b650a7342a9daf03",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0015.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0010.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0019.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-h/elite-0000.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-h/elite-0000.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0019.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0015.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0010.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0024.json",
+          "xy_hash": "7e344a5257145278b3768dcbd6abe0b4ffcfe08d7dc010f0d69df842e3a9ba41",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0025.json",
+          "xy_hash": "0cc9085971f0594f25811879bc0728adba8cece29bd311f28d0397e209f2dc0e",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0026.json",
+          "xy_hash": "fe8940d00b5253b74abaa90ea0d0c45acf800c74d9d2b368ccdf6bef0bb4acfe",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0027.json",
+          "xy_hash": "c278c8bc481464720b67584445e44b8da0e712d4c11d8096c7d96e3ab3f14c66",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0024.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0024.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0028.json",
+          "xy_hash": "69aca10b71fa84eab2e882ee03cd71f3bb58fe7f307393941214dc2fa22477c3",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0029.json",
+          "xy_hash": "70f587edddac243302b47c1f245191a6a3d7b2f3a235b01e3f5b9cacd826e5bd",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0030.json",
+          "xy_hash": "a5aafe11efe44d08d974b4952fdef5ae0288702e3853e77052acd4c95dfa6573",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0031.json",
+          "xy_hash": "760edafd06faba1f8bba4fb62f5c36dbcd6a47d71adf30905921320fd89dc175",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0032.json",
+          "xy_hash": "34cd0fed0ea2f59e6b4bf2a8ea6b0776d8f57b121fb17cfaed552c197df0d6a3",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0033.json",
+          "xy_hash": "0f31b9dc0c932b309466556b96fe5be035b705bbedfee8ac91804610c2d53d08",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0034.json",
+          "xy_hash": "4a399890273ce77a279070a8ea3c5b225b10be1f537406cdcf5be4a6a2f3cc1e",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0013.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0030.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0034.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0030.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0013.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0034.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0035.json",
+          "xy_hash": "f59a7943352333c0491bfe6a4948421112589408a4cb256dfc4de8f8eeb43e41",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0036.json",
+          "xy_hash": "0ec417df4f6eaaccda4b1b6d0580609cb41ae7f07ebb8862cac8a28c4987ac79",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0004.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0001.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0008.json",
+            "experiments/2026-11-04/round3/mirror/random-e/elite-0000.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0001.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0001.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0004.json",
+            "experiments/2026-11-04/round3/mirror/campaign-b/foothold-api-input.json",
+            "experiments/2026-11-04/round3/mirror/random-e/elite-0000.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0008.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-baseline/elite-0003.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0001.json"
+          ],
+          "raw_sha_training_match": false
+        }
+      ],
+      "frontier_under20nm": [
+        {
+          "file": "witness-00366.json",
+          "sidecar": "witness-00366.npz",
+          "radius": 2.9485269135930903,
+          "radius_delta_nm": -10.292521057664317,
+          "max_overlap_nm": 18.920772260093447,
+          "sum_overlap_nm2": 755.139274254108,
+          "violated_pairs": 3,
+          "pairs": [
+            [
+              2,
+              11
+            ],
+            [
+              6,
+              10
+            ],
+            [
+              12,
+              14
+            ]
+          ],
+          "max_area": 1.0007308198783015e-06,
+          "native_max_overlap_nm": 18.90890156731554,
+          "raw_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+          "xy_hash": "0b68cf3f297eb76bacdd9ecafcb1ca6437e959a95861387f3be9d0337f8a3a95",
+          "training_xy_match": [],
+          "prior_xy_match": []
+        },
+        {
+          "file": "witness-00194.json",
+          "sidecar": "witness-00194.npz",
+          "radius": 2.948526931294496,
+          "radius_delta_nm": 7.408884616921796,
+          "max_overlap_nm": 8.6009749687849,
+          "sum_overlap_nm2": 147.1447380993769,
+          "violated_pairs": 4,
+          "pairs": [
+            [
+              0,
+              8
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              10
+            ]
+          ],
+          "max_area": 1.000303181239009e-06,
+          "native_max_overlap_nm": 8.590328177089782,
+          "raw_sha256": "d90924d5b6c96488d1157ecbe85f8384b484d0eaced0926033ec4e08a3d4355b",
+          "xy_hash": "e99b0c0f008800e2cdbaa33ca638637112019c080d43d4e29f903faf93a22fc1",
+          "training_xy_match": [],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-h/nearest-raw.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/nearest-raw.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/frontier/witness-00115.json"
+          ]
+        },
+        {
+          "file": "witness-00270.json",
+          "sidecar": "witness-00270.npz",
+          "radius": 2.948526952441282,
+          "radius_delta_nm": 28.555670716912118,
+          "max_overlap_nm": 14.63657339642824,
+          "sum_overlap_nm2": 214.2292807890309,
+          "violated_pairs": 1,
+          "pairs": [
+            [
+              1,
+              3
+            ]
+          ],
+          "max_area": 1.0003761015283315e-06,
+          "native_max_overlap_nm": 14.609029344887306,
+          "raw_sha256": "8cb23059920abd1a8159f7b6afa0fb5d778065cd60ed394689ec171452f36441",
+          "xy_hash": "54d4f3800ded1336566865cac7c07ef872089d6be285a55f887cfe4972498f9b",
+          "training_xy_match": [],
+          "prior_xy_match": []
+        },
+        {
+          "file": "witness-00219.json",
+          "sidecar": "witness-00219.npz",
+          "radius": 2.948526955370502,
+          "radius_delta_nm": 31.4848906945997,
+          "max_overlap_nm": 10.227552399208628,
+          "sum_overlap_nm2": 327.914205340919,
+          "violated_pairs": 4,
+          "pairs": [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              2,
+              10
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "max_area": 1.000385736536549e-06,
+          "native_max_overlap_nm": 10.216604330379575,
+          "raw_sha256": "22e50b07d0dd9c269192e3a9390674dd3710bce1bc2d3c32de8b33172d1104db",
+          "xy_hash": "49a7f7869b8faa193bb09e62f3e6b4987c561986c7969c4f95e3e73792354349",
+          "training_xy_match": [],
+          "prior_xy_match": []
+        },
+        {
+          "file": "witness-00379.json",
+          "sidecar": "witness-00379.npz",
+          "radius": 2.948526965630731,
+          "radius_delta_nm": 41.74511980536977,
+          "max_overlap_nm": 12.285998371843144,
+          "sum_overlap_nm2": 150.9457559929324,
+          "violated_pairs": 1,
+          "pairs": [
+            [
+              1,
+              12
+            ]
+          ],
+          "max_area": 1.0004682866166683e-06,
+          "native_max_overlap_nm": 12.275561453910486,
+          "raw_sha256": "1afdf0234c10761e9e3594d3e3a302bad20c68db4d6dd607422da07422b02e6e",
+          "xy_hash": "28efc4694a59d1630b671645fecb9feea76eaa3586a62e94630c0eb89cd8ba2d",
+          "training_xy_match": [],
+          "prior_xy_match": []
+        },
+        {
+          "file": "witness-00000.json",
+          "sidecar": "witness-00000.npz",
+          "radius": 2.9485269675611483,
+          "radius_delta_nm": 43.67553696482673,
+          "max_overlap_nm": 9.926604767984088,
+          "sum_overlap_nm2": 181.47589270880943,
+          "violated_pairs": 5,
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "max_area": 1.0021656429692128e-06,
+          "native_max_overlap_nm": 9.916630920440818,
+          "raw_sha256": "c1625cff6c723c6bb51e54dbcbc52c7906f97105ed72e49c70290088d0a08ee8",
+          "xy_hash": "df8861e25a2e35da7907b8de396aac68b3a2e2b90bcff481234f1a4c6417cfe0",
+          "training_xy_match": [],
+          "prior_xy_match": []
+        }
+      ]
+    },
+    "quality-matched-learned": {
+      "saved_valid_records": 39,
+      "unique_valid_xy": 39,
+      "training_xy_recovery": 31,
+      "prior_xy_recovery": 31,
+      "new_xy_against_training": 8,
+      "new_xy_against_prior": 8,
+      "raw_sha_training_matches": 0,
+      "records": [
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0000.json",
+          "xy_hash": "4df2da6353c83a42204947045deed89d76351e6ec0538a7eda8dcccd73393cca",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0009.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0011.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0014.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0012.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0014.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0020.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0009.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0011.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0012.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0001.json",
+          "xy_hash": "2ed5a049165c1a06af53b094dde9d2b8002eba36a34815d03f7108050603d624",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0010.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0019.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0022.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0010.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0019.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0002.json",
+          "xy_hash": "6dec9849a046d859e80ff4549732147cfcb3958e83ab05d0c5cb486ff6b936f8",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0003.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0006.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0006.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0002.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0006.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0003.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0006.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0002.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0003.json",
+          "xy_hash": "ed231384035cd3a480a4e2d133bb9efa46a8a23bba91f0fd98b0e74f3487abbd",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0037.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0037.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0004.json",
+          "xy_hash": "f07b6ae62c748b331cf1587098e33003858a52ee639c4630e8e43203d46333bf",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0035.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0033.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0035.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0033.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0005.json",
+          "xy_hash": "891bf1bc0e77220c90a4b17490d0b713828cca57e3a521048bbc088c1745ae5b",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0003.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0000.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0003.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0006.json",
+          "xy_hash": "95a3bd1eb728840184e01dafdd67b451427a3613443a14abd058c32e9984adde",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0039.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0010.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/nearest-raw.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0039.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0007.json",
+          "xy_hash": "4f4f889c50b298aac20406ae7bde90a535a756926f13db6dcce7c07a0f363d4e",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0029.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0029.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0011.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0008.json",
+          "xy_hash": "fa564f83351c6f3015dbb647014b59b4d469fcfadf8eac0029014895cc136e1c",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0015.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0015.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0004.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0009.json",
+          "xy_hash": "3a2527cb3a66511ad6a74eb4230f3c0c0e05f88e95a6e2d3baf080a1ea43288a",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0028.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0012.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0028.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0010.json",
+          "xy_hash": "a4311f90422358a3512c9a7c58f2791706c256daa8140bca250988ab9bac1efd",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0025.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0021.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0025.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0014.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0021.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0011.json",
+          "xy_hash": "fbf6362a20125521bd28715ca47a599ca8aa89535244b00b3100cc7f38e35751",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0012.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0028.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0015.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0012.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0028.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0012.json",
+          "xy_hash": "4cf5fa4884f947c78c6f0fa6a3373775c3df02d3838e8ca529dd1693c06e5268",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0002.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0002.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0017.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0013.json",
+          "xy_hash": "2916a45be786cbbd05143a6322c9ed68dd7e838770aa684c8e0a1995f082bc4f",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0003.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0003.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0013.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0014.json",
+          "xy_hash": "624207645ba1403a0b2c45ad22ba72df64fcc8b8df8110f81c4284fe06726fd7",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0016.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0016.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0016.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0015.json",
+          "xy_hash": "03e9121a4909b820625185c40041257f0f8387e45796e76743ad83dbf8265fec",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/frontier-control/elite-0000.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0018.json",
+            "experiments/2026-11-04/round3/mirror/frontier-control/elite-0000.json",
+            "experiments/2026-11-04/round3/mirror/frontier-smoke/elite-0000.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0016.json",
+          "xy_hash": "ee07cd0a3cd270f936dc3440b28b9d9fe766e906173457010486a830762f10e4",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0020.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0021.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-baseline/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0020.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0017.json",
+          "xy_hash": "e8b3828031ef67be4d13db122e3ff7ab94477f9ec95428195fcd46436623aa5e",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0036.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0036.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0018.json",
+          "xy_hash": "30f6219e63380e4563b38823ae45b2bd0da0ecd357805da6b650a7342a9daf03",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0015.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0010.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0019.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-h/elite-0000.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-h/elite-0000.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0019.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0015.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0010.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0019.json",
+          "xy_hash": "3bdd6d3f7e83d9bb82a0260da06875af28a9561c7aa5a3f7bdd08e13bf8cfcee",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0007.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0007.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0001.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0007.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0007.json",
+            "experiments/2026-11-04/round3/mirror/campaign-b/nearest-raw.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0020.json",
+          "xy_hash": "7d24b8249863f13cf0180686cd599df8f36b5cbddf1962daa1e780caed84e2c3",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0021.json",
+          "xy_hash": "0ec417df4f6eaaccda4b1b6d0580609cb41ae7f07ebb8862cac8a28c4987ac79",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0004.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0001.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0008.json",
+            "experiments/2026-11-04/round3/mirror/random-e/elite-0000.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0001.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0001.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0004.json",
+            "experiments/2026-11-04/round3/mirror/campaign-b/foothold-api-input.json",
+            "experiments/2026-11-04/round3/mirror/random-e/elite-0000.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0008.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-baseline/elite-0003.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0001.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0022.json",
+          "xy_hash": "77c975b5d02df61615a20bfc794b74fac10f222b0f72b5912e5d184dfd85516d",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0023.json",
+          "xy_hash": "662c6b8fd9348001b40e6d7546f6cd491ea6eaa2af23e4be90368e8ca730f126",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0024.json",
+          "xy_hash": "423b7dbc3a67a15f8b7ef114eb495af7f248334a6502e2caa667787fe8aa7cd1",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0021.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0021.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0025.json",
+          "xy_hash": "d517c7a0a0b48f496526857207060076f8e902c856e4475c3d67f3f317a3afdf",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0038.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0038.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0026.json",
+          "xy_hash": "93465d53b70dc4f3e77001675a4a5148c1fdacccee5afbd3b862d70b4c5ee86e",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0027.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0009.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0027.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0027.json",
+          "xy_hash": "13987e8ce37f83b4c5884b98aaf9fb142047cbde22f49b9241a4c84d79072a53",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0001.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0001.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0028.json",
+          "xy_hash": "8c4a45b65045652abba256b3ef142f3976a5fba81e1f65d6090356f3c41cbae1",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0030.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0000.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0015.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0003.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0005.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0030.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0000.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0015.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0003.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0029.json",
+          "xy_hash": "847dc455088ec87a4f8ef070031522a6e3f3a407511b9d1ea944300170476b2a",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0017.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0010.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0017.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0003.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0010.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0030.json",
+          "xy_hash": "2a465a0927f6cabac27a470d68f32237382fa4c57bd5ccec66a0b3c2bc5dd951",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0002.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0013.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0038.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0016.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0013.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0002.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0038.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0016.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0031.json",
+          "xy_hash": "eacf223c6058032486f06f5eafd2ea76a86dcf7629362b4ee7b2e484d77323a5",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0027.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0008.json",
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0016.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0004.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0019.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0016.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/elite-0007.json",
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0027.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/elite-0008.json",
+            "experiments/2026-11-04/round3/mirror/random-d/elite-0004.json",
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0019.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0032.json",
+          "xy_hash": "d0e416957d30f529eb14cfb898106d023429e1196bf2b80f7fad1901ea76559a",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0033.json",
+          "xy_hash": "27497c7b360b17a774d59ecc32f75fdfc0af01f85b1792145341afab5332c4d1",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0034.json",
+          "xy_hash": "12ac631aa89ade1a124a8889b24a8e744968be0762c9e6bf6c2742a682f5700f",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0035.json",
+          "xy_hash": "c278c8bc481464720b67584445e44b8da0e712d4c11d8096c7d96e3ab3f14c66",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0024.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/random-f/elite-0024.json"
+          ],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0036.json",
+          "xy_hash": "0edc09aff1b8566c00d5b96c07675aed0456cadc8873632889e7a3225021f031",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0037.json",
+          "xy_hash": "00ea36d1e5ec021d19779a020d6579421fe0c7c1f48c3c882db5b62488e36c43",
+          "training_xy_match": [],
+          "prior_xy_match": [],
+          "raw_sha_training_match": false
+        },
+        {
+          "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/elite-0038.json",
+          "xy_hash": "f04381738b2fd30bc57203408657e5a9fe1a817a62d3498719dc4f9c758efccc",
+          "training_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0024.json"
+          ],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/broad-j/elite-0024.json"
+          ],
+          "raw_sha_training_match": false
+        }
+      ],
+      "frontier_under20nm": [
+        {
+          "file": "witness-00121.json",
+          "sidecar": "witness-00121.npz",
+          "radius": 2.948526931294496,
+          "radius_delta_nm": 7.408884616921796,
+          "max_overlap_nm": 8.601575009439033,
+          "sum_overlap_nm2": 147.1465643554967,
+          "violated_pairs": 4,
+          "pairs": [
+            [
+              0,
+              8
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              10
+            ]
+          ],
+          "max_area": 1.0003031812390632e-06,
+          "native_max_overlap_nm": 8.590927473442274,
+          "raw_sha256": "6a3c8f01059861f97e997eacaee1ce7f03fee4fdf3cadf220f1b19f581e7f563",
+          "xy_hash": "e99b0c0f008800e2cdbaa33ca638637112019c080d43d4e29f903faf93a22fc1",
+          "training_xy_match": [],
+          "prior_xy_match": [
+            "experiments/2026-11-04/round3/mirror/neighbor-h/nearest-raw.json",
+            "experiments/2026-11-04/round3/mirror/broad-k/nearest-raw.json",
+            "experiments/2026-11-04/round3/mirror/slack-matched-learned/frontier/witness-00115.json"
+          ]
+        },
+        {
+          "file": "witness-00238.json",
+          "sidecar": "witness-00238.npz",
+          "radius": 2.948526952441282,
+          "radius_delta_nm": 28.555670716912118,
+          "max_overlap_nm": 14.63657339642824,
+          "sum_overlap_nm2": 214.2292807890309,
+          "violated_pairs": 1,
+          "pairs": [
+            [
+              1,
+              3
+            ]
+          ],
+          "max_area": 1.0003761015283315e-06,
+          "native_max_overlap_nm": 14.609029344887306,
+          "raw_sha256": "8cb23059920abd1a8159f7b6afa0fb5d778065cd60ed394689ec171452f36441",
+          "xy_hash": "54d4f3800ded1336566865cac7c07ef872089d6be285a55f887cfe4972498f9b",
+          "training_xy_match": [],
+          "prior_xy_match": []
+        },
+        {
+          "file": "witness-00310.json",
+          "sidecar": "witness-00310.npz",
+          "radius": 2.948526965630731,
+          "radius_delta_nm": 41.74511980536977,
+          "max_overlap_nm": 12.285998371843144,
+          "sum_overlap_nm2": 150.9457559929324,
+          "violated_pairs": 1,
+          "pairs": [
+            [
+              1,
+              12
+            ]
+          ],
+          "max_area": 1.0004682866166683e-06,
+          "native_max_overlap_nm": 12.275561453910486,
+          "raw_sha256": "1afdf0234c10761e9e3594d3e3a302bad20c68db4d6dd607422da07422b02e6e",
+          "xy_hash": "28efc4694a59d1630b671645fecb9feea76eaa3586a62e94630c0eb89cd8ba2d",
+          "training_xy_match": [],
+          "prior_xy_match": []
+        },
+        {
+          "file": "witness-00000.json",
+          "sidecar": "witness-00000.npz",
+          "radius": 2.9485269675611483,
+          "radius_delta_nm": 43.67553696482673,
+          "max_overlap_nm": 9.926604767984088,
+          "sum_overlap_nm2": 190.90068282991203,
+          "violated_pairs": 6,
+          "pairs": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          "max_area": 1.0021656429692128e-06,
+          "native_max_overlap_nm": 9.916630920440818,
+          "raw_sha256": "0678436adff181d923cf56e880d78b7f5e2b0f04cf5963e25d3a50bf98d09b44",
+          "xy_hash": "df8861e25a2e35da7907b8de396aac68b3a2e2b90bcff481234f1a4c6417cfe0",
+          "training_xy_match": [],
+          "prior_xy_match": []
+        }
+      ]
+    }
+  }
+}

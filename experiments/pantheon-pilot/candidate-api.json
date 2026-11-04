@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-04T11:04:30.803968+00:00",
+  "solution": "experiments/pantheon-pilot/candidate-2.948526950912552.json",
+  "sha256": "cefac3368caae7f9dea0c4cdc0e87d869f3a9bd76ba75292b1cd4b7fff7c8fb9",
+  "response": {
+    "valid": true,
+    "errors": [],
+    "score": 2.948526950912552
+  }
+}

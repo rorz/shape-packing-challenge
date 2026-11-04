@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "description": "Frozen recovery controls. Incumbent is calibration; three held-out cases span alternative integer flat branches. Target fitting is an optimistic coverage diagnostic, not blind discovery. Saved origins are diagnostic only and must not become target-coordinate hints.",
+  "seed": {
+    "path": "mirror-continuous.json",
+    "sha256": "88d33e4a36c1406de98c02c41caccfdaa45934e4eb877f518da0923b2ab8eacd",
+    "source": "experiments/2026-11-04/round2/topology/continuous-best.json",
+    "source_sha256": "88d33e4a36c1406de98c02c41caccfdaa45934e4eb877f518da0923b2ab8eacd"
+  },
+  "cases": [
+    {
+      "id": "incumbent",
+      "split": "calibration",
+      "target": "incumbent.json",
+      "sha256": "d0300c4a563c2443dc01c489a788a308e1b1725a0e7bf6d67d4014e9c83e6980",
+      "expected_score": 2.948526962953499,
+      "source": {
+        "path": "experiments/2026-11-04/round3/candidate-2.948526962953499.json",
+        "sha256": "d0300c4a563c2443dc01c489a788a308e1b1725a0e7bf6d67d4014e9c83e6980"
+      },
+      "provenance": {
+        "branch": [
+          3.14157,
+          3.141593
+        ],
+        "alpha": [
+          -0.00014,
+          -0.00014
+        ],
+        "section_path": "experiments/2026-11-04/round3/mirror/campaign-b/section-032.json",
+        "section_sha256": "c6ccaf1b7f3ca1a006b7e57ff406d90372fa1a707eeedfa9bdc4e54c1a1bbac8",
+        "note": "The campaign saved only its first posed frame per section; that frame is not guaranteed to be the winning frame. This origin is the unposed documented section, not an exact winner checkpoint."
+      },
+      "saved_origin": {
+        "path": "incumbent-origin.json",
+        "sha256": "c6ccaf1b7f3ca1a006b7e57ff406d90372fa1a707eeedfa9bdc4e54c1a1bbac8",
+        "kind": "unposed_section",
+        "description": "Documented source section before rigid rotation; winning posed frame not independently preserved."
+      }
+    },
+    {
+      "id": "random-d",
+      "split": "heldout",
+      "target": "random-d.json",
+      "sha256": "593a123f74aa20c4eb6925837707ee2be06df2cd6d916af8eebe3fa3a59e15ac",
+      "expected_score": 2.9485269867883153,
+      "source": {
+        "path": "experiments/2026-11-04/round3/mirror/random-d/elite-0039.json",
+        "sha256": "593a123f74aa20c4eb6925837707ee2be06df2cd6d916af8eebe3fa3a59e15ac"
+      },
+      "provenance": {
+        "branch": [
+          3.14157,
+          -3.141592
+        ],
+        "alpha": [
+          -0.000186312217952056,
+          -0.00029058792859535515
+        ],
+        "sidecar_path": "experiments/2026-11-04/round3/mirror/random-d/elite-0039.npz",
+        "sidecar_sha256": "f8b423695e6b2e5627a96af2aea529b1e7c418915f01e82e5229f591ecd19532"
+      },
+      "saved_origin": {
+        "path": "random-d-origin.json",
+        "sha256": "8ab0a8abbb8387be97edc2b0a2b42065d4f89976d3fd3b9abaea7b56b6bccb31",
+        "kind": "posed_frame",
+        "description": "Exact full-precision origin saved beside this target; coefficients and move vectors deliberately excluded."
+      }
+    },
+    {
+      "id": "neighbor-g",
+      "split": "heldout",
+      "target": "neighbor-g.json",
+      "sha256": "5af73ec9c153c43d080a889233b1b6e4c00189970af8dadc49428830d2e5746f",
+      "expected_score": 2.9485269864331265,
+      "source": {
+        "path": "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0007.json",
+        "sha256": "5af73ec9c153c43d080a889233b1b6e4c00189970af8dadc49428830d2e5746f"
+      },
+      "provenance": {
+        "branch": [
+          3.141569,
+          3.141593
+        ],
+        "alpha": [
+          -0.00015628473636726902,
+          -0.00015975112641905835
+        ],
+        "sidecar_path": "experiments/2026-11-04/round3/mirror/neighbor-g/elite-0007.npz",
+        "sidecar_sha256": "9c862357ad930a667e61bdfbb3ef576bbf2feda4c21b5576db34e3b58951d0c8"
+      },
+      "saved_origin": {
+        "path": "neighbor-g-origin.json",
+        "sha256": "6bcd76622ab3662bcb9ed45218882372fca14e8cd7ec3889cc3d50fa47a38c7c",
+        "kind": "posed_frame",
+        "description": "Exact full-precision origin saved beside this target; coefficients and move vectors deliberately excluded."
+      }
+    },
+    {
+      "id": "fresh-baseline",
+      "split": "heldout",
+      "target": "fresh-baseline.json",
+      "sha256": "757141db6c4c5720b8c7e4d3ce760205055cc28ce77c1b4f7dd4bc26a41a9a55",
+      "expected_score": 2.9485270133102732,
+      "source": {
+        "path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0015.json",
+        "sha256": "757141db6c4c5720b8c7e4d3ce760205055cc28ce77c1b4f7dd4bc26a41a9a55"
+      },
+      "provenance": {
+        "branch": [
+          3.141566,
+          3.141593
+        ],
+        "alpha": [
+          4.781565468769388e-06,
+          -0.00010309535959122403
+        ],
+        "sidecar_path": "experiments/2026-11-04/round3/mirror/quality-matched-baseline/elite-0015.npz",
+        "sidecar_sha256": "0eedb75a863142b7c3eb4ba08164efafa99819c69443117e1a5d091baf6fb002"
+      },
+      "saved_origin": {
+        "path": "fresh-baseline-origin.json",
+        "sha256": "ea97d0a58a1737a5cfff1a900b765f1af825bf074fe6463c4da7122e4170c177",
+        "kind": "posed_frame",
+        "description": "Exact full-precision origin saved beside this target; coefficients and move vectors deliberately excluded."
+      }
+    }
+  ]
+}

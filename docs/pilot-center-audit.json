@@ -1,0 +1,346 @@
+{
+  "scope": "Read-only audit against hash-verified frozen prior sources; center identity does not imply angle-grid equivalence",
+  "candidate": {
+    "path": "experiments/pantheon-pilot/candidate-2.948526950912552.json",
+    "sha256": "cefac3368caae7f9dea0c4cdc0e87d869f3a9bd76ba75292b1cd4b7fff7c8fb9",
+    "reference_valid": true,
+    "reference_score": 2.948526950912552,
+    "labeled_center_hash": "0c0337e5d33796deceace9e47fe3f04d1647917b881fd313b48368354621dfa1",
+    "dihedral_center_hash": "60866a24570de7ed1307d0c1de9ab6db719addf1814e812cf0220c42cdca7087",
+    "raw_placements": [
+      {
+        "x": 0.545425,
+        "y": 0.67215,
+        "theta": -0.570778
+      },
+      {
+        "x": 1.135484,
+        "y": -1.23874,
+        "theta": 2.227365
+      },
+      {
+        "x": -0.584124,
+        "y": -0.217653,
+        "theta": -1.671787
+      },
+      {
+        "x": 1.843118,
+        "y": 0.631801,
+        "theta": -0.722762
+      },
+      {
+        "x": 0.278186,
+        "y": 1.928675,
+        "theta": 2.264578
+      },
+      {
+        "x": -0.723715,
+        "y": 1.809349,
+        "theta": 3.126118
+      },
+      {
+        "x": -1.624637,
+        "y": 1.076193,
+        "theta": -2.992325
+      },
+      {
+        "x": -0.56981,
+        "y": 0.785952,
+        "theta": -1.682231
+      },
+      {
+        "x": 0.032918,
+        "y": 1.724683,
+        "theta": -0.877015
+      },
+      {
+        "x": 1.261991,
+        "y": 1.484613,
+        "theta": 0.453135
+      },
+      {
+        "x": -1.944933,
+        "y": -0.121111,
+        "theta": -2.464295
+      },
+      {
+        "x": -1.573106,
+        "y": -1.149938,
+        "theta": -1.641622
+      },
+      {
+        "x": 1.049635,
+        "y": -2.567295,
+        "theta": 1.95895
+      },
+      {
+        "x": -0.789401,
+        "y": -1.781407,
+        "theta": -0.792106
+      },
+      {
+        "x": 1.811166,
+        "y": -0.718041,
+        "theta": -0.914204
+      }
+    ]
+  },
+  "prior_index": {
+    "path": "experiments/pantheon-pilot/blind-v1/prior-centers.json",
+    "sha256": "99b81193a5b5cbec832199f7d7afe5c9cd93744082e15c2a86bf0c9437f26e1c",
+    "sources": 10016
+  },
+  "matching_verified_sources": [
+    {
+      "path": "experiments/2026-11-04/round3/mirror/quality-matched-learned/frontier/witness-00219.json",
+      "sha256": "98fb1979c7985f5432728e93180c3261478d0b3b757fb8513c4936aad96cbde4",
+      "reference_valid": false,
+      "reference_score": null,
+      "reference_errors": [
+        "Semicircles 6 and 7 overlap",
+        "Semicircles 6 and 10 overlap"
+      ],
+      "mec_radius": 2.9485269509126995,
+      "bad_pairs": [
+        {
+          "pair": [
+            6,
+            7
+          ],
+          "area": 1.0007122950692922e-06
+        },
+        {
+          "pair": [
+            6,
+            10
+          ],
+          "area": 1.0023035557060845e-06
+        }
+      ],
+      "transformations": [
+        {
+          "swap_xy": true,
+          "signs": [
+            1,
+            -1
+          ],
+          "integer_translation": [
+            -163,
+            58
+          ],
+          "old_to_new_piece_indices": [
+            [
+              10,
+              10
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              11,
+              11
+            ],
+            [
+              13,
+              13
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              7,
+              7
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              12,
+              12
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              14,
+              14
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "ideal_angle_delta_microradians": [
+            0.32679489658793415,
+            0.019615309820864017,
+            0.32679489669895645,
+            0.32679489658793415,
+            1.0196153104047312,
+            0.019615310264953226,
+            -0.6732051036628661,
+            0.32679489647691184,
+            0.32679489658793415,
+            0.32679489647691184,
+            0.32679489692100105,
+            0.32679489669895645,
+            0.019615310264953226,
+            0.32679489669895645,
+            1.3267948966166898
+          ],
+          "max_absolute_ideal_angle_delta_microradians": 1.3267948966166898,
+          "rounded_transform_angle_delta_microradians": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.000000000139778,
+            0.0,
+            -1.000000000139778,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0000000000287557
+          ],
+          "max_absolute_rounded_angle_delta_microradians": 1.000000000139778,
+          "rounded_transform_reference_valid": false,
+          "rounded_transform_reference_score": null,
+          "rounded_transform_errors": [
+            "Semicircles 4 and 9 overlap",
+            "Semicircles 6 and 7 overlap"
+          ],
+          "rounded_transform_mec_radius": 2.9485269509127003,
+          "angle_repairs_from_rounded_transform": [
+            {
+              "piece": 4,
+              "integer_microradian_change": 1
+            },
+            {
+              "piece": 6,
+              "integer_microradian_change": -1
+            },
+            {
+              "piece": 14,
+              "integer_microradian_change": 1
+            }
+          ]
+        }
+      ],
+      "raw_placements": [
+        {
+          "x": -0.672092,
+          "y": 0.545588,
+          "theta": 1.000018
+        },
+        {
+          "x": 1.238798,
+          "y": 1.135647,
+          "theta": -2.485024
+        },
+        {
+          "x": 0.217711,
+          "y": -0.583961,
+          "theta": -0.100991
+        },
+        {
+          "x": -0.631743,
+          "y": 1.843281,
+          "theta": 0.848034
+        },
+        {
+          "x": -1.928617,
+          "y": 0.278349,
+          "theta": -2.447812
+        },
+        {
+          "x": -1.809291,
+          "y": -0.723552,
+          "theta": -1.586271
+        },
+        {
+          "x": -1.076135,
+          "y": -1.624474,
+          "theta": -1.421528
+        },
+        {
+          "x": -0.785894,
+          "y": -0.569647,
+          "theta": -0.111435
+        },
+        {
+          "x": -1.724625,
+          "y": 0.033081,
+          "theta": 0.693781
+        },
+        {
+          "x": -1.484555,
+          "y": 1.262154,
+          "theta": 2.023931
+        },
+        {
+          "x": 0.121169,
+          "y": -1.94477,
+          "theta": -0.893499
+        },
+        {
+          "x": 1.149996,
+          "y": -1.572943,
+          "theta": -0.070826
+        },
+        {
+          "x": 2.567353,
+          "y": 1.049798,
+          "theta": -2.753439
+        },
+        {
+          "x": 1.781465,
+          "y": -0.789238,
+          "theta": 0.77869
+        },
+        {
+          "x": 0.718099,
+          "y": 1.811329,
+          "theta": 0.656591
+        }
+      ]
+    }
+  ],
+  "changed_sources_excluded": [
+    {
+      "path": "experiments/best.json",
+      "frozen_sha256": "d0300c4a563c2443dc01c489a788a308e1b1725a0e7bf6d67d4014e9c83e6980",
+      "current_sha256": "cefac3368caae7f9dea0c4cdc0e87d869f3a9bd76ba75292b1cd4b7fff7c8fb9"
+    }
+  ],
+  "read_errors": [],
+  "seconds": 1.6121215410530567,
+  "interpretation": {
+    "finding": "The new valid candidate reuses a previously invalid center arrangement after a clockwise quarter turn and common integer translation. Its three one-microradian angular corrections differ from simply rounding the rotated old packing.",
+    "angle_grid_limit": "Quarter turns preserve integer XY centers but pi/2 is not an integer multiple of one microradian. Rounding transformed angles changes the scored semicircle geometry, so a D4 center hash is a conservative novelty label, not an equivalence proof for full packings.",
+    "novelty": "New labeled center hash; previously observed D4-equivalent centers; newly reference-valid angle realization at the improved radius.",
+    "scope": "Read-only replay of at most two related packings; no optimization or remote API call in this audit."
+  }
+}

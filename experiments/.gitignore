@@ -11,3 +11,6 @@
 !branch-*.json
 !best_phase_seed.json
 !best_phase_small_seed.json
+# This campaign maintains its own small, explicit archive below.
+!2026-11-04/
+!pantheon-pilot/

@@ -1,0 +1,14 @@
+{
+  "source": "experiments/branch-3.141616-3.141592.json",
+  "source_sha256": "e5c6113cd4e3e2061e998a97b96b6bb31770daf33ede38cd648b8275b027680f",
+  "radius": 2.948526549441705,
+  "max_violation": 6.643256801806724e-13,
+  "iterations": 300,
+  "success": false,
+  "maximum_polygon_area": 1.000000940127233e-06,
+  "raw_flat_differences": [
+    3.1416157992733957,
+    3.1415934395299963
+  ],
+  "scope": "Full-precision continuous seed, not a valid rounded submission; flat differences unfixed"
+}

@@ -10,7 +10,7 @@ import math
 import time
 from pathlib import Path
 import numpy as np
-from scipy.optimize import minimize
+from scipy.optimize import minimize, linear_sum_assignment
 from semicircle_packing.fast_geometry import FastGeometry
 
 CENTROID = 4/(3*math.pi)
@@ -21,7 +21,35 @@ def read(path):
 
 
 def write(path, x):
-    Path(path).write_text(json.dumps([dict(x=float(p[0]),y=float(p[1]),theta=float(p[2])) for p in x],indent=2)+'\n')
+    path=Path(path);path.parent.mkdir(parents=True,exist_ok=True)
+    path.write_text(json.dumps([dict(x=float(p[0]),y=float(p[1]),theta=float(p[2])) for p in x],indent=2)+'\n')
+
+
+def packing_invariant(x):
+    """Cheap necessary congruence invariant; never used alone to merge seeds."""
+    return np.sort(np.linalg.norm(x[:,None,:2]-x[None,:,:2],axis=2)[np.triu_indices(len(x),1)])
+
+
+def congruent_packings(a,b,tolerance=1e-5):
+    """Compare poses up to rigid motion, reflection and piece permutation.
+
+    This is basin-archive deduplication at an explicit geometric tolerance, not
+    a claim that nearby decimal-grid instances have equal rounding quality.
+    """
+    if a.shape!=b.shape:return False
+    if np.max(np.abs(packing_invariant(a)-packing_invariant(b)),initial=0)>2*tolerance:return False
+    for reflected in (False,True):
+        source=a.copy()
+        if reflected:source[:,1]*=-1;source[:,2]*=-1
+        for anchor in range(len(b)):
+            angle=b[anchor,2]-source[0,2];co,si=np.cos(angle),np.sin(angle)
+            centers=(source[:,:2]-source[0,:2])@np.array([[co,si],[-si,co]])+b[anchor,:2]
+            distance=np.linalg.norm(centers[:,None]-b[None,:,:2],axis=2)
+            angular=source[:,None,2]+angle-b[None,:,2]
+            angular=np.abs(np.arctan2(np.sin(angular),np.cos(angular)))
+            cost=np.maximum(distance,angular);rows,cols=linear_sum_assignment(cost)
+            if cost[rows,cols].max()<=tolerance:return True
+    return False
 
 
 def centroid_move(x, indices, angle):
@@ -95,6 +123,8 @@ def main():
     print('initial',r,err,it,flush=True)
     best=x.copy();best_r=r
     pool=[(x.copy(),r)]
+    archive=[x.copy()]
+    archive_directory=Path(a.prefix+'_basins');write(archive_directory/'0000.json',x)
     best_loss=1
     run=0
     while run<a.iterations and time.monotonic()-start<a.seconds:
@@ -107,7 +137,11 @@ def main():
         if loss<2e-4:
             candidate,score,gap,nit2=polish(geometry,trial,max(target,base_r))
             if gap > -1e-7:
-                if all(abs(score-pr)>1e-7 for _,pr in pool):
+                if all(not congruent_packings(candidate,prior)for prior in archive):
+                    archive.append(candidate.copy())
+                    archive_path=archive_directory/f'{len(archive)-1:04d}.json';write(archive_path,candidate)
+                    with (archive_directory/'index.jsonl').open('a')as record:
+                        record.write(json.dumps(dict(run=run,radius=score,gap=gap,file=str(archive_path)))+'\n')
                     pool.append((candidate.copy(),score));pool.sort(key=lambda item:item[1]);pool=pool[:12]
                 if score<best_r-1e-9:
                     best,best_r=candidate,score

@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-11-04T14:29:01.525945+00:00",
+  "endpoint": "https://www.paradigm.xyz/puzzles/api/packing/leaderboard",
+  "full_record_sha256": "64236a047f0fcaeb897d7696376169be567244895cc20e18b39da248677d6131",
+  "scope": "Firstthree entries from freshpublicleaderboard; no submission made",
+  "entries": [
+    {
+      "rank": 1,
+      "submission": {
+        "id": "62bb5a25-5ea0-4698-b866-10c89eb4a797",
+        "author": "@cameronspirals",
+        "name": "\u2220(\u2018-\u2018 )",
+        "createdAt": "2026-08-08T19:05:57.289219Z",
+        "score": 2.9485269238856113
+      },
+      "score": 2.9485269238856113,
+      "attempts": 30
+    },
+    {
+      "rank": 2,
+      "submission": {
+        "id": "38ed0e4d-00af-4cac-b20f-623bc52eb654",
+        "author": "@fordgt1111",
+        "name": "sphere minify",
+        "createdAt": "2026-09-21T01:22:01.851199Z",
+        "score": 2.948526931599013
+      },
+      "score": 2.948526931599013,
+      "attempts": 4
+    },
+    {
+      "rank": 3,
+      "submission": {
+        "id": "2e11614c-b011-4d61-9283-a2d810cb628b",
+        "author": "@rorzio",
+        "name": "packs and recreation",
+        "createdAt": "2026-10-31T03:35:11.241718Z",
+        "score": 2.948526966725367
+      },
+      "score": 2.948526966725367,
+      "attempts": 12
+    }
+  ]
+}

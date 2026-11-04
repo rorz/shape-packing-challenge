@@ -1,0 +1,3570 @@
+{
+  "scope": "Finite fixed-center D4 angular models; local reference validation only, no API or promotion",
+  "target": 2.9485269238806113,
+  "acceptance_guard": 2e-12,
+  "seconds_budget": 60.0,
+  "per_model_seconds": 2.0,
+  "angle_widths": [
+    3,
+    12
+  ],
+  "seed": 3110927,
+  "source_hashes": {
+    "experiment_angle_orbits.py": "ab51362b5ce05d0a5944150d501150b84bbebf3047e6d5fce7b3d4f5e610b4d0",
+    "lazy_phase_solver.py": "9412bd94db438c80bca1ecb4e715b2f84ff3ba70dbeb69b9d05a296c03606971",
+    "lazy_pair_oracle.py": "f09fe6edf264b19f79ea3b4cf74d33d72d56ccccc3c4af265ce303b00c6b429c",
+    "translation_union.py": "251d98891b09697dfa52688f8d2bccdb3dfbe820e06450666704c9111c2d51d9"
+  },
+  "inputs": [
+    {
+      "path": "/Users/rorz/repos/forks/shape-packing-challenge/tests/fixtures/angle-orbits/tied-three.json",
+      "sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "frozen_path": "inputs/source-000.json"
+    },
+    {
+      "path": "/Users/rorz/repos/forks/shape-packing-challenge/tests/fixtures/angle-orbits/mirror-five.json",
+      "sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "frozen_path": "inputs/source-001.json"
+    },
+    {
+      "path": "/Users/rorz/repos/forks/shape-packing-challenge/tests/fixtures/angle-orbits/broad-four.json",
+      "sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "frozen_path": "inputs/source-002.json"
+    },
+    {
+      "path": "/Users/rorz/repos/forks/shape-packing-challenge/tests/fixtures/angle-orbits/baseline-three.json",
+      "sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "frozen_path": "inputs/source-003.json"
+    }
+  ],
+  "seconds": 2.884524874971248,
+  "attempted": 64,
+  "scheduled": 64,
+  "remaining": 0,
+  "status": "COMPLETE",
+  "full_report": "experiments/pantheon-pilot/angle-orbits-v1/report.json",
+  "full_report_sha256": "76af7adb0d5c828ab7028328374308044658782b1ec281cce756d3544cfdab03",
+  "interpretation": "All 64 finite models were exhausted at the recorded target. This excludes only the four supplied fixed-center D4 orbits at the recorded angle widths, not wider angle changes, center moves, or other packings.",
+  "models": [
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "identity",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "04d2a6f20e24a11723d97ac0f824cf4fc5c87c4fd7c7a6265f563e60da9c880a",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.114943458000198,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 4,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 316,
+          "certain_allowed": 1128,
+          "certain_rejected": 467,
+          "geos_pairs": 16,
+          "exact_allowed": 12,
+          "exact_rejected": 4
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "identity",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "f2b85ee88484b7d41f0a36251ec892c298f398ae681e981f1f99e05e7163c41a",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.07858520798617974,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 5,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 380,
+          "certain_allowed": 1057,
+          "certain_rejected": 474,
+          "geos_pairs": 19,
+          "exact_allowed": 14,
+          "exact_rejected": 5
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "identity",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "865864835f1971cedf74eb61cbd33be7ce6228123aa4e5faabd3a3e6385042e9",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.02677679102635011,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 289,
+          "certain_allowed": 1152,
+          "certain_rejected": 470,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "identity",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "3e477bad631006a2b058bd5b46b6d0737ea43767a7317507680c615eb98d7dc3",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.05916004203027114,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 3,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 331,
+          "certain_allowed": 1118,
+          "certain_rejected": 462,
+          "geos_pairs": 12,
+          "exact_allowed": 9,
+          "exact_rejected": 3
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "rotate_ccw_90",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "fd099b897e05fd86ac8a46b3f58864e4cb5ed418f7937a4ac7e777a2e4e64a0f",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.026019542012363672,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 268,
+          "certain_allowed": 1158,
+          "certain_rejected": 485,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "rotate_ccw_90",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "418f7ffa34a7f1a02e4db4cafd839e80e06b6064043870686d17f0320612ed7a",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.02668795798672363,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 333,
+          "certain_allowed": 1072,
+          "certain_rejected": 506,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "rotate_ccw_90",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "0ba16012b294c7fb70872929fd6548efbf719831af97874ea22d74a4fec1dbe7",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.026772582961712033,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 282,
+          "certain_allowed": 1151,
+          "certain_rejected": 478,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "rotate_ccw_90",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "c3a0ddf79e3a1a83f872796ed9f6a5662af9202ea7a778ccaf0cdb37faf1ae01",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.025535167020279914,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 328,
+          "certain_allowed": 1115,
+          "certain_rejected": 468,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "rotate_180",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "2d14a158f89e6adc3f1b106ee9b67f35fb38276f37b7920c66d03833984d5d23",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.025948124995920807,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 253,
+          "certain_allowed": 1147,
+          "certain_rejected": 511,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "rotate_180",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "741d5a03f2165288c67b6b1473681ef2a527e72235c7a5a2555bde869b321e99",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.02647883299505338,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 328,
+          "certain_allowed": 1074,
+          "certain_rejected": 509,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "rotate_180",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "106f9ce3b98420ca78a1732593f90b996fb63e2470f94215a0580f77bfb68b24",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.025544416974298656,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 289,
+          "certain_allowed": 1152,
+          "certain_rejected": 470,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "rotate_180",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "8f03cbae74dadd692c59a4992f27c0088e0a402240a16608fa6ced0c02e7baa8",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.026387957972474396,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 326,
+          "certain_allowed": 1098,
+          "certain_rejected": 487,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "rotate_cw_90",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "75e182ad24b88532997bb1cec9565e3b7daefca9a8c477701b518f0a48c44d4c",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.0258223750279285,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 290,
+          "certain_allowed": 1138,
+          "certain_rejected": 483,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "rotate_cw_90",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "af7f737e0855b0930e6715525d2bbf07ce3a0065bbc0778767e1bccc7664ba86",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.027073416975326836,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 338,
+          "certain_allowed": 1064,
+          "certain_rejected": 509,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "rotate_cw_90",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "15adefcafabab64b8738ad838a8600ce30565cab5359354b8d6aa45dd028da19",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.025537415989674628,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 273,
+          "certain_allowed": 1156,
+          "certain_rejected": 482,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "rotate_cw_90",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "40969044a2739357c18749cf99e73cf4bf5f50404a998421a279ee3d2162c6c6",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.02596408303361386,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 369,
+          "certain_allowed": 1080,
+          "certain_rejected": 462,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "reflect_x_axis",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "075770a705ddbf502fa4ed62cf5ce124b7edb1ea8cecc4f5fc2558289b6a7253",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.05752316699363291,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 3,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 316,
+          "certain_allowed": 1128,
+          "certain_rejected": 467,
+          "geos_pairs": 16,
+          "exact_allowed": 13,
+          "exact_rejected": 3
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "reflect_x_axis",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "3866118061c91b1def7a59850ab423096da98142380235691a6f265a3498fa0a",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.060735874983947724,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 5,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 380,
+          "certain_allowed": 1057,
+          "certain_rejected": 474,
+          "geos_pairs": 19,
+          "exact_allowed": 14,
+          "exact_rejected": 5
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "reflect_x_axis",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "60cf82c0e4bce82f5ccf40e7533f09cdd6b05a65495ecf3b0d98bbda5fad51e8",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.025394209020305425,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 289,
+          "certain_allowed": 1152,
+          "certain_rejected": 470,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "reflect_x_axis",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "73b0190fea9f7d5ac1b2703559e1c8d4a1ca3cee03e4a29817b983bbdcc3e40d",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.055305875022895634,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 3,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 331,
+          "certain_allowed": 1118,
+          "certain_rejected": 462,
+          "geos_pairs": 12,
+          "exact_allowed": 9,
+          "exact_rejected": 3
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "reflect_y_axis",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "ed9a8d4f1569b6dc6dd27d52521532a188245e0344ae9a7c043e356ebed3c640",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.02631737501360476,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 253,
+          "certain_allowed": 1147,
+          "certain_rejected": 511,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "reflect_y_axis",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "dd0414c988956cafa2ab90ba1ca4fe48308775bf42fab93f24010356a087b319",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.02621474995976314,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 328,
+          "certain_allowed": 1074,
+          "certain_rejected": 509,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "reflect_y_axis",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "579cb947f144a0fc17fa3e54045d1cf16d28b594531cb3929c19a5dc9d391253",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.026009000022895634,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 289,
+          "certain_allowed": 1152,
+          "certain_rejected": 470,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "reflect_y_axis",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "a749f4b86ca99910d375d0001c14d152137252905091495ea652dbd6ddb65dde",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.024932291998993605,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 326,
+          "certain_allowed": 1098,
+          "certain_rejected": 487,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "reflect_y_equals_x",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "ab6e9f0f6c8dac52fd3cfa4e48edb0f25d3ba5c240954a184140c6d0e2efcc33",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.02644254098413512,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 290,
+          "certain_allowed": 1138,
+          "certain_rejected": 483,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "reflect_y_equals_x",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "ee01c379e88bcba3147dbced37b546fe68abbdcbd0c9a4356019127311e622c3",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.025962166022509336,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 338,
+          "certain_allowed": 1064,
+          "certain_rejected": 509,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "reflect_y_equals_x",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "7a48c60299577f0f799bba418816d05edfe349c32837fd26fbf1194b04c431f2",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.025973792013246566,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 273,
+          "certain_allowed": 1156,
+          "certain_rejected": 482,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "reflect_y_equals_x",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "45441cece8ccc50c2687001fca61013518f3304cf3be61fd5b265cc57bab75c5",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.02632804197492078,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 369,
+          "certain_allowed": 1080,
+          "certain_rejected": 462,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "reflect_y_equals_minus_x",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "8fc38e4c40e152fa158de5e1e37f9e6b07e4c59e54fb7eed33258d9f2d10c7d7",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.026060457981657237,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 268,
+          "certain_allowed": 1158,
+          "certain_rejected": 485,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "reflect_y_equals_minus_x",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "0ef66e690f02007a906eab0b0b8bf89ba3143dbca0b2d73a550b56333c5a800b",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.02523716597352177,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 333,
+          "certain_allowed": 1072,
+          "certain_rejected": 506,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "reflect_y_equals_minus_x",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "6b6cdd65a53505b9f84ac0caba3d04c52859d85992e17bbc6f81fff8978f251f",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.0253286249935627,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 282,
+          "certain_allowed": 1151,
+          "certain_rejected": 478,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "reflect_y_equals_minus_x",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 3,
+      "domain_sha256": "89fa12f75d1640d9dc88ab467728fb8a0770c887dcc0f22a81e4cb51ea7b9cf5",
+      "domain_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.025983542029280216,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 1911,
+          "initial_uncertain": 328,
+          "certain_allowed": 1115,
+          "certain_rejected": 468,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "identity",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "e136b7f822b267ed0fd84c1fde50b4b8b9c6fece5d16cc96ea80dd5d785f4709",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.14446437504375353,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 4,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2934,
+          "certain_allowed": 14204,
+          "certain_rejected": 7237,
+          "geos_pairs": 16,
+          "exact_allowed": 12,
+          "exact_rejected": 4
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "identity",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "7f4dd75347862e964ae199de5e33bf0388e7ebf09149dcb46022038c5e486026",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.08341379201738164,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 5,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3595,
+          "certain_allowed": 13503,
+          "certain_rejected": 7277,
+          "geos_pairs": 18,
+          "exact_allowed": 13,
+          "exact_rejected": 5
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "identity",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "f691f2924bc8c7a1619148b85b2e28fdae7da2cf2fde76702a93f1e9420dd093",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04146733303787187,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2835,
+          "certain_allowed": 14297,
+          "certain_rejected": 7243,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "identity",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "516085f1a9518016c7e7cfab95f300f3bd937db1fd16fdf592fbd66a38ea3191",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.07492095796624199,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 3,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3436,
+          "certain_allowed": 13714,
+          "certain_rejected": 7225,
+          "geos_pairs": 12,
+          "exact_allowed": 9,
+          "exact_rejected": 3
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "rotate_ccw_90",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "d0443b364ac7c51f5b22ae3fb582f5465a41bc56b7a510d150a8c2f3eda51a8d",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04087816696846858,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2763,
+          "certain_allowed": 14304,
+          "certain_rejected": 7308,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "rotate_ccw_90",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "38607f7824cd68c456c66384b53e9368665b6f8631a1422beebcdaf58889b717",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04206112498650327,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3437,
+          "certain_allowed": 13558,
+          "certain_rejected": 7380,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "rotate_ccw_90",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "688fa09af6cd5ca8e60061089b0c7ed7885d7f332e1a98acc6ad7e8b4c4e0a4c",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04138012498151511,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2813,
+          "certain_allowed": 14290,
+          "certain_rejected": 7272,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "rotate_ccw_90",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "9b4f9fbf6ccae5675e1be3a7e4c203f891a38b2490b88c3eb833c449547e0921",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.040563291986472905,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3417,
+          "certain_allowed": 13715,
+          "certain_rejected": 7243,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "rotate_180",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "3d6de5735d697e9a49ca1cb440b0c6542fa2c715b93e456715d0537e8fca7edf",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04086541698779911,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2710,
+          "certain_allowed": 14280,
+          "certain_rejected": 7385,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "rotate_180",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "860cc9692401001b6e61b5c0e0d638383ac4b2674105ea6c3850aa4b8d726fa3",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04072129202540964,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3415,
+          "certain_allowed": 13569,
+          "certain_rejected": 7391,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "rotate_180",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "ed1896e05d796a99dda4e3aeb459e537b19d5bcfe38c090f84b876ed94f55c49",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.040831665974110365,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2839,
+          "certain_allowed": 14291,
+          "certain_rejected": 7245,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "rotate_180",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "6784e94b1c021e2be342bc84d7cc01b476e655fa3c925e5469f2ce27a75423fb",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.041122542053926736,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3413,
+          "certain_allowed": 13656,
+          "certain_rejected": 7306,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "rotate_cw_90",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "370bcd9ba031f44bf263d1b8c195fe7bba549928fafae9c117f721303cd55cc6",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04027945798588917,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2839,
+          "certain_allowed": 14247,
+          "certain_rejected": 7289,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "rotate_cw_90",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "d1f204a395ea2dbe7d81c8ccb53d4e061da72d0419809b03cb68074c8e669c63",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04233037499943748,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3464,
+          "certain_allowed": 13529,
+          "certain_rejected": 7382,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "rotate_cw_90",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "da74be97d8172f204dce2b53457f5fe9bc840072afa55fed2b27ebd7afb2ec67",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04148650000570342,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2766,
+          "certain_allowed": 14314,
+          "certain_rejected": 7295,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "rotate_cw_90",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "46d017376248014ff690c0678e6815f2e49914c60fd34342be326db0ccba0ff2",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.041147041018120944,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3564,
+          "certain_allowed": 13592,
+          "certain_rejected": 7219,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "reflect_x_axis",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "b87359af2a546b841fa38e0094b13190e75248ddcdce943b9ed4d784582bae4f",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.07226741698104888,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 4,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2934,
+          "certain_allowed": 14204,
+          "certain_rejected": 7237,
+          "geos_pairs": 16,
+          "exact_allowed": 12,
+          "exact_rejected": 4
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "reflect_x_axis",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "02eabcd3295ec3255ef8034286afea7ceaec4ba5bad437db385a785fb13f1ce0",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.07599225000012666,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 5,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3595,
+          "certain_allowed": 13503,
+          "certain_rejected": 7277,
+          "geos_pairs": 18,
+          "exact_allowed": 13,
+          "exact_rejected": 5
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "reflect_x_axis",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "47c098382951b466826aa667e91b2ff1557f8ddf9decf8581273523802139d07",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04096408298937604,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2835,
+          "certain_allowed": 14297,
+          "certain_rejected": 7243,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "reflect_x_axis",
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "ee5a464415b5c4848814dfda8b96185d9e7609c2f06eb6a9cf7abace3c93f455",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.07163354195654392,
+        "counts": {
+          "iterations": 2,
+          "pair_nogoods": 3,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3436,
+          "certain_allowed": 13714,
+          "certain_rejected": 7225,
+          "geos_pairs": 12,
+          "exact_allowed": 9,
+          "exact_rejected": 3
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "reflect_y_axis",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "9ee51ceef449f7f7ddc865fa4bd40352554cb04ca4f7c113eae1942a30e27b29",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.041356375033501536,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2710,
+          "certain_allowed": 14280,
+          "certain_rejected": 7385,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "reflect_y_axis",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "88a95e9cfc3af6c9d7aaf6a40fde1f2b80e12980d14841588ffa69e5fc945c97",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04125054198084399,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3415,
+          "certain_allowed": 13569,
+          "certain_rejected": 7391,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "reflect_y_axis",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "c766107c593540f4916406231b074d824e910262e411df2860d135413d4fc5db",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04196116700768471,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2839,
+          "certain_allowed": 14291,
+          "certain_rejected": 7245,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "reflect_y_axis",
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "80ddb5a5653bc52cfa78beb0d9d92c2d66628161c59b82b803c679a70418b44e",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04070474999025464,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3413,
+          "certain_allowed": 13656,
+          "certain_rejected": 7306,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "reflect_y_equals_x",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "6c430ba981de9fa5ac43995bd1fc92cb73c9da8dcc6be2b273355d1e9983bfea",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.040426041989121586,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2839,
+          "certain_allowed": 14247,
+          "certain_rejected": 7289,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "reflect_y_equals_x",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "88f61f6b2ebed6b5e4aa8f18739e6e3fdd8adccd1a1ae3507aef7b710c803162",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.041830957983620465,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3464,
+          "certain_allowed": 13529,
+          "certain_rejected": 7382,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "reflect_y_equals_x",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "ddbe80755b12b68c53e6e296a2a64513e4193ab0b005ddd91b5db0d09d0d47ba",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04045308299828321,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2766,
+          "certain_allowed": 14314,
+          "certain_rejected": 7295,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "reflect_y_equals_x",
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "98d93b1c42e0f13aa70b3858d4d3b78c5c0bb3efe0654b186cb5ca34a04ea857",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04065429203910753,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3564,
+          "certain_allowed": 13592,
+          "certain_rejected": 7219,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 0,
+      "input_sha256": "4db98d5d40f55447233dbe94f88b349928757fab3bd26e9fc44fffeea76bf2a8",
+      "orbit": "reflect_y_equals_minus_x",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "3da77c816a5cb8f537010ff6af2c3af43e2b7546491790faea6b29216161e34c",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.0415953749907203,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2763,
+          "certain_allowed": 14304,
+          "certain_rejected": 7308,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 1,
+      "input_sha256": "64533d9f31572ee266f6a6a713c15d54bbd74457a590f01abe847201c40e84bb",
+      "orbit": "reflect_y_equals_minus_x",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "6fb3b874ca88e64de5c458bbae50dc87ea388aa4af8cff34e0e80cd9b510afbf",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04061458300566301,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3437,
+          "certain_allowed": 13558,
+          "certain_rejected": 7380,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 2,
+      "input_sha256": "f95e1ffaa74952a333e8774e4fc9fd3562ecf5d76df37c4ee1d21bc7ea29a3d0",
+      "orbit": "reflect_y_equals_minus_x",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "d10aae5565cf69699c08c2498ffa3e009c6c37b47b147061b25356a16f01cf98",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.04088362498441711,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 2813,
+          "certain_allowed": 14290,
+          "certain_rejected": 7272,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    },
+    {
+      "input_index": 3,
+      "input_sha256": "e5d408f95d76289a0181aebf5aabbe24fbdfc2dfd3b3a45345019c89c1eba2ca",
+      "orbit": "reflect_y_equals_minus_x",
+      "matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "angle_width": 12,
+      "domain_sha256": "2464c5ca2bed46650f21b0bfd06bec68d1b04ad3eb938f006f0242ca5989944f",
+      "domain_sizes": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "status": "INFEASIBLE",
+      "solver": {
+        "finite_exhausted": true,
+        "seconds": 0.040470499952789396,
+        "counts": {
+          "iterations": 1,
+          "pair_nogoods": 0,
+          "enclosure_cuts": 0,
+          "enclosure_nogoods": 0,
+          "reference_checks": 0
+        },
+        "oracle": {
+          "native_pairs": 24375,
+          "initial_uncertain": 3417,
+          "certain_allowed": 13715,
+          "certain_rejected": 7243,
+          "geos_pairs": 0,
+          "exact_allowed": 0,
+          "exact_rejected": 0
+        }
+      }
+    }
+  ]
+}

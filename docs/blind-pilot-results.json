@@ -1,0 +1,575 @@
+{
+  "scope": "Three paired blind origin-to-score cases; shared native proposal schedule, hybrid exact repair",
+  "plan": {
+    "scope": "Three paired blind origin-to-score cases; shared native proposal schedule, hybrid exact repair",
+    "command": [
+      "scripts/run_blind_pilot.py",
+      "--output",
+      "experiments/pantheon-pilot/blind-v1",
+      "--seconds-per-arm",
+      "120",
+      "--seed",
+      "3111201",
+      "--exact-seconds",
+      "2",
+      "4",
+      "10"
+    ],
+    "runtime": {
+      "python": "3.13.1",
+      "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "packages": {
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "shapely": "2.2.0",
+        "ortools": "9.15.6755",
+        "fpylll": "0.6.4"
+      }
+    },
+    "seconds_per_arm": 120.0,
+    "base_seed": 3111201,
+    "exact_seconds_per_width": [
+      2.0,
+      4.0,
+      10.0
+    ],
+    "score_guard": 1e-11,
+    "exact_fraction_limit": 0.25,
+    "order": [
+      [
+        "random-d",
+        "native"
+      ],
+      [
+        "random-d",
+        "hybrid"
+      ],
+      [
+        "neighbor-g",
+        "hybrid"
+      ],
+      [
+        "neighbor-g",
+        "native"
+      ],
+      [
+        "fresh-baseline",
+        "native"
+      ],
+      [
+        "fresh-baseline",
+        "hybrid"
+      ]
+    ],
+    "go_rule": "Hybrid qualifies on >= native cases, wins latency in >=2/3 pairs, improves aggregate censored latency >=20%, and has no per-case best-score regression >1e-11",
+    "prior_centers_sha256": "99b81193a5b5cbec832199f7d7afe5c9cd93744082e15c2a86bf0c9437f26e1c",
+    "prior_labeled_centers": 4635,
+    "prior_dihedral_centers": 4627,
+    "attribution": "Exact repair may change the two local flat differences; native proposals preserve them"
+  },
+  "decision": {
+    "decision": "GO",
+    "native_qualifying_cases": 3,
+    "hybrid_qualifying_cases": 3,
+    "hybrid_latency_wins": 2,
+    "capped_latency_improvement_fraction": 0.32813854913287577,
+    "material_best_score_regression": false,
+    "scope": "A three-case pilot of this exact-repair funnel; not a general rejection of all exact or translation-union searches"
+  },
+  "interpretation": "One clear exact-repair recovery benefit; two practical latency ties. The verified incumbent improvement comes from the shared native stream in both arms.",
+  "shared_proposal_prefixes": {
+    "random-d": 1584,
+    "neighbor-g": 1763,
+    "fresh-baseline": 1249
+  },
+  "arms": [
+    {
+      "method": "native",
+      "case": "random-d",
+      "best_score": 2.948526986788315,
+      "first_qualifying_seconds": 14.783399416948669,
+      "censored_seconds": 14.783399416948669,
+      "distinct_valid_centers": 28,
+      "distinct_dihedral_valid_centers": 28,
+      "qualifying_centers": 1,
+      "new_qualifying_centers": 0,
+      "new_dihedral_qualifying_centers": 0,
+      "counts": {
+        "frames": 1954,
+        "rejected_frames": 0,
+        "proposals": 4001792,
+        "unique_evaluated": 3210795,
+        "branch_rejected": 5993,
+        "duplicates": 785004,
+        "ambiguous": 91,
+        "reference_checks": 147,
+        "reference_valid": 125,
+        "late_valid": 1,
+        "candidate_nominations": 0,
+        "queue_dropped": 0,
+        "qualified_repairs_skipped": 0,
+        "duplicate_domains": 0
+      },
+      "exact_seconds": 0.0,
+      "exact_budget_overrun": 0.0,
+      "stage_statuses": [],
+      "worker_seconds": 120.01127162500052,
+      "warmup_seconds": 0.03691583400359377,
+      "execution_and_parent_grading_seconds": 139.6641577919945,
+      "access_audit": {
+        "blocked_read_count": 0,
+        "network_attempts": 0,
+        "json_reads": [
+          "direct_url.json",
+          "random-d.json"
+        ]
+      },
+      "best_record": {
+        "score": 2.948526986788315,
+        "seconds": 22.744134457956534,
+        "source": "native",
+        "qualifying": true,
+        "center_hash": "95a3bd1eb728840184e01dafdd67b451427a3613443a14abd058c32e9984adde",
+        "file": "valid-00026.json",
+        "new_center": false,
+        "branch": [
+          3.14157,
+          -3.141592
+        ],
+        "same_requested_branch": true,
+        "reference_score": 2.948526986788315,
+        "dihedral_hash": "1509e17654f2054add61d4117651be85e18fb59c11d5d22fc46c3735754cd006",
+        "new_labeled_center": false,
+        "new_dihedral_center": false
+      }
+    },
+    {
+      "method": "hybrid",
+      "case": "random-d",
+      "best_score": 2.948526986788315,
+      "first_qualifying_seconds": 9.742172875034157,
+      "censored_seconds": 9.742172875034157,
+      "distinct_valid_centers": 28,
+      "distinct_dihedral_valid_centers": 28,
+      "qualifying_centers": 1,
+      "new_qualifying_centers": 0,
+      "new_dihedral_qualifying_centers": 0,
+      "counts": {
+        "frames": 1584,
+        "rejected_frames": 0,
+        "proposals": 3244032,
+        "unique_evaluated": 2604799,
+        "branch_rejected": 5646,
+        "duplicates": 633587,
+        "ambiguous": 77,
+        "reference_checks": 137,
+        "reference_valid": 115,
+        "late_valid": 0,
+        "candidate_nominations": 28,
+        "queue_dropped": 0,
+        "qualified_repairs_skipped": 1,
+        "duplicate_domains": 0
+      },
+      "exact_seconds": 17.654665416048374,
+      "exact_budget_overrun": 0.0,
+      "stage_statuses": [
+        {
+          "angle_width": 1,
+          "status": "LOCAL_FEASIBLE",
+          "seconds": 1.0934887500479817
+        },
+        {
+          "angle_width": 1,
+          "status": "INFEASIBLE",
+          "seconds": 1.5536105829523876
+        },
+        {
+          "angle_width": 3,
+          "status": "UNKNOWN",
+          "seconds": 3.91840158298146
+        },
+        {
+          "angle_width": 12,
+          "status": "UNKNOWN",
+          "seconds": 10.007468750001863
+        },
+        {
+          "angle_width": 1,
+          "status": "INFEASIBLE",
+          "seconds": 0.2231126250117086
+        },
+        {
+          "angle_width": 1,
+          "status": "INFEASIBLE",
+          "seconds": 0.22013170801801607
+        },
+        {
+          "angle_width": 3,
+          "status": "INFEASIBLE",
+          "seconds": 0.6384514170349576
+        }
+      ],
+      "worker_seconds": 120.05546325002797,
+      "warmup_seconds": 0.03272816602839157,
+      "execution_and_parent_grading_seconds": 138.16886062500998,
+      "access_audit": {
+        "blocked_read_count": 0,
+        "network_attempts": 0,
+        "json_reads": [
+          "direct_url.json",
+          "random-d.json"
+        ]
+      },
+      "best_record": {
+        "score": 2.948526986788315,
+        "seconds": 26.599965833011083,
+        "source": "native",
+        "qualifying": true,
+        "center_hash": "95a3bd1eb728840184e01dafdd67b451427a3613443a14abd058c32e9984adde",
+        "file": "valid-00027.json",
+        "new_center": false,
+        "branch": [
+          3.14157,
+          -3.141592
+        ],
+        "same_requested_branch": true,
+        "reference_score": 2.948526986788315,
+        "dihedral_hash": "1509e17654f2054add61d4117651be85e18fb59c11d5d22fc46c3735754cd006",
+        "new_labeled_center": false,
+        "new_dihedral_center": false
+      }
+    },
+    {
+      "method": "hybrid",
+      "case": "neighbor-g",
+      "best_score": 2.948526950912552,
+      "first_qualifying_seconds": 0.37485041603213176,
+      "censored_seconds": 0.37485041603213176,
+      "distinct_valid_centers": 15,
+      "distinct_dihedral_valid_centers": 15,
+      "qualifying_centers": 2,
+      "new_qualifying_centers": 1,
+      "new_dihedral_qualifying_centers": 0,
+      "counts": {
+        "frames": 1763,
+        "rejected_frames": 0,
+        "proposals": 3610624,
+        "unique_evaluated": 2823993,
+        "branch_rejected": 0,
+        "duplicates": 786631,
+        "ambiguous": 73,
+        "reference_checks": 75,
+        "reference_valid": 75,
+        "late_valid": 0,
+        "candidate_nominations": 33,
+        "queue_dropped": 0,
+        "qualified_repairs_skipped": 1,
+        "duplicate_domains": 0
+      },
+      "exact_seconds": 19.222232167841867,
+      "exact_budget_overrun": 0.0,
+      "stage_statuses": [
+        {
+          "angle_width": 1,
+          "status": "INFEASIBLE",
+          "seconds": 0.25688379094935954
+        },
+        {
+          "angle_width": 1,
+          "status": "INFEASIBLE",
+          "seconds": 0.23271224997006357
+        },
+        {
+          "angle_width": 3,
+          "status": "INFEASIBLE",
+          "seconds": 1.1700764590059407
+        },
+        {
+          "angle_width": 12,
+          "status": "INFEASIBLE",
+          "seconds": 6.6804098329739645
+        },
+        {
+          "angle_width": 1,
+          "status": "INFEASIBLE",
+          "seconds": 0.264774999988731
+        },
+        {
+          "angle_width": 1,
+          "status": "INFEASIBLE",
+          "seconds": 0.21280958299757913
+        },
+        {
+          "angle_width": 3,
+          "status": "INFEASIBLE",
+          "seconds": 0.7095527090132236
+        },
+        {
+          "angle_width": 12,
+          "status": "INFEASIBLE",
+          "seconds": 5.352647541963961
+        },
+        {
+          "angle_width": 1,
+          "status": "INFEASIBLE",
+          "seconds": 0.23190870898542926
+        },
+        {
+          "angle_width": 1,
+          "status": "INFEASIBLE",
+          "seconds": 0.26939012500224635
+        },
+        {
+          "angle_width": 3,
+          "status": "INFEASIBLE",
+          "seconds": 3.841066166991368
+        }
+      ],
+      "worker_seconds": 120.02897133299848,
+      "warmup_seconds": 0.03478350001387298,
+      "execution_and_parent_grading_seconds": 132.42188312497456,
+      "access_audit": {
+        "blocked_read_count": 0,
+        "network_attempts": 0,
+        "json_reads": [
+          "direct_url.json",
+          "neighbor-g.json"
+        ]
+      },
+      "best_record": {
+        "score": 2.948526950912552,
+        "seconds": 33.126621583011,
+        "source": "native",
+        "qualifying": true,
+        "center_hash": "0c0337e5d33796deceace9e47fe3f04d1647917b881fd313b48368354621dfa1",
+        "file": "valid-00020.json",
+        "new_center": true,
+        "branch": [
+          3.141569,
+          3.141593
+        ],
+        "same_requested_branch": true,
+        "reference_score": 2.948526950912552,
+        "dihedral_hash": "60866a24570de7ed1307d0c1de9ab6db719addf1814e812cf0220c42cdca7087",
+        "new_labeled_center": true,
+        "new_dihedral_center": false
+      }
+    },
+    {
+      "method": "native",
+      "case": "neighbor-g",
+      "best_score": 2.948526950912552,
+      "first_qualifying_seconds": 0.3774784170091152,
+      "censored_seconds": 0.3774784170091152,
+      "distinct_valid_centers": 18,
+      "distinct_dihedral_valid_centers": 18,
+      "qualifying_centers": 2,
+      "new_qualifying_centers": 1,
+      "new_dihedral_qualifying_centers": 0,
+      "counts": {
+        "frames": 2101,
+        "rejected_frames": 0,
+        "proposals": 4302848,
+        "unique_evaluated": 3362893,
+        "branch_rejected": 0,
+        "duplicates": 939955,
+        "ambiguous": 86,
+        "reference_checks": 94,
+        "reference_valid": 94,
+        "late_valid": 1,
+        "candidate_nominations": 0,
+        "queue_dropped": 0,
+        "qualified_repairs_skipped": 0,
+        "duplicate_domains": 0
+      },
+      "exact_seconds": 0.0,
+      "exact_budget_overrun": 0.0,
+      "stage_statuses": [],
+      "worker_seconds": 120.00916058401344,
+      "warmup_seconds": 0.03427595901302993,
+      "execution_and_parent_grading_seconds": 134.99077966599725,
+      "access_audit": {
+        "blocked_read_count": 0,
+        "network_attempts": 0,
+        "json_reads": [
+          "direct_url.json",
+          "neighbor-g.json"
+        ]
+      },
+      "best_record": {
+        "score": 2.948526950912552,
+        "seconds": 31.21503349998966,
+        "source": "native",
+        "qualifying": true,
+        "center_hash": "0c0337e5d33796deceace9e47fe3f04d1647917b881fd313b48368354621dfa1",
+        "file": "valid-00020.json",
+        "new_center": true,
+        "branch": [
+          3.141569,
+          3.141593
+        ],
+        "same_requested_branch": true,
+        "reference_score": 2.948526950912552,
+        "dihedral_hash": "60866a24570de7ed1307d0c1de9ab6db719addf1814e812cf0220c42cdca7087",
+        "new_labeled_center": true,
+        "new_dihedral_center": false
+      }
+    },
+    {
+      "method": "native",
+      "case": "fresh-baseline",
+      "best_score": 2.9485270133102732,
+      "first_qualifying_seconds": 0.20714612503070384,
+      "censored_seconds": 0.20714612503070384,
+      "distinct_valid_centers": 45,
+      "distinct_dihedral_valid_centers": 45,
+      "qualifying_centers": 1,
+      "new_qualifying_centers": 0,
+      "new_dihedral_qualifying_centers": 0,
+      "counts": {
+        "frames": 1530,
+        "rejected_frames": 0,
+        "proposals": 3133440,
+        "unique_evaluated": 2519460,
+        "branch_rejected": 0,
+        "duplicates": 613980,
+        "ambiguous": 55,
+        "reference_checks": 264,
+        "reference_valid": 264,
+        "late_valid": 0,
+        "candidate_nominations": 0,
+        "queue_dropped": 0,
+        "qualified_repairs_skipped": 0,
+        "duplicate_domains": 0
+      },
+      "exact_seconds": 0.0,
+      "exact_budget_overrun": 0.0,
+      "stage_statuses": [],
+      "worker_seconds": 120.05026425002143,
+      "warmup_seconds": 0.03300150000723079,
+      "execution_and_parent_grading_seconds": 161.14540425001178,
+      "access_audit": {
+        "blocked_read_count": 0,
+        "network_attempts": 0,
+        "json_reads": [
+          "direct_url.json",
+          "fresh-baseline.json"
+        ]
+      },
+      "best_record": {
+        "score": 2.9485270133102732,
+        "seconds": 0.20714612503070384,
+        "source": "native",
+        "qualifying": true,
+        "center_hash": "4cf7da0ab6707131b2ecef8959744a8f8d6e0fde368e2bc1a66c7d2702519848",
+        "file": "valid-00000.json",
+        "new_center": true,
+        "branch": [
+          3.141566,
+          3.141593
+        ],
+        "same_requested_branch": true,
+        "reference_score": 2.9485270133102732,
+        "dihedral_hash": "9b4513ef800a823cc4a0fe988b209e5e779bc6a99cbb75082e0c2bbd4a32da2d",
+        "new_labeled_center": false,
+        "new_dihedral_center": false
+      }
+    },
+    {
+      "method": "hybrid",
+      "case": "fresh-baseline",
+      "best_score": 2.9485270133102732,
+      "first_qualifying_seconds": 0.2081595829804428,
+      "censored_seconds": 0.2081595829804428,
+      "distinct_valid_centers": 33,
+      "distinct_dihedral_valid_centers": 33,
+      "qualifying_centers": 1,
+      "new_qualifying_centers": 0,
+      "new_dihedral_qualifying_centers": 0,
+      "counts": {
+        "frames": 1249,
+        "rejected_frames": 0,
+        "proposals": 2557952,
+        "unique_evaluated": 2052428,
+        "branch_rejected": 0,
+        "duplicates": 505524,
+        "ambiguous": 44,
+        "reference_checks": 199,
+        "reference_valid": 199,
+        "late_valid": 1,
+        "candidate_nominations": 73,
+        "queue_dropped": 8,
+        "qualified_repairs_skipped": 0,
+        "duplicate_domains": 0
+      },
+      "exact_seconds": 24.184675001946744,
+      "exact_budget_overrun": 0.0,
+      "stage_statuses": [
+        {
+          "angle_width": 1,
+          "status": "UNKNOWN",
+          "seconds": 2.0311417089542374
+        },
+        {
+          "angle_width": 1,
+          "status": "INFEASIBLE",
+          "seconds": 0.2829789170064032
+        },
+        {
+          "angle_width": 3,
+          "status": "UNKNOWN",
+          "seconds": 3.9990061669959687
+        },
+        {
+          "angle_width": 12,
+          "status": "UNKNOWN",
+          "seconds": 9.821053125022445
+        },
+        {
+          "angle_width": 1,
+          "status": "INFEASIBLE",
+          "seconds": 2.0052824589656666
+        },
+        {
+          "angle_width": 1,
+          "status": "UNKNOWN",
+          "seconds": 2.08717675000662
+        },
+        {
+          "angle_width": 3,
+          "status": "UNKNOWN",
+          "seconds": 3.958035874995403
+        }
+      ],
+      "worker_seconds": 120.15422720799688,
+      "warmup_seconds": 0.033890417020302266,
+      "execution_and_parent_grading_seconds": 151.16928154195193,
+      "access_audit": {
+        "blocked_read_count": 0,
+        "network_attempts": 0,
+        "json_reads": [
+          "direct_url.json",
+          "fresh-baseline.json"
+        ]
+      },
+      "best_record": {
+        "score": 2.9485270133102732,
+        "seconds": 0.2081595829804428,
+        "source": "native",
+        "qualifying": true,
+        "center_hash": "4cf7da0ab6707131b2ecef8959744a8f8d6e0fde368e2bc1a66c7d2702519848",
+        "file": "valid-00000.json",
+        "new_center": true,
+        "branch": [
+          3.141566,
+          3.141593
+        ],
+        "same_requested_branch": true,
+        "reference_score": 2.9485270133102732,
+        "dihedral_hash": "9b4513ef800a823cc4a0fe988b209e5e779bc6a99cbb75082e0c2bbd4a32da2d",
+        "new_labeled_center": false,
+        "new_dihedral_center": false
+      }
+    }
+  ]
+}

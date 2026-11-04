@@ -1,0 +1,352 @@
+{
+  "scope": "Target-assisted positive control only; known clockwise quarter-turn and translation, no target assignment hint, no new discovery or API call",
+  "input_sha256": "98fb1979c7985f5432728e93180c3261478d0b3b757fb8513c4936aad96cbde4",
+  "audit_sha256": "437305973fb227fec425bb7c7f6be097be566d8d496f0981052dcadfe0c2fc43",
+  "input": [
+    {
+      "x": -0.672092,
+      "y": 0.545588,
+      "theta": 1.000018
+    },
+    {
+      "x": 1.238798,
+      "y": 1.135647,
+      "theta": -2.485024
+    },
+    {
+      "x": 0.217711,
+      "y": -0.583961,
+      "theta": -0.100991
+    },
+    {
+      "x": -0.631743,
+      "y": 1.843281,
+      "theta": 0.848034
+    },
+    {
+      "x": -1.928617,
+      "y": 0.278349,
+      "theta": -2.447812
+    },
+    {
+      "x": -1.809291,
+      "y": -0.723552,
+      "theta": -1.586271
+    },
+    {
+      "x": -1.076135,
+      "y": -1.624474,
+      "theta": -1.421528
+    },
+    {
+      "x": -0.785894,
+      "y": -0.569647,
+      "theta": -0.111435
+    },
+    {
+      "x": -1.724625,
+      "y": 0.033081,
+      "theta": 0.693781
+    },
+    {
+      "x": -1.484555,
+      "y": 1.262154,
+      "theta": 2.023931
+    },
+    {
+      "x": 0.121169,
+      "y": -1.94477,
+      "theta": -0.893499
+    },
+    {
+      "x": 1.149996,
+      "y": -1.572943,
+      "theta": -0.070826
+    },
+    {
+      "x": 2.567353,
+      "y": 1.049798,
+      "theta": -2.753439
+    },
+    {
+      "x": 1.781465,
+      "y": -0.789238,
+      "theta": 0.77869
+    },
+    {
+      "x": 0.718099,
+      "y": 1.811329,
+      "theta": 0.656591
+    }
+  ],
+  "matrix": [
+    [
+      0,
+      1
+    ],
+    [
+      -1,
+      0
+    ]
+  ],
+  "translation_units": [
+    -163,
+    58
+  ],
+  "angle_width": 1,
+  "seed": 3111501,
+  "seconds_budget": 5,
+  "domain_sha256": "6d25bb96f389a3a3085c5d0917b2f391e9fb3424b76e2f83ee1268340cfa4a90",
+  "domain_sizes": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "source_hashes": {
+    "scripts/experiment_angle_orbits.py": "ab51362b5ce05d0a5944150d501150b84bbebf3047e6d5fce7b3d4f5e610b4d0",
+    "scripts/lazy_phase_solver.py": "9412bd94db438c80bca1ecb4e715b2f84ff3ba70dbeb69b9d05a296c03606971",
+    "scripts/translation_union.py": "251d98891b09697dfa52688f8d2bccdb3dfbe820e06450666704c9111c2d51d9"
+  },
+  "solver": {
+    "valid": true,
+    "domain_sizes": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "target": 2.948526950912552,
+    "acceptance_guard": 2e-12,
+    "local_only": true,
+    "initial_band_seconds": 0.04248441697563976,
+    "support_cut_count": 55,
+    "relaxation": "Every conservative-band uncertain cell is allowed until selected GEOS resolves it",
+    "status": "LOCAL_FEASIBLE",
+    "score": 2.9485269509125525,
+    "assignment": [
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "raw_placements": [
+      [
+        0.545425,
+        0.67215,
+        -0.570778
+      ],
+      [
+        1.135484,
+        -1.23874,
+        2.227365
+      ],
+      [
+        -0.584124,
+        -0.217653,
+        -1.671787
+      ],
+      [
+        1.843118,
+        0.631801,
+        -0.722762
+      ],
+      [
+        0.278186,
+        1.928675,
+        2.264578
+      ],
+      [
+        -0.723715,
+        1.809349,
+        3.126117
+      ],
+      [
+        -1.624637,
+        1.076193,
+        -2.992325
+      ],
+      [
+        -0.56981,
+        0.785952,
+        -1.682231
+      ],
+      [
+        0.032918,
+        1.724683,
+        -0.877015
+      ],
+      [
+        1.261991,
+        1.484613,
+        0.453135
+      ],
+      [
+        -1.944933,
+        -0.121111,
+        -2.464295
+      ],
+      [
+        -1.573106,
+        -1.149938,
+        -1.641622
+      ],
+      [
+        1.049635,
+        -2.567295,
+        1.95895
+      ],
+      [
+        -0.789401,
+        -1.781407,
+        -0.792106
+      ],
+      [
+        1.811166,
+        -0.718041,
+        -0.914206
+      ]
+    ],
+    "scored_placements": [
+      [
+        0.545425,
+        0.67215,
+        -0.570778
+      ],
+      [
+        1.135484,
+        -1.23874,
+        2.227365
+      ],
+      [
+        -0.584124,
+        -0.217653,
+        -1.671787
+      ],
+      [
+        1.843118,
+        0.631801,
+        -0.722762
+      ],
+      [
+        0.278186,
+        1.928675,
+        2.264578
+      ],
+      [
+        -0.723715,
+        1.809349,
+        3.126117
+      ],
+      [
+        -1.624637,
+        1.076193,
+        -2.992325
+      ],
+      [
+        -0.56981,
+        0.785952,
+        -1.682231
+      ],
+      [
+        0.032918,
+        1.724683,
+        -0.877015
+      ],
+      [
+        1.261991,
+        1.484613,
+        0.453135
+      ],
+      [
+        -1.944933,
+        -0.121111,
+        -2.464295
+      ],
+      [
+        -1.573106,
+        -1.149938,
+        -1.641622
+      ],
+      [
+        1.049635,
+        -2.567295,
+        1.95895
+      ],
+      [
+        -0.789401,
+        -1.781407,
+        -0.792106
+      ],
+      [
+        1.811166,
+        -0.718041,
+        -0.914206
+      ]
+    ],
+    "solution_path": "experiments/pantheon-pilot/oblique-orbit-control-v1/solution.json",
+    "seconds": 0.30602695897687227,
+    "counts": {
+      "iterations": 2,
+      "pair_nogoods": 2,
+      "enclosure_cuts": 0,
+      "enclosure_nogoods": 0,
+      "reference_checks": 1
+    },
+    "oracle": {
+      "native_pairs": 351,
+      "initial_uncertain": 65,
+      "certain_allowed": 225,
+      "certain_rejected": 61,
+      "geos_pairs": 14,
+      "exact_allowed": 12,
+      "exact_rejected": 2
+    },
+    "support_inserter": {
+      "cuts": 55,
+      "theta_tables": 29,
+      "theta_table_entries": 87,
+      "shared_pose_table_entries": 135
+    },
+    "best_score": null
+  },
+  "independent_reference": {
+    "valid": true,
+    "score": 2.9485269509125525,
+    "errors": [],
+    "raw_sha256": "4e0aef7f115817d46b32303d746fc1826e8fb8d2f01cbe884423e84b349af13f"
+  }
+}

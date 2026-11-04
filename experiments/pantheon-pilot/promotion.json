@@ -1,0 +1,43 @@
+{
+  "candidate": "experiments/pantheon-pilot/candidate-2.948526950912552.json",
+  "sha256": "cefac3368caae7f9dea0c4cdc0e87d869f3a9bd76ba75292b1cd4b7fff7c8fb9",
+  "previous_score": 2.948526962953499,
+  "score": 2.948526950912552,
+  "improvement": 1.2040946906211047e-08,
+  "leaderboard": [
+    {
+      "rank": 1,
+      "author": "@cameronspirals",
+      "score": 2.9485269238856113
+    },
+    {
+      "rank": 2,
+      "author": "@fordgt1111",
+      "score": 2.948526931599013
+    },
+    {
+      "rank": 3,
+      "author": "@rorzio",
+      "score": 2.948526966725367
+    }
+  ],
+  "would_place": 3,
+  "gap_to_first": 2.7026940685459522e-08,
+  "gap_closed_fraction": 0.3082057323411114,
+  "source": {
+    "score": 2.948526950912552,
+    "seconds": 33.126621583011,
+    "source": "native",
+    "qualifying": true,
+    "center_hash": "0c0337e5d33796deceace9e47fe3f04d1647917b881fd313b48368354621dfa1",
+    "file": "valid-00020.json",
+    "new_center": true,
+    "branch": [
+      3.141569,
+      3.141593
+    ],
+    "same_requested_branch": true
+  },
+  "public_submission_made": false,
+  "scope": "API and independently reference-validated promotion; native proposal from the hybrid arm"
+}

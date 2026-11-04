@@ -6,3 +6,9 @@ __pycache__/
 build/
 dist/
 uv.lock
+
+# Local editor/OS files and native build products.
+.DS_Store
+*.so
+*.dylib
+*.o

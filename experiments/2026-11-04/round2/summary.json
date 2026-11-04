@@ -1,0 +1,316 @@
+{
+  "updated_utc": "2026-11-04T03:16:44.074009+00:00",
+  "verified_score": 2.948526966725367,
+  "leader": 2.9485269238856113,
+  "improvement": false,
+  "solution_sha256": "088950a795745e2757fd462e6a9085220777ca00422bca66fb3d9c6bba0e475e",
+  "tests": 98,
+  "root_runs": [
+    {
+      "record": "experiments/2026-11-04/round2/runs/20261104T025101_652081Z-breakout-smoke.json",
+      "hypothesis": "Dynamic contact prices escape fixed-energy integer traps; native MEC avoids per-candidate Python optimizer overhead.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_breakout.py",
+        "--seconds",
+        "12",
+        "--seed",
+        "110451",
+        "--output",
+        "experiments/2026-11-04/round2/breakout/smoke.json"
+      ],
+      "seconds": 12.891732415999286,
+      "exit_code": 0,
+      "sources_changed_during_run": []
+    },
+    {
+      "record": "experiments/2026-11-04/round2/runs/20261104T025220_652325Z-breakout-incumbent.json",
+      "hypothesis": "Adaptive contact prices and nonlinear native MEC can cross integer barriers around a valid incumbent; only translation is quotiented.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_breakout.py",
+        "--seconds",
+        "180",
+        "--seed",
+        "110452",
+        "--penalty-step",
+        "10",
+        "--movement",
+        "2000",
+        "--restarts",
+        "3000",
+        "--output",
+        "experiments/2026-11-04/round2/breakout/incumbent.json"
+      ],
+      "seconds": 180.88465720799286,
+      "exit_code": 0,
+      "sources_changed_during_run": [
+        "scripts/angular_rounder.py",
+        "scripts/experiment_hillclimb.py",
+        "scripts/experiment_neutral_network.py"
+      ]
+    },
+    {
+      "record": "experiments/2026-11-04/round2/runs/20261104T025220_652344Z-breakout-three-conflicts.json",
+      "hypothesis": "Repair a low-radius three-overlap witness using dynamic prices, rather than minimizing the same fixed violation sum.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_breakout.py",
+        "--input",
+        "experiments/2026-11-04/alternative/quadratic-stress/candidate-0.json",
+        "--seconds",
+        "180",
+        "--seed",
+        "110453",
+        "--movement",
+        "2000",
+        "--penalty-step",
+        "10",
+        "--restarts",
+        "3000",
+        "--output",
+        "experiments/2026-11-04/round2/breakout/three-conflicts.json"
+      ],
+      "seconds": 180.8709164999891,
+      "exit_code": 0,
+      "sources_changed_during_run": [
+        "scripts/angular_rounder.py",
+        "scripts/experiment_hillclimb.py",
+        "scripts/experiment_neutral_network.py"
+      ]
+    },
+    {
+      "record": "experiments/2026-11-04/round2/runs/20261104T025642_097974Z-breakout-quantized.json",
+      "hypothesis": "Remove artificial descent at numerical MEC noise; price repeated blocked center states while retaining physical angular states.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_breakout.py",
+        "--seconds",
+        "180",
+        "--seed",
+        "110455",
+        "--penalty-step",
+        "5",
+        "--movement",
+        "2000",
+        "--restarts",
+        "1500",
+        "--combinations",
+        "600",
+        "--output",
+        "experiments/2026-11-04/round2/breakout/quantized.json"
+      ],
+      "seconds": 180.8878994169645,
+      "exit_code": 0,
+      "sources_changed_during_run": [
+        "scripts/experiment_neutral_network.py"
+      ]
+    },
+    {
+      "record": "experiments/2026-11-04/round2/runs/20261104T025713_953655Z-breakout-angular-conflict.json",
+      "hypothesis": "Direct nonlinear discrete repair of the rotated frame with a proven piece13 angle-grid contradiction; alter centers together with angles.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_breakout.py",
+        "--input",
+        "experiments/2026-11-04/positions/angular-feedback_continuous.json",
+        "--seconds",
+        "180",
+        "--seed",
+        "110456",
+        "--penalty-step",
+        "5",
+        "--movement",
+        "2000",
+        "--restarts",
+        "1500",
+        "--combinations",
+        "600",
+        "--output",
+        "experiments/2026-11-04/round2/breakout/angular-conflict.json"
+      ],
+      "seconds": 180.87386537500424,
+      "exit_code": 0,
+      "sources_changed_during_run": [
+        "scripts/experiment_neutral_network.py"
+      ]
+    },
+    {
+      "record": "experiments/2026-11-04/round2/runs/20261104T025713_953655Z-breakout-mincost-frame.json",
+      "hypothesis": "A different rigid lattice phase with36nm overlap residual may be repairable with contact-specific breakout penalties.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_breakout.py",
+        "--input",
+        "experiments/2026-11-04/positions/mincost_continuous.json",
+        "--seconds",
+        "180",
+        "--seed",
+        "110457",
+        "--penalty-step",
+        "5",
+        "--movement",
+        "2000",
+        "--restarts",
+        "1500",
+        "--combinations",
+        "600",
+        "--output",
+        "experiments/2026-11-04/round2/breakout/mincost-frame.json"
+      ],
+      "seconds": 180.86985416698735,
+      "exit_code": 0,
+      "sources_changed_during_run": [
+        "scripts/experiment_neutral_network.py"
+      ]
+    },
+    {
+      "record": "experiments/2026-11-04/round2/runs/20261104T030535_839500Z-equal-radius-new-geometry.json",
+      "hypothesis": "A noncongruent packing at the same continuous radius can have a better decimal-grid realization; detect its flat pairs rather than assuming original labels.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_lll.py",
+        "--input",
+        "experiments/2026-11-04/round2/topology/continuous-best.json",
+        "--keep-seed",
+        "--flat-pairs",
+        "auto",
+        "--seconds",
+        "180",
+        "--seed",
+        "110460",
+        "--movement",
+        "50",
+        "--block-size",
+        "20",
+        "--target",
+        "2.948526966",
+        "--goal",
+        "2.9485269238",
+        "--concentration",
+        "10",
+        "--boundary-bias",
+        "5",
+        "--incumbent",
+        "solution.json",
+        "--checkpoint-prefix",
+        "new-geometry",
+        "--output",
+        "experiments/2026-11-04/round2/new-geometry/best.json"
+      ],
+      "seconds": 180.5362070829724,
+      "exit_code": 0,
+      "sources_changed_during_run": [
+        "scripts/audit2_projection_trace.py",
+        "scripts/experiment_breakout.py"
+      ]
+    },
+    {
+      "record": "experiments/2026-11-04/round2/runs/20261104T030615_990056Z-equal-radius-new-geometry-relaxed.json",
+      "hypothesis": "Allocate a slightly looser slack budget in the newly discovered equal-radius geometry, retaining every exact improvement over the incumbent.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_lll.py",
+        "--input",
+        "experiments/2026-11-04/round2/topology/continuous-best.json",
+        "--keep-seed",
+        "--flat-pairs",
+        "auto",
+        "--seconds",
+        "180",
+        "--seed",
+        "110461",
+        "--movement",
+        "50",
+        "--block-size",
+        "20",
+        "--target",
+        "2.94852698",
+        "--goal",
+        "2.9485269238",
+        "--concentration",
+        "10",
+        "--boundary-bias",
+        "5",
+        "--incumbent",
+        "solution.json",
+        "--checkpoint-prefix",
+        "new-geometry-relaxed",
+        "--output",
+        "experiments/2026-11-04/round2/new-geometry/relaxed.json"
+      ],
+      "seconds": 180.50772045901977,
+      "exit_code": 0,
+      "sources_changed_during_run": [
+        "scripts/audit2_projection_trace.py",
+        "scripts/experiment_breakout.py"
+      ]
+    },
+    {
+      "record": "experiments/2026-11-04/round2/runs/20261104T030801_975139Z-breakout-reflected-patch.json",
+      "hypothesis": "A new local mirror embedding has a radius below first with five small overlap residuals; attempt contact-priced joint integer repair with detected flat pairs.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_breakout.py",
+        "--input",
+        "experiments/2026-11-04/round2/breakout/new-geometry-snapshot.json",
+        "--seconds",
+        "180",
+        "--seed",
+        "110462",
+        "--penalty-step",
+        "5",
+        "--movement",
+        "2000",
+        "--restarts",
+        "1500",
+        "--combinations",
+        "600",
+        "--output",
+        "experiments/2026-11-04/round2/breakout/reflected-patch.json"
+      ],
+      "seconds": 180.87121733400272,
+      "exit_code": 0,
+      "sources_changed_during_run": [
+        "scripts/experiment_hillclimb.py"
+      ]
+    },
+    {
+      "record": "experiments/2026-11-04/round2/runs/20261104T030843_072222Z-positions-free-center-repair.json",
+      "hypothesis": "Replay a bounded center projection after removing the explicit fixed-center angular rejection; enumerate endpoint-sensitive angular centers before rejecting.",
+      "command": [
+        ".venv/bin/python",
+        "scripts/experiment_position_projection.py",
+        "--seconds",
+        "60",
+        "--seed",
+        "110463",
+        "--target",
+        "2.948526966",
+        "--output",
+        "experiments/2026-11-04/round2/positions-free-center/best.json"
+      ],
+      "seconds": 51.146967499982566,
+      "exit_code": 0,
+      "sources_changed_during_run": []
+    }
+  ],
+  "root_run_count": 10,
+  "leaderboard": "leaderboard-final.json",
+  "api_validation": "api-final.json",
+  "test_output": "tests-final.txt",
+  "benchmark": "benchmark-final.json",
+  "agent_reports": [
+    "audit/log.md",
+    "neutral/final-summary.json",
+    "topology/report.json",
+    "topology/inventory/summary.json"
+  ],
+  "visuals": [
+    "contact-slack.png",
+    "patch-reflection.png"
+  ],
+  "solution_unchanged": true,
+  "compileall_passed": true,
+  "diff_check_passed": true
+}

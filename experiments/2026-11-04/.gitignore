@@ -1,0 +1,43 @@
+# Runs, snapshots, tables, candidate populations and plots stay local.
+# Keep the research narrative and a curated set of inputs/evidence in Git.
+*
+!*/
+!.gitignore
+!**/*.md
+**/steps.md
+
+# Campaign indexes and independent validation records.
+!/summary.json
+!/api-final.json
+!/leaderboard-final.json
+!/round2/summary.json
+!/round2/api-final.json
+!/round2/leaderboard-final.json
+!/round2/benchmark-final.json
+!/round3/summary.json
+!/round3/paused.json
+!/round3/candidate-2.948526962953499.json
+!/round3/candidate-api.json
+!/round3/previous-incumbent.json
+!/round3/promotion.json
+!/round3/leaderboard-latest.json
+
+# Full-precision continuous seeds and audits of the distinct mirror geometry.
+!/round2/topology/continuous-best.json
+!/round2/topology/continuous-best-relabelled.json
+!/round2/topology/reference-continuous.json
+!/round2/topology/patch-audit.json
+!/round2/topology/patch-interface-audit.json
+!/round2/topology/equal-radius-graph-audit.json
+!/round3/coherent-phases/original-free-polished.json
+!/round3/coherent-phases/original-free-polished.report.json
+
+# Compact evidence for the last planning decision; bulk per-pose tables omitted.
+!/round3/conflicts/target-core-g.report.json
+!/round3/conflicts/target-core-three.report.json
+!/round3/mirror/quality-comparison.json
+!/round3/mirror/quality-novelty-final.json
+
+# Do not re-include these via the directory/document rules above.
+__pycache__/
+.DS_Store

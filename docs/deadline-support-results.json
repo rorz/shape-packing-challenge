@@ -1,0 +1,4224 @@
+{
+  "scope": "Two bounded support-conditioned tests; no candidate; finite exclusions only",
+  "runs": [
+    {
+      "scope": "Boundary-center conditioned continuous completion, then finite all-piece integer repair; no API or promotion",
+      "input": "/Users/rorz/repos/forks/shape-packing-challenge/solution.json",
+      "input_sha256": "cefac3368caae7f9dea0c4cdc0e87d869f3a9bd76ba75292b1cd4b7fff7c8fb9",
+      "input_score": 2.948526950912552,
+      "target": 2.9485269238806113,
+      "budget_seconds": 180.0,
+      "supports": [
+        5,
+        10,
+        14
+      ],
+      "extent": 2,
+      "triangles": 625,
+      "subtarget_triangles": 144,
+      "selected": 32,
+      "source_hashes": {
+        "experiment_support_completion.py": "9ace68ad2f39056be35c2e1001ff551e4ed8082be49a0d6c1541235c60e3b393",
+        "lazy_phase_solver.py": "9412bd94db438c80bca1ecb4e715b2f84ff3ba70dbeb69b9d05a296c03606971",
+        "translation_union.py": "251d98891b09697dfa52688f8d2bccdb3dfbe820e06450666704c9111c2d51d9"
+      },
+      "seconds": 16.87475658301264,
+      "status": "COMPLETE",
+      "full_report": "experiments/pantheon-pilot/deadline-support-v1/report.json",
+      "full_report_sha256": "742178cb6fa88e5d6db6780e1f617eb4beb1a4db5a3dd233a7ee0ad895011f69",
+      "rows": [
+        {
+          "serial": 0,
+          "offsets": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 3.072824843346274e-07,
+          "completion_seconds": 0.16502729104831815,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526577782928,
+            "native_mec": [
+              -0.00018223643782216796,
+              0.00013476050857483268,
+              2.94852657778293
+            ],
+            "model_violation": 2.5954046910351434e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 988
+          },
+          "continuous_geos_max_area": 1.0000008850899726e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "83741a2949b09942ee2a008488e86c9cd4075ca1c8f66d18f2b6f5edfaab5da1",
+              "status": "INFEASIBLE",
+              "seconds": 0.08269675000337884,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "2d3f96c33c528715fec39cc839321ad387c0ac87381298233cba93bc4a473b25",
+              "status": "INFEASIBLE",
+              "seconds": 0.2578531669569202,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 1,
+          "offsets": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 3.7716215459524214e-07,
+          "completion_seconds": 0.0066622080048546195,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.948526762850784,
+            "native_mec": [
+              -0.00018204339722645985,
+              0.00013463839013183598,
+              2.9485267628507845
+            ],
+            "model_violation": 7.926340504036937e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 9,
+            "calls": 15
+          },
+          "continuous_geos_max_area": 1.0000006987549642e-06,
+          "continuous_geos_bad_pairs": 17,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "8ef06763d8c67138c02092eb57868ef67b4f335c2145df7becc12406691442fc",
+              "status": "INFEASIBLE",
+              "seconds": 0.07033758400939405,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "21928dd564e29a43bd0f4723b7c35758c1786f70ed291ca5835511e0cc87a77f",
+              "status": "INFEASIBLE",
+              "seconds": 0.27594920800765976,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 2,
+          "offsets": [
+            1,
+            0,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 4.0360263218445297e-07,
+          "completion_seconds": 0.1866920000175014,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266589594943,
+            "native_mec": [
+              -0.0001812369187027315,
+              0.00013507280474681083,
+              2.948526658959498
+            ],
+            "model_violation": 3.4787157703456937e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1331
+          },
+          "continuous_geos_max_area": 1.0000008857410343e-06,
+          "continuous_geos_bad_pairs": 27,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "9e79b24cccd00859b79a6a3b5bc2c6fac86140e14f8e1c65fce4c6e0af37db05",
+              "status": "INFEASIBLE",
+              "seconds": 0.07224616600433365,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "84d03c2b074e74a6363f28172c1af761b9a5b9488ab80d10ebbc40bed241f389",
+              "status": "INFEASIBLE",
+              "seconds": 0.28602391603635624,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 3,
+          "offsets": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 4.0360263218445297e-07,
+          "completion_seconds": 0.16126224998151883,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485265955849784,
+            "native_mec": [
+              -0.00018130302343118306,
+              0.00013511462287280063,
+              2.9485265955849815
+            ],
+            "model_violation": 7.354767232312125e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1055
+          },
+          "continuous_geos_max_area": 1.0000008851512518e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "e7b30c811f4f0a4658b74837f9fd19a9666e67c3675c111e86deeb60bac9a044",
+              "status": "INFEASIBLE",
+              "seconds": 0.07253491698065773,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "cb1f877034f141ca24745103664a28f7835f548a212c1fb0a00a9fa2e04984c2",
+              "status": "INFEASIBLE",
+              "seconds": 0.2537480829632841,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 4,
+          "offsets": [
+            1,
+            -1,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 4.1091143308221336e-07,
+          "completion_seconds": 0.024518333026207983,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.9485266545983495,
+            "native_mec": [
+              -0.0001813022966380088,
+              0.0001350513560172406,
+              2.9485266545983535
+            ],
+            "model_violation": 1.1853241152842321e-13,
+            "relative_pin_error": 1.1102230246251565e-16,
+            "iterations": 26,
+            "calls": 106
+          },
+          "continuous_geos_max_area": 1.0000008856199986e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "dfac83a553adc748e6d67bdc33dd4fefebe1e4b73e1b77d8456f98eb3c146a3e",
+              "status": "INFEASIBLE",
+              "seconds": 0.07131949998438358,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "e37dfb8ef2090615f740763903468a0a93486c8aaa2b8f5aeea4a8a4f6aff3d2",
+              "status": "INFEASIBLE",
+              "seconds": 0.25624270900152624,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 5,
+          "offsets": [
+            1,
+            -1,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 4.1091143308221336e-07,
+          "completion_seconds": 0.15905879199272022,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526591183607,
+            "native_mec": [
+              -0.00018136844334369108,
+              0.00013509320068022523,
+              2.9485265911836125
+            ],
+            "model_violation": 6.025202418761383e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 982
+          },
+          "continuous_geos_max_area": 1.0000008851088525e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "b80201386759bdb60eaca82e0985cc3c93b6036acf31fdd2903ecddbfcbb65c6",
+              "status": "INFEASIBLE",
+              "seconds": 0.07094091695034876,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "8eb392cdc6e6b81e6b6a6af0257a945bd98e9f3237d72d6526d8a88f4c418eb5",
+              "status": "INFEASIBLE",
+              "seconds": 0.25412800000049174,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 6,
+          "offsets": [
+            2,
+            -1,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 5.000334216399305e-07,
+          "completion_seconds": 0.1812670410145074,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267402573365,
+            "native_mec": [
+              -0.00018023727398274077,
+              0.0001353850211330554,
+              2.94852674025734
+            ],
+            "model_violation": 3.5836541559980703e-13,
+            "relative_pin_error": 1.3877787807814457e-17,
+            "iterations": 150,
+            "calls": 1268
+          },
+          "continuous_geos_max_area": 1.000000886289146e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "b4a7d3a3a7e8b05b5bbba1487292ce63c5b339a89962add63c8a37d3f73fc40c",
+              "status": "INFEASIBLE",
+              "seconds": 0.0745208750013262,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "db86f735f29aab24e39df93c88c14aca4c0243123da1ce6dc89d40d7fdf1d545",
+              "status": "INFEASIBLE",
+              "seconds": 0.305870792013593,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 7,
+          "offsets": [
+            2,
+            -1,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 5.000334216399305e-07,
+          "completion_seconds": 0.18673449999187142,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.94852667680874,
+            "native_mec": [
+              -0.00018030345600634004,
+              0.00013542688810194714,
+              2.9485266768087453
+            ],
+            "model_violation": 6.91386141238847e-13,
+            "relative_pin_error": 1.1102230246251565e-16,
+            "iterations": 150,
+            "calls": 1131
+          },
+          "continuous_geos_max_area": 1.0000008857839888e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "02f2e9a23fd964a03b48107f725f44b513b94241d2a30ccd60626387f5ed0bcb",
+              "status": "INFEASIBLE",
+              "seconds": 0.07327691599493846,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "256593204fc786302e40d10be6542b7a6d01ce9bd962f686a025e14d57626c63",
+              "status": "INFEASIBLE",
+              "seconds": 0.2569419170031324,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 8,
+          "offsets": [
+            0,
+            1,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 6.754013223839876e-07,
+          "completion_seconds": 0.16181020898511633,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266808687065,
+            "native_mec": [
+              -0.00018212891109822826,
+              0.00013469248663647293,
+              2.948526680868709
+            ],
+            "model_violation": 6.512060592139329e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1076
+          },
+          "continuous_geos_max_area": 1.0000008858837174e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "81a5d0028a0e195ccec186286dc82f22d01daebab660276b1d7ccd6b69903c57",
+              "status": "INFEASIBLE",
+              "seconds": 0.07412795798154548,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "887d05839e501c064364cc16f21a3d211ee72f0609ebdbf85ac6d57a175c5caf",
+              "status": "INFEASIBLE",
+              "seconds": 0.2857770409900695,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 9,
+          "offsets": [
+            1,
+            0,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 6.754013223839876e-07,
+          "completion_seconds": 0.15818341699196026,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267620387465,
+            "native_mec": [
+              -0.00018112939874020094,
+              0.0001350047871697957,
+              2.948526762038749
+            ],
+            "model_violation": 3.8726009001246953e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1039
+          },
+          "continuous_geos_max_area": 1.0000008865116405e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "be1916ddbc30ee85d51398b4d1b73fa23d72614250c34c90a59af5db87bf69b2",
+              "status": "INFEASIBLE",
+              "seconds": 0.07173120800871402,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "eb4ab02520f2029d2f3b9ae0d2fb5e8ab862ed30b226df6f96aa93310c0f87b7",
+              "status": "INFEASIBLE",
+              "seconds": 0.28860716603230685,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 10,
+          "offsets": [
+            1,
+            -1,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 6.754013223839876e-07,
+          "completion_seconds": 0.15157633303897455,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526757673666,
+            "native_mec": [
+              -0.00018119478073836022,
+              0.00013498334104833365,
+              2.9485267576736742
+            ],
+            "model_violation": 3.5305531203072433e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 860
+          },
+          "continuous_geos_max_area": 1.0000008864999593e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "b1c76247b8515fa70045e1848f3109c35d835d094c565ed3dea6e14276ef83cc",
+              "status": "INFEASIBLE",
+              "seconds": 0.07279008300974965,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "0d263be6ce7b0403b2e4fcdd2410db138d2b7620a2d7951b58cb099a7d963f02",
+              "status": "INFEASIBLE",
+              "seconds": 0.30624004203127697,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 11,
+          "offsets": [
+            2,
+            -1,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 6.754013223839876e-07,
+          "completion_seconds": 0.15746262500761077,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526843330193,
+            "native_mec": [
+              -0.0001801297606423783,
+              0.00013531700784369383,
+              2.9485268433301965
+            ],
+            "model_violation": 6.274101976729176e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 977
+          },
+          "continuous_geos_max_area": 1.0000008871075259e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "6643d5d7e9f6d50f7f6a3648e3199db2548382f58cfcf5a442f9fb71c4df43db",
+              "status": "INFEASIBLE",
+              "seconds": 0.0790085420012474,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "d73995e93bf4d8564c66307f79a3125f8e26499e4701d70f341e3c1a35dda125",
+              "status": "INFEASIBLE",
+              "seconds": 0.29495545802637935,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 12,
+          "offsets": [
+            0,
+            2,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 7.03604073989814e-07,
+          "completion_seconds": 0.16805991699220613,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526582246885,
+            "native_mec": [
+              -0.00018217095376808247,
+              0.00013478188897331211,
+              2.948526582246891
+            ],
+            "model_violation": 3.2292807736369235e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1149
+          },
+          "continuous_geos_max_area": 1.000000885123386e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "c326ea6aa48dda7dad98656f8f7d720fa6b42bb88a6043b092a30b1769ac6b4a",
+              "status": "INFEASIBLE",
+              "seconds": 0.07250145799480379,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "a7f2777fc1e6df8b04d5249d62ba9d5129546be57fe4d56c955d3ec68fd02e69",
+              "status": "INFEASIBLE",
+              "seconds": 0.2537954999716021,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 13,
+          "offsets": [
+            0,
+            2,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 7.03604073989814e-07,
+          "completion_seconds": 0.011473875027149916,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.9485267413493497,
+            "native_mec": [
+              -0.00018200499721450318,
+              0.00013467690397048204,
+              2.9485267413493523
+            ],
+            "model_violation": 4.7192710184627603e-14,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 16,
+            "calls": 26
+          },
+          "continuous_geos_max_area": 1.0000008849150745e-06,
+          "continuous_geos_bad_pairs": 26,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "070bc5145f0a5aa35e0fdc55a76b546ec898777f47278c0b603c516da54d3945",
+              "status": "INFEASIBLE",
+              "seconds": 0.07008154201321304,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "bd4c66357a0bde8dc77fb74822cc54e0340fd2967cb4fd7c2ca68315ccc566c7",
+              "status": "INFEASIBLE",
+              "seconds": 0.25170987501041964,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 14,
+          "offsets": [
+            0,
+            2,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 7.03604073989814e-07,
+          "completion_seconds": 0.1715045829769224,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526685336272,
+            "native_mec": [
+              -0.00018206342332019107,
+              0.00013471386464028456,
+              2.948526685336274
+            ],
+            "model_violation": 4.073295731652812e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1211
+          },
+          "continuous_geos_max_area": 1.0000008859544948e-06,
+          "continuous_geos_bad_pairs": 27,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "9bc05194ad7384e384953a4dbf6c8687c03daf9c6c0f3a6f9bbc2340b3611a21",
+              "status": "INFEASIBLE",
+              "seconds": 0.07328704203246161,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "f6d62814a0c36acef301aec5d9afe5d2b110b747db989654b13dd0e5e52447b2",
+              "status": "INFEASIBLE",
+              "seconds": 0.26960737496847287,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 15,
+          "offsets": [
+            1,
+            1,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.003812344285272e-07,
+          "completion_seconds": 0.17422108398750424,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526663357639,
+            "native_mec": [
+              -0.00018117150265779813,
+              0.00013509422886642808,
+              2.948526663357642
+            ],
+            "model_violation": 2.605931050271612e-13,
+            "relative_pin_error": 1.1102230246251565e-16,
+            "iterations": 150,
+            "calls": 1191
+          },
+          "continuous_geos_max_area": 1.0000008858088581e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "1abc53d28794b018942d2fb1b46cb6425eda9e2a0f6c312175f9de4ff8b49f19",
+              "status": "INFEASIBLE",
+              "seconds": 0.07419458299409598,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "c01e8a353f41f2d6bec7811cf84d6302d4dca2b70e019137b1976a811565e313",
+              "status": "INFEASIBLE",
+              "seconds": 0.289354040985927,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 16,
+          "offsets": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.003812344285272e-07,
+          "completion_seconds": 0.16095983295235783,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526600023103,
+            "native_mec": [
+              -0.00018123756566244473,
+              0.00013513602061812624,
+              2.948526600023104
+            ],
+            "model_violation": 5.919391667225701e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1007
+          },
+          "continuous_geos_max_area": 1.0000008852774716e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "4e3ebc3a63fd4d71c777c2b188901ae2b0bc2537690a63aed04ae2a5a8f77efc",
+              "status": "INFEASIBLE",
+              "seconds": 0.07232754200231284,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "f5c7acef52ee60c8b124e0837e247e53e8c9881acf882786540153cb5a762b87",
+              "status": "INFEASIBLE",
+              "seconds": 0.256423500017263,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 17,
+          "offsets": [
+            1,
+            1,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.003812344285272e-07,
+          "completion_seconds": 0.17072604200802743,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267664408377,
+            "native_mec": [
+              -0.0001810639786163845,
+              0.00013502620867786308,
+              2.94852676644084
+            ],
+            "model_violation": 1.7805766072324847e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1207
+          },
+          "continuous_geos_max_area": 1.000000886540972e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "94486b7a805b04bab366333c75637c04c800cee5bf672a2130ae91a4ca330e75",
+              "status": "INFEASIBLE",
+              "seconds": 0.07226108299801126,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "e38a1ca6a3e1348b0681b8d3f0958c0b6d784bcda2adece3a08d6d6ffb27fb8c",
+              "status": "INFEASIBLE",
+              "seconds": 0.2912428749841638,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 18,
+          "offsets": [
+            0,
+            1,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.067829004918466e-07,
+          "completion_seconds": 0.028106958023272455,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.9485266175719365,
+            "native_mec": [
+              -0.00018219493469889998,
+              0.00013473425349366797,
+              2.948526617571938
+            ],
+            "model_violation": 9.121999951112721e-14,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 32,
+            "calls": 121
+          },
+          "continuous_geos_max_area": 1.0000008854141878e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "c0d857209f010f7743b787cffbb9b1ac3437bde9ecb5a289750ffd9c41d68122",
+              "status": "INFEASIBLE",
+              "seconds": 0.07232962502166629,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "15a2aef21d333cdbf2ce09cf44b04a1a00f0044f48a7ffc352850dfa9d878bac",
+              "status": "INFEASIBLE",
+              "seconds": 0.2559118329663761,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 19,
+          "offsets": [
+            1,
+            0,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.067829004918466e-07,
+          "completion_seconds": 0.1713891249964945,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526698668379,
+            "native_mec": [
+              -0.00018119549913939506,
+              0.00013504660255683754,
+              2.94852669866838
+            ],
+            "model_violation": 3.9696845177980984e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1111
+          },
+          "continuous_geos_max_area": 1.0000008860506759e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "f7fa35852cea40a80c51044b52deb5f16729e067f171d4c66af57cbd1bbce81d",
+              "status": "INFEASIBLE",
+              "seconds": 0.07294591702520847,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "c0769e3e29f1e109642f58d6a1711992beb48db0b4328ca99ffb046c4145c937",
+              "status": "INFEASIBLE",
+              "seconds": 0.25477654195856303,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 20,
+          "offsets": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.067829004918466e-07,
+          "completion_seconds": 0.17955175001407042,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266942632866,
+            "native_mec": [
+              -0.00018126092289904444,
+              0.0001350251828356186,
+              2.948526694263288
+            ],
+            "model_violation": 4.0315687967945164e-13,
+            "relative_pin_error": 3.3306690738754696e-16,
+            "iterations": 150,
+            "calls": 1083
+          },
+          "continuous_geos_max_area": 1.0000008859126603e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "79155cc54e18b228ac9f4f9a93d2d70cd56226773ffe42fe55ec5c8b64b92fb7",
+              "status": "INFEASIBLE",
+              "seconds": 0.07149087497964501,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "5c95a3bebdf99b961ea03f516e3545fb84fbb0d4ea5db4b8b3cd6c64e13a409d",
+              "status": "INFEASIBLE",
+              "seconds": 0.2533357919892296,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 21,
+          "offsets": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.067829004918466e-07,
+          "completion_seconds": 0.1677657079999335,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526703107536,
+            "native_mec": [
+              -0.0001811300403276716,
+              0.00013506799961071625,
+              2.9485267031075386
+            ],
+            "model_violation": 1.0636421276276682e-11,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1106
+          },
+          "continuous_geos_max_area": 1.0000059493812398e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "52014a2279f70ad1f851c7efbc6a835c6bb92d7993fe93ebc4000854fe545e9f",
+              "status": "INFEASIBLE",
+              "seconds": 0.0756302920053713,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "3a7304a64d6575431e167bc3394799acf0509c023e03e1c0d391311173a0e213",
+              "status": "INFEASIBLE",
+              "seconds": 0.2555210830178112,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 22,
+          "offsets": [
+            0,
+            2,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.067829004918466e-07,
+          "completion_seconds": 0.16927404201123863,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266220790924,
+            "native_mec": [
+              -0.00018212940560175667,
+              0.00013475560537912212,
+              2.9485266220790955
+            ],
+            "model_violation": 8.645896367398267e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1051
+          },
+          "continuous_geos_max_area": 1.0000008854442485e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "01f52db91eb58219a56541df8b313de08b38484835ffb825bda7cd55888759e5",
+              "status": "INFEASIBLE",
+              "seconds": 0.07331912498921156,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "d02f2dac5c66e507de54c2bab0f1259f6ef32a19a3ef35cff34bb938f6350cbb",
+              "status": "INFEASIBLE",
+              "seconds": 0.2588222920312546,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 23,
+          "offsets": [
+            2,
+            -1,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.067829004918466e-07,
+          "completion_seconds": 0.16756716702366248,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267798857486,
+            "native_mec": [
+              -0.00018019593833709137,
+              0.0001353588720697796,
+              2.9485267798857517
+            ],
+            "model_violation": 3.094222023079966e-13,
+            "relative_pin_error": 3.3306690738754696e-16,
+            "iterations": 150,
+            "calls": 1002
+          },
+          "continuous_geos_max_area": 1.0000008866183114e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "7171b62f4ca61a24dd4f705cf3a767eff3118e730c363fad70d8a6289c665da8",
+              "status": "INFEASIBLE",
+              "seconds": 0.0717220840160735,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "98302742cf6568f958c0cc9be32931a0822e87c2f5d8ad37ddfb188244e67053",
+              "status": "INFEASIBLE",
+              "seconds": 0.2559190829633735,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 24,
+          "offsets": [
+            0,
+            1,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.562621892645606e-07,
+          "completion_seconds": 0.006705041974782944,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.948526675881035,
+            "native_mec": [
+              -0.00018213411363826246,
+              0.00013469577778796316,
+              2.9485266758810367
+            ],
+            "model_violation": 1.020499256767e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 9,
+            "calls": 19
+          },
+          "continuous_geos_max_area": 1.0000008669240265e-06,
+          "continuous_geos_bad_pairs": 21,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "ed8a4a3b77bd5dafb415552dee5517de6e1d1a824734e1f89dcebdfca2c06985",
+              "status": "INFEASIBLE",
+              "seconds": 0.07205074996454641,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "6a89b84fdd8cef6c1901070a2e73820367ff5630371a7292f089b4fe9db739fe",
+              "status": "INFEASIBLE",
+              "seconds": 0.2605732919764705,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 25,
+          "offsets": [
+            1,
+            0,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.562621892645606e-07,
+          "completion_seconds": 0.17726425000000745,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526619303983,
+            "native_mec": [
+              -0.00018127828259430732,
+              0.00013509897171554153,
+              2.9485266193039883
+            ],
+            "model_violation": 3.1429631182957196e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1308
+          },
+          "continuous_geos_max_area": 1.0000008853945834e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "723fda319664140787f84b0b75e074cdda539055b1a0758b7ff323b6a9e96500",
+              "status": "INFEASIBLE",
+              "seconds": 0.07329120801296085,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "c54712520606d863ed7d22b02d0a54bfd7cdc0f02bdc1743c57a4352dd8aba94",
+              "status": "INFEASIBLE",
+              "seconds": 0.25530391599750146,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 26,
+          "offsets": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.562621892645606e-07,
+          "completion_seconds": 0.17430066596716642,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266149863096,
+            "native_mec": [
+              -0.00018134361520054376,
+              0.00013507749430174965,
+              2.9485266149863127
+            ],
+            "model_violation": 1.9543492375623486e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1064
+          },
+          "continuous_geos_max_area": 1.0000008853583075e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "99550138409b0f759918e51d464c78a84487b93d196a9eba920a062b0dfa38f8",
+              "status": "INFEASIBLE",
+              "seconds": 0.0712817910243757,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "18414c04552bc9fdb24c025c1723d5438dab79c8a0582741acca410f42816db4",
+              "status": "INFEASIBLE",
+              "seconds": 0.25371891603572294,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 27,
+          "offsets": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.562621892645606e-07,
+          "completion_seconds": 0.1712308750138618,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266236580943,
+            "native_mec": [
+              -0.00018121291246862674,
+              0.00013512042489841058,
+              2.948526623658097
+            ],
+            "model_violation": 3.3370780255407144e-13,
+            "relative_pin_error": 2.7755575615628914e-17,
+            "iterations": 150,
+            "calls": 1087
+          },
+          "continuous_geos_max_area": 1.0000008853765355e-06,
+          "continuous_geos_bad_pairs": 27,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "84362368a68cb548376b2ca8c95ae092f9895dc0ee12f38bc63c13331451902a",
+              "status": "INFEASIBLE",
+              "seconds": 0.0724485830287449,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "8517769b5f5b39a6a1ff20fc7855bb62bcb3ef1cdbf3da015578010ad9220361",
+              "status": "INFEASIBLE",
+              "seconds": 0.30076470802305266,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 28,
+          "offsets": [
+            0,
+            2,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.562621892645606e-07,
+          "completion_seconds": 0.005257250042632222,
+          "completion": {
+            "success": false,
+            "message": "Positive directional derivative for linesearch",
+            "radius": 2.948526654379615,
+            "native_mec": [
+              -0.00018209571358236872,
+              0.00013473429162896844,
+              2.9485266543796165
+            ],
+            "model_violation": 2.2323096018423126e-12,
+            "relative_pin_error": 1.8041124150158794e-16,
+            "iterations": 7,
+            "calls": 3
+          },
+          "continuous_geos_max_area": 1.0000010139240114e-06,
+          "continuous_geos_bad_pairs": 26,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "b2e6fa3703106a8286986277f2f05ecce8996578b1010f1bf327fb9c4517a5ce",
+              "status": "INFEASIBLE",
+              "seconds": 0.07221116696018726,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "f24306666c501a5223543ee09b3be119baffae4148b86215c560ef7e54bc001c",
+              "status": "INFEASIBLE",
+              "seconds": 0.2545600839657709,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 29,
+          "offsets": [
+            2,
+            -1,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.562621892645606e-07,
+          "completion_seconds": 0.03742429200792685,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.948526700683093,
+            "native_mec": [
+              -0.00018027855312622437,
+              0.00013541113446066677,
+              2.9485267006830957
+            ],
+            "model_violation": 4.819207531705619e-14,
+            "relative_pin_error": 3.3306690738754696e-16,
+            "iterations": 39,
+            "calls": 189
+          },
+          "continuous_geos_max_area": 1.000000886009795e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "d4f3024fba099a32602bb8e9cccdba5d73958205e35ade44d1d08c46d08d738a",
+              "status": "INFEASIBLE",
+              "seconds": 0.07203191699227318,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "7abab4df15ae621bf041db3727ac7048768b0e84b360b1ce14d0d42efdc87148",
+              "status": "INFEASIBLE",
+              "seconds": 0.2546470829984173,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 30,
+          "offsets": [
+            2,
+            0,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.97268516555108e-07,
+          "completion_seconds": 0.1595931249903515,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267445893317,
+            "native_mec": [
+              -0.0001801719262949364,
+              0.0001354064891994078,
+              2.948526744589335
+            ],
+            "model_violation": 2.8643068675420466e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 971
+          },
+          "continuous_geos_max_area": 1.0000008863242643e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "381d4fcab9d15ec71b1a0dea7523e8949c9fa202dca11cf01bc634383c4da50b",
+              "status": "INFEASIBLE",
+              "seconds": 0.07320895895827562,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "6a650209b943a53a95371691b4e152fb98c3904b0b1fa88911a35c5a95e4d854",
+              "status": "INFEASIBLE",
+              "seconds": 0.26045762503053993,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 31,
+          "offsets": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.97268516555108e-07,
+          "completion_seconds": 0.1687597919953987,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266811811863,
+            "native_mec": [
+              -0.0001802380661044909,
+              0.0001354483294843667,
+              2.9485266811811908
+            ],
+            "model_violation": 6.414127102709073e-13,
+            "relative_pin_error": 1.5265566588595902e-16,
+            "iterations": 150,
+            "calls": 1091
+          },
+          "continuous_geos_max_area": 1.0000008858869459e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "726ce731190c1ba0017893c524dbde33466c0f300af1a82aab811cc67f064237",
+              "status": "INFEASIBLE",
+              "seconds": 0.08543291699606925,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "e25fcbaacf613b569fc170a3a51d0fc38ca8004a5201c1a6845bf296ba4f5f9c",
+              "status": "INFEASIBLE",
+              "seconds": 0.26175779197365046,
+              "finite_exhausted": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "Boundary-center conditioned continuous completion, then finite all-piece integer repair; no API or promotion",
+      "input": "/Users/rorz/repos/forks/shape-packing-challenge/solution.json",
+      "input_sha256": "cefac3368caae7f9dea0c4cdc0e87d869f3a9bd76ba75292b1cd4b7fff7c8fb9",
+      "input_score": 2.948526950912552,
+      "target": 2.9485269238806113,
+      "budget_seconds": 180.0,
+      "supports": [
+        5,
+        10,
+        14
+      ],
+      "extent": 8,
+      "triangles": 83521,
+      "subtarget_triangles": 20736,
+      "selected": 64,
+      "excluded_prior_offsets": 32,
+      "previous_offset_reports": [
+        {
+          "path": "experiments/pantheon-pilot/deadline-support-v1/report.json",
+          "sha256": "742178cb6fa88e5d6db6780e1f617eb4beb1a4db5a3dd233a7ee0ad895011f69"
+        }
+      ],
+      "source_hashes": {
+        "experiment_support_completion.py": "9bb7e49972b35bd83a4f74416695a1e3943d3432ff85b0b53bf71e54a9419d21",
+        "lazy_phase_solver.py": "9412bd94db438c80bca1ecb4e715b2f84ff3ba70dbeb69b9d05a296c03606971",
+        "translation_union.py": "251d98891b09697dfa52688f8d2bccdb3dfbe820e06450666704c9111c2d51d9"
+      },
+      "seconds": 34.235351042007096,
+      "status": "COMPLETE",
+      "full_report": "experiments/pantheon-pilot/deadline-support-wide-v2/report.json",
+      "full_report_sha256": "68266eabe3422ba96371536b714b61a52a6c37d6dc07db0d92d6c00d3a807fe8",
+      "rows": [
+        {
+          "serial": 0,
+          "offsets": [
+            2,
+            0,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.97268516555108e-07,
+          "completion_seconds": 0.16026920801959932,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267049704578,
+            "native_mec": [
+              -0.00018021325197730212,
+              0.0001354326319750465,
+              2.948526704970461
+            ],
+            "model_violation": 2.5417028823026405e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 940
+          },
+          "continuous_geos_max_area": 1.0000008860589291e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "00a67d88b024737055a9f880fc65b8e36bfff41df9a6e82537b31cd60eceaadd",
+              "status": "INFEASIBLE",
+              "seconds": 0.10996854200493544,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "77d58e61927ad2903b4c9842b9a4fca65880fc041fc098f40d8a7b406a430256",
+              "status": "INFEASIBLE",
+              "seconds": 0.3238025000318885,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 1,
+          "offsets": [
+            2,
+            0,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.97268516555108e-07,
+          "completion_seconds": 0.16066283301915973,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267842617127,
+            "native_mec": [
+              -0.00018013054480186912,
+              0.00013538031111892668,
+              2.9485267842617144
+            ],
+            "model_violation": 2.021748969429271e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 926
+          },
+          "continuous_geos_max_area": 1.0000008866599996e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "ff5ba20f532055e8513b20bee4e1a4c250bb139f0016a3dbaa7b47f4f7af799c",
+              "status": "INFEASIBLE",
+              "seconds": 0.07183825003448874,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "3d30125f349afe069cd990d73195b28fb1804c2f9e39a57b6beea8543159a733",
+              "status": "INFEASIBLE",
+              "seconds": 0.25237266696058214,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 2,
+          "offsets": [
+            2,
+            0,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 8.97268516555108e-07,
+          "completion_seconds": 0.1575925420038402,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526847665927,
+            "native_mec": [
+              -0.0001800644090920074,
+              0.0001353384734314178,
+              2.94852684766593
+            ],
+            "model_violation": 2.737967876500937e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 906
+          },
+          "continuous_geos_max_area": 1.0000008871763075e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "933512ee4808d9bb8fc9e04c7850c94b2439fb2c9f62cfb4e9d6842ee1b3b2c3",
+              "status": "INFEASIBLE",
+              "seconds": 0.07218779198592529,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "9f6680725814fd990716ea7c132e28cac870b72c60970c1ebe104bdaf2f6df43",
+              "status": "INFEASIBLE",
+              "seconds": 0.3729889169917442,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 3,
+          "offsets": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.411559764309715e-07,
+          "completion_seconds": 0.006778082984965295,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.948526596290624,
+            "native_mec": [
+              -0.00018221713281291532,
+              0.00013474829613027706,
+              2.948526596290626
+            ],
+            "model_violation": 3.8836441745962635e-14,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 8,
+            "calls": 11
+          },
+          "continuous_geos_max_area": 1.0000008876256527e-06,
+          "continuous_geos_bad_pairs": 27,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "251923eba55c611a3b8650560723a8296cd707c4559b040e28fbeff82dd2896f",
+              "status": "INFEASIBLE",
+              "seconds": 0.07232137495884672,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "296a636b935d4df2a83c2aef31fe89cdffd444beeb649790d4ad210895ec6b00",
+              "status": "INFEASIBLE",
+              "seconds": 0.2932636250043288,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 4,
+          "offsets": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.411559764309715e-07,
+          "completion_seconds": 0.17479037499288097,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266353427826,
+            "native_mec": [
+              -0.00018126155283815573,
+              0.00013508838840262105,
+              2.948526635342785
+            ],
+            "model_violation": 9.143958435812062e-14,
+            "relative_pin_error": 2.7755575615628914e-17,
+            "iterations": 150,
+            "calls": 1151
+          },
+          "continuous_geos_max_area": 1.0000008855452998e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "6bea985dd4bb0ce536b95fb65512e7c56cbf0508ac2b5994902a3fffd7250be4",
+              "status": "INFEASIBLE",
+              "seconds": 0.07175654103048146,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "4235126d8e9bee256490c44c6632bedff7eb3650f6558f009cd43bd9c4ed5797",
+              "status": "INFEASIBLE",
+              "seconds": 0.25217579101445153,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 5,
+          "offsets": [
+            1,
+            -1,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.411559764309715e-07,
+          "completion_seconds": 0.1666899579577148,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266308975073,
+            "native_mec": [
+              -0.0001813270185341137,
+              0.0001350669951896144,
+              2.9485266308975104
+            ],
+            "model_violation": 9.91120540046543e-13,
+            "relative_pin_error": 1.1102230246251565e-16,
+            "iterations": 150,
+            "calls": 1068
+          },
+          "continuous_geos_max_area": 1.0000008854786112e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "9402c23269f173a7281959638d861b7c3fc6ca47b4aeadebdeca61491a274161",
+              "status": "INFEASIBLE",
+              "seconds": 0.07915949996095151,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "fcf03e7696e4f156029ecb03a0be6ec4a752c5cc19cf6c414c8a4b22ecde892a",
+              "status": "INFEASIBLE",
+              "seconds": 0.2549240000080317,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 6,
+          "offsets": [
+            1,
+            1,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.411559764309715e-07,
+          "completion_seconds": 0.18119579198537394,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526639824315,
+            "native_mec": [
+              -0.00018119604980264097,
+              0.00013510975750397058,
+              2.948526639824319
+            ],
+            "model_violation": 2.4201234255690747e-13,
+            "relative_pin_error": 1.1102230246251565e-16,
+            "iterations": 150,
+            "calls": 1235
+          },
+          "continuous_geos_max_area": 1.000000885571414e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "c147073e3711ce38a93734604499c0426b64f72f8838e26fb1841399bf8793e6",
+              "status": "INFEASIBLE",
+              "seconds": 0.0727000420447439,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "d425cc161f9706566265cf84549dcd450872be97d1fcd46d0b85b50f17939925",
+              "status": "INFEASIBLE",
+              "seconds": 0.2525411659735255,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 7,
+          "offsets": [
+            0,
+            2,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.411559764309715e-07,
+          "completion_seconds": 0.0147315000067465,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.9485265747891596,
+            "native_mec": [
+              -0.00018217873277810367,
+              0.00013478681001449777,
+              2.948526574789163
+            ],
+            "model_violation": 2.929514152464189e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 20,
+            "calls": 32
+          },
+          "continuous_geos_max_area": 1.000000888433638e-06,
+          "continuous_geos_bad_pairs": 27,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "17333e522c2c8d36cbc0460a23eda32bb877264f8c8938b1d2495828e1335ada",
+              "status": "INFEASIBLE",
+              "seconds": 0.06992054200964049,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "6066e6364a835b11a5c6322d1d9a38257acb4939be452f4f7b20ed006fd8ddd2",
+              "status": "INFEASIBLE",
+              "seconds": 0.25274133298080415,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 8,
+          "offsets": [
+            2,
+            0,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.411559764309715e-07,
+          "completion_seconds": 0.1594839579774998,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267209025356,
+            "native_mec": [
+              -0.0001801966335357747,
+              0.0001354221190928706,
+              2.948526720902537
+            ],
+            "model_violation": 1.35153167833644e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 973
+          },
+          "continuous_geos_max_area": 1.000000886206778e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "fcd64e3f005a1fe7e600430ab707b9b5b99129a6c734a0993fcf64a951747cc0",
+              "status": "INFEASIBLE",
+              "seconds": 0.0706026250263676,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "e7e8e8b4f8ac6f55f36022f7903f330a3f92bd4b5fd1a4065f3b9b5afb5c0b7b",
+              "status": "INFEASIBLE",
+              "seconds": 0.2539469579933211,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 9,
+          "offsets": [
+            2,
+            -1,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.411559764309715e-07,
+          "completion_seconds": 0.1699665830237791,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526716486547,
+            "native_mec": [
+              -0.00018026206884055526,
+              0.0001354007064446605,
+              2.9485267164865507
+            ],
+            "model_violation": 3.271685964533576e-13,
+            "relative_pin_error": 3.3306690738754696e-16,
+            "iterations": 150,
+            "calls": 1137
+          },
+          "continuous_geos_max_area": 1.0000008860871374e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "4a079769132a45248f76bca039da51608eadaa6266cabbdbf901e87de3239f7b",
+              "status": "INFEASIBLE",
+              "seconds": 0.07186691701645032,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "54a87e9ac4e7a3ece4a3689a79d2e691188c41e3e9b517319c9d020cd4317b86",
+              "status": "INFEASIBLE",
+              "seconds": 0.2609085000003688,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 10,
+          "offsets": [
+            3,
+            -1,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.942668031291534e-07,
+          "completion_seconds": 0.18573362496681511,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526825942925,
+            "native_mec": [
+              -0.00017917222367509235,
+              0.0001357186693443091,
+              2.9485268259429285
+            ],
+            "model_violation": 2.035919421626737e-13,
+            "relative_pin_error": 3.3306690738754696e-16,
+            "iterations": 150,
+            "calls": 1292
+          },
+          "continuous_geos_max_area": 1.000000886908421e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "56c60ec534a72f84f518bc7cb31cf202eef9a7ee93e3ef9cf5bc64baf9900d10",
+              "status": "INFEASIBLE",
+              "seconds": 0.06936374999349937,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "8c4a0333a82d99f69ebf029cbea6573b24775871bd39f1754647e95d24d8467f",
+              "status": "INFEASIBLE",
+              "seconds": 0.255594874965027,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 11,
+          "offsets": [
+            3,
+            -1,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.942668031291534e-07,
+          "completion_seconds": 0.167725250008516,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526762459982,
+            "native_mec": [
+              -0.00017923844153478266,
+              0.00013576055894642947,
+              2.948526762459985
+            ],
+            "model_violation": 1.1143314921804317e-12,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1034
+          },
+          "continuous_geos_max_area": 1.0000008864438427e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "414b81b71218a1da7dd748b905ea51ba478f66c10d6660f8aec505345cb36405",
+              "status": "INFEASIBLE",
+              "seconds": 0.08410041697788984,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "beb2ac612a09c1bee88b72d4afc45214f40dd298ae22f323954cd0094a512166",
+              "status": "INFEASIBLE",
+              "seconds": 0.30458850000286475,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 12,
+          "offsets": [
+            3,
+            -1,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.942668031291534e-07,
+          "completion_seconds": 0.1534720420022495,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267864058975,
+            "native_mec": [
+              -0.00017921346400381205,
+              0.00013574475808889042,
+              2.948526786405899
+            ],
+            "model_violation": 3.2843992597809227e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 833
+          },
+          "continuous_geos_max_area": 1.0000008867052708e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "cd75cd68e0c1d0ffa27da3d010e21e9b275f0fbc7c09d42fad22e2c549ed8dff",
+              "status": "INFEASIBLE",
+              "seconds": 0.07012737495824695,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "9632c7a4ec7d09dc20577656310995e9eba00806eb9236ff71b58c6ffe560e46",
+              "status": "INFEASIBLE",
+              "seconds": 0.25656037498265505,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 13,
+          "offsets": [
+            3,
+            -1,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.942668031291534e-07,
+          "completion_seconds": 0.1706584999919869,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485268655343373,
+            "native_mec": [
+              -0.000179130926621196,
+              0.00013569254471318404,
+              2.948526865534341
+            ],
+            "model_violation": 7.755682599577518e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1057
+          },
+          "continuous_geos_max_area": 1.0000008872855722e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "dcd2353884fd40e269dd38a84d93f83d86e3381f820f22a5c1232a3c7e13c1e4",
+              "status": "INFEASIBLE",
+              "seconds": 0.07137520797550678,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "18ab2e9e18144be7c022c60688963af457c2b644a9bbf39f784ed4b8cebf01e2",
+              "status": "INFEASIBLE",
+              "seconds": 0.2542352500022389,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 14,
+          "offsets": [
+            3,
+            -1,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.942668031291534e-07,
+          "completion_seconds": 0.15156779100652784,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526929013062,
+            "native_mec": [
+              -0.00017906471316419224,
+              0.0001356506578962524,
+              2.9485269290130645
+            ],
+            "model_violation": 7.223479390416003e-13,
+            "relative_pin_error": 5.551115123125783e-16,
+            "iterations": 150,
+            "calls": 866
+          },
+          "repairs": []
+        },
+        {
+          "serial": 15,
+          "offsets": [
+            3,
+            -1,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.942668031291534e-07,
+          "completion_seconds": 0.15962795802624896,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526802100899,
+            "native_mec": [
+              -0.00017919709284525825,
+              0.00013573440164726946,
+              2.9485268021008997
+            ],
+            "model_violation": 3.5443341547177043e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 972
+          },
+          "continuous_geos_max_area": 1.0000008867656434e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "17ccb3d5b971806c4e57db443314fc81982bcaac30b793b98d8558115b27e668",
+              "status": "INFEASIBLE",
+              "seconds": 0.07123900001170114,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "1e7d49cceb430a9aa40a170c85ce941104ffeef4d07ab4f293d4737a6c7bedbb",
+              "status": "INFEASIBLE",
+              "seconds": 0.2526502499822527,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 16,
+          "offsets": [
+            3,
+            -2,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.943646736019052e-07,
+          "completion_seconds": 0.17250470898579806,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.94852682167788,
+            "native_mec": [
+              -0.0001792375021750104,
+              0.000135697156808251,
+              2.9485268216778797
+            ],
+            "model_violation": 4.559715450369819e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1112
+          },
+          "continuous_geos_max_area": 1.000000886840094e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "897727dab10aa47c7f1c51d09598b09fee2ec748e665665ed139814a2a1b6fa5",
+              "status": "INFEASIBLE",
+              "seconds": 0.07898083399049938,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "abbf5aada8d9fc9f9bb09f679ce7af432d2dd6be314fe1f8481d129a8b9fca0e",
+              "status": "INFEASIBLE",
+              "seconds": 0.2633956670179032,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 17,
+          "offsets": [
+            3,
+            -2,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.943646736019052e-07,
+          "completion_seconds": 0.07983695797156543,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.94852675815475,
+            "native_mec": [
+              -0.00017930376197156962,
+              0.00013573907291417053,
+              2.9485267581547534
+            ],
+            "model_violation": 6.364803675991189e-14,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 76,
+            "calls": 491
+          },
+          "continuous_geos_max_area": 1.0000008864133976e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "10c81738edfd564eb3eefc4bb38e0409a09b253fa2767eda85be888417a4426b",
+              "status": "INFEASIBLE",
+              "seconds": 0.08340941701317206,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "5c6e44382f15aecabb48754e43dc9e7419ba2994a1ff1393b010889f0d69fc25",
+              "status": "INFEASIBLE",
+              "seconds": 0.2685641669668257,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 18,
+          "offsets": [
+            3,
+            -2,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.943646736019052e-07,
+          "completion_seconds": 0.16328624996822327,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526782185294,
+            "native_mec": [
+              -0.0001792786961602559,
+              0.00013572321622384864,
+              2.9485267821852976
+            ],
+            "model_violation": 1.0290627319953988e-12,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 973
+          },
+          "continuous_geos_max_area": 1.0000008866178428e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "c63b07437b47c11743faccb3bbf38a2a27ee96aac3bc8629495a92dab81312ec",
+              "status": "INFEASIBLE",
+              "seconds": 0.09365170903038234,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "c747cda474f68fbb49e4785b21e27f9448d60a2c8751de7bb5940cc6fe0b8e22",
+              "status": "INFEASIBLE",
+              "seconds": 0.26740283297840506,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 19,
+          "offsets": [
+            3,
+            -2,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.943646736019052e-07,
+          "completion_seconds": 0.17334416694939137,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485268612249245,
+            "native_mec": [
+              -0.0001791962513817951,
+              0.00013567106145292995,
+              2.948526861224927
+            ],
+            "model_violation": 6.751413938176047e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1075
+          },
+          "continuous_geos_max_area": 1.0000008872135572e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "208dfe1528cba7bbe2c20dda8289cc4f0188c53176c592d4c1e7ffc82fae5ed0",
+              "status": "INFEASIBLE",
+              "seconds": 0.07276020897552371,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "ef6b82bb7aab72b78da5acb745c5efa0c40addcaf28c6364f734f74a74d78cbe",
+              "status": "INFEASIBLE",
+              "seconds": 0.25311900000087917,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 20,
+          "offsets": [
+            3,
+            -2,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.943646736019052e-07,
+          "completion_seconds": 0.15853187500033528,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485269247443253,
+            "native_mec": [
+              -0.00017912999547468715,
+              0.0001356291478009919,
+              2.9485269247443266
+            ],
+            "model_violation": 9.43267449558954e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 948
+          },
+          "repairs": []
+        },
+        {
+          "serial": 21,
+          "offsets": [
+            3,
+            -2,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 9.943646736019052e-07,
+          "completion_seconds": 0.15726362500572577,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267977512,
+            "native_mec": [
+              -0.0001792624596472052,
+              0.00013571294496494968,
+              2.948526797751203
+            ],
+            "model_violation": 6.354750498687337e-13,
+            "relative_pin_error": 6.661338147750939e-16,
+            "iterations": 150,
+            "calls": 911
+          },
+          "continuous_geos_max_area": 1.0000008866327247e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "0941db7022e53996e443e328395d0be191428c32d106831241ca5a1d9ec8ba30",
+              "status": "INFEASIBLE",
+              "seconds": 0.07086208299733698,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "000904eb725cedd765951b0e85f24dde48487d675c913fe5ad82f5ce70597d84",
+              "status": "INFEASIBLE",
+              "seconds": 0.2510371660464443,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 22,
+          "offsets": [
+            2,
+            -2,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.042770106058081e-06,
+          "completion_seconds": 0.1725881249876693,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267359625316,
+            "native_mec": [
+              -0.0001803025833605268,
+              0.00013536352833753984,
+              2.948526735962534
+            ],
+            "model_violation": 1.1222281040800911e-13,
+            "relative_pin_error": 3.3306690738754696e-16,
+            "iterations": 150,
+            "calls": 1148
+          },
+          "continuous_geos_max_area": 1.0000008862656763e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "cc9a786a63be5c24b7d48d11cae7b4c6d53c21e5722b3534a06ac26501405f31",
+              "status": "INFEASIBLE",
+              "seconds": 0.087443542026449,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "d097dd46af88c45ef38d3e72560e1c083a054f472b85efae3c4e29e0be9b8619",
+              "status": "INFEASIBLE",
+              "seconds": 0.29372695804340765,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 23,
+          "offsets": [
+            2,
+            -2,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.042770106058081e-06,
+          "completion_seconds": 0.17117633298039436,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266724729846,
+            "native_mec": [
+              -0.00018036880812475654,
+              0.00013540542232179376,
+              2.9485266724729877
+            ],
+            "model_violation": 2.33601390507359e-12,
+            "relative_pin_error": 0.0,
+            "iterations": 150,
+            "calls": 1146
+          },
+          "continuous_geos_max_area": 1.000001942660838e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "7ab6d947e49075ad2f5b166fcaf418fbd4771a3cc749e29ca18b3029224295b1",
+              "status": "INFEASIBLE",
+              "seconds": 0.07283754204399884,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "a7f8d2100335902c71e15695009ee24c3078e0cb1278ce910e36f427a9c59c19",
+              "status": "INFEASIBLE",
+              "seconds": 0.2543937080190517,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 24,
+          "offsets": [
+            2,
+            -2,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.042770106058081e-06,
+          "completion_seconds": 0.16035249998094514,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526696432159,
+            "native_mec": [
+              -0.00018034381675687515,
+              0.0001353896127075649,
+              2.9485266964321606
+            ],
+            "model_violation": 4.342407431265471e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 992
+          },
+          "continuous_geos_max_area": 1.0000008859711962e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "abec403908273eea46b774589abdd759ae47a29d8962bbbb91738bd7f74805d2",
+              "status": "INFEASIBLE",
+              "seconds": 0.07280225004069507,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "1177813b92fc65dbcdbd6314f1ed2f2789ac465bccad2fa9e8ff3f6771fcac5b",
+              "status": "INFEASIBLE",
+              "seconds": 0.25777287501841784,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 25,
+          "offsets": [
+            2,
+            -2,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.042770106058081e-06,
+          "completion_seconds": 0.15709729201626033,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267755465956,
+            "native_mec": [
+              -0.0001802612939614378,
+              0.0001353374085414638,
+              2.948526775546598
+            ],
+            "model_violation": 8.65189831756922e-13,
+            "relative_pin_error": 1.8041124150158794e-16,
+            "iterations": 150,
+            "calls": 874
+          },
+          "continuous_geos_max_area": 1.0000008865322105e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "70561a985116547fcbe6f9ecae033943f826077a8c1a888fbf3412c26b84341d",
+              "status": "INFEASIBLE",
+              "seconds": 0.14118983398657292,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "37b7aeb9c9c24013c945a00a63e550359ba38fa3ab3e7de3081e8b344a81c8af",
+              "status": "INFEASIBLE",
+              "seconds": 0.2661228330107406,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 26,
+          "offsets": [
+            2,
+            -2,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.042770106058081e-06,
+          "completion_seconds": 0.16968641703715548,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526839031651,
+            "native_mec": [
+              -0.00018019507388461302,
+              0.00013529551752400337,
+              2.9485268390316515
+            ],
+            "model_violation": 2.854758683639782e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1125
+          },
+          "continuous_geos_max_area": 1.000000887025306e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "08155728bc69173372cefe6d008d0ed20cf34b354f65f9fdc7a7599244f950a9",
+              "status": "INFEASIBLE",
+              "seconds": 0.08638320799218491,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "c43c349a2f54f859b43a7e636b75185b76e1d14267655f458d683b8b151faaad",
+              "status": "INFEASIBLE",
+              "seconds": 0.2922406670404598,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 27,
+          "offsets": [
+            2,
+            -2,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.042770106058081e-06,
+          "completion_seconds": 0.15428412501933053,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267121070526,
+            "native_mec": [
+              -0.00018032746656683474,
+              0.00013537926952930657,
+              2.948526712107055
+            ],
+            "model_violation": 6.494249622077709e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 888
+          },
+          "continuous_geos_max_area": 1.0000008860833614e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "80ca84aee936f4fd7041199958bf6885b3e4d9c439723e6e363f60fb3ea356dc",
+              "status": "INFEASIBLE",
+              "seconds": 0.07011829200200737,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "fdce811c20729d166bf606e20015b1da6a6409aa8a58294d2b8dc0232c5e49cb",
+              "status": "INFEASIBLE",
+              "seconds": 0.2522624580306001,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 28,
+          "offsets": [
+            0,
+            1,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0785205503013262e-06,
+          "completion_seconds": 0.007118665962480009,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.9485268498217057,
+            "native_mec": [
+              -0.0001819526795916026,
+              0.00013458100170371523,
+              2.948526849821707
+            ],
+            "model_violation": 7.164749126584807e-13,
+            "relative_pin_error": 6.661338147750939e-16,
+            "iterations": 10,
+            "calls": 7
+          },
+          "continuous_geos_max_area": 1.0000006966285426e-06,
+          "continuous_geos_bad_pairs": 19,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "70159d12ad494a018d8ad20160ce648ca99fd071b7601b03609b0a6cbb382d5a",
+              "status": "INFEASIBLE",
+              "seconds": 0.07357316598063335,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "a8f33f8b665346a8dc3a391adf77ab271c64f2836a8e88e930d488823facbe20",
+              "status": "INFEASIBLE",
+              "seconds": 0.2540140420314856,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 29,
+          "offsets": [
+            1,
+            0,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0785205503013262e-06,
+          "completion_seconds": 0.16440787503961474,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526572061818,
+            "native_mec": [
+              -0.00018132755998416517,
+              0.0001351301447947706,
+              2.9485265720618195
+            ],
+            "model_violation": 2.6336808679707907e-13,
+            "relative_pin_error": 6.661338147750939e-16,
+            "iterations": 150,
+            "calls": 1075
+          },
+          "continuous_geos_max_area": 1.0000008850830616e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "6e5eac1650d988c291a2cf160d5daf69516ed37bdd5158c1de1ff5a8686b9f9f",
+              "status": "INFEASIBLE",
+              "seconds": 0.07052562502212822,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "deeb46baaed8bc59aadaf5254d72499adc3e367944ef90f1d400e95af6b4e90e",
+              "status": "INFEASIBLE",
+              "seconds": 0.30841175001114607,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 30,
+          "offsets": [
+            1,
+            -1,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0785205503013262e-06,
+          "completion_seconds": 0.15490725002018735,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526567576515,
+            "native_mec": [
+              -0.00018139306745794392,
+              0.00013510877798525445,
+              2.9485265675765167
+            ],
+            "model_violation": 4.369951315520081e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 949
+          },
+          "continuous_geos_max_area": 1.0000008849877632e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "53e6469fee7238bc6a7fe419d8d9e8e5fbf9679d88819a7a5cc34d5bf107be7c",
+              "status": "INFEASIBLE",
+              "seconds": 0.0709967499715276,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "3b17aba5f307599c0324256713f3f0371d3728d063d88a4684b4dcbb1d759e3d",
+              "status": "INFEASIBLE",
+              "seconds": 0.2518028750200756,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 31,
+          "offsets": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0785205503013262e-06,
+          "completion_seconds": 0.17599766695639119,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526576583146,
+            "native_mec": [
+              -0.00018126201541671973,
+              0.00013515148764517426,
+              2.948526576583149
+            ],
+            "model_violation": 2.624266335522603e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1128
+          },
+          "continuous_geos_max_area": 1.0000008850693998e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "cc0ed65d7979c25c93e7962f294b5efb44d401d2321054e96a0a70433fecf0a5",
+              "status": "INFEASIBLE",
+              "seconds": 0.07118754094699398,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "06082fca3e4a64902a2594ba4fc6bd7467660ce4f65a309a4c3b456b7c197eeb",
+              "status": "INFEASIBLE",
+              "seconds": 0.2532753749983385,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 32,
+          "offsets": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0785205503013262e-06,
+          "completion_seconds": 0.006946000037714839,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.9485268283202566,
+            "native_mec": [
+              -0.0001819142796280742,
+              0.00013461951554458174,
+              2.948526828320259
+            ],
+            "model_violation": 5.334054836280411e-13,
+            "relative_pin_error": 2.914335439641036e-16,
+            "iterations": 11,
+            "calls": 8
+          },
+          "continuous_geos_max_area": 1.0000006960825217e-06,
+          "continuous_geos_bad_pairs": 23,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "cc4571ad8c96e59c415405678e6603782857524624a4e1b75b4e6a770480a6f0",
+              "status": "INFEASIBLE",
+              "seconds": 0.07091045897686854,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "69b180ef5a05629076feef149a412d78cbe85a982bef384ea8acd7186d475a9c",
+              "status": "INFEASIBLE",
+              "seconds": 0.253445542010013,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 33,
+          "offsets": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0785205503013262e-06,
+          "completion_seconds": 0.1810847080196254,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526657587868,
+            "native_mec": [
+              -0.0001802626758389686,
+              0.0001354638976939493,
+              2.9485266575878715
+            ],
+            "model_violation": 6.492995844915553e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1305
+          },
+          "continuous_geos_max_area": 1.0000008857611204e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "ec72f8f480c732071e9e79546f35161f8832695429a796383c9284ded46235f6",
+              "status": "INFEASIBLE",
+              "seconds": 0.070886250003241,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "8584b159ac3aa12b78bd2b3442e24200dbaad0f457eea413ecdd7f821c9707c1",
+              "status": "INFEASIBLE",
+              "seconds": 0.25576033303514123,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 34,
+          "offsets": [
+            2,
+            -1,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0785205503013262e-06,
+          "completion_seconds": 0.16838954202830791,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526653132163,
+            "native_mec": [
+              -0.00018032815259965904,
+              0.00013544251124714135,
+              2.9485266531321646
+            ],
+            "model_violation": 4.431474908733728e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1167
+          },
+          "continuous_geos_max_area": 1.0000008856927487e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "0f35a3f4ac86ca1e06cd0b60c1ae38c14a6f55b5b8f1c633b8552c79bb661f17",
+              "status": "INFEASIBLE",
+              "seconds": 0.07090183300897479,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "c1d8743759cece8cb02bb0e4eb9a8279391f133252c4d19b6f3f897ed5e848f1",
+              "status": "INFEASIBLE",
+              "seconds": 0.25369049998698756,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 35,
+          "offsets": [
+            2,
+            -2,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0785205503013262e-06,
+          "completion_seconds": 0.1640568749862723,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266487129063,
+            "native_mec": [
+              -0.00018039359181972955,
+              0.00013542110056133372,
+              2.9485266487129103
+            ],
+            "model_violation": 5.280708279451499e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1002
+          },
+          "continuous_geos_max_area": 1.0000008855285559e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "ca10cf26f6238c1df2d37a561780aa1b0d6eecb3d8f0976465ec497aced91207",
+              "status": "INFEASIBLE",
+              "seconds": 0.07206091599073261,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "168e4280327fdc18439c4777e3b5ef29a6db7e7bfba5438ac305d29e723e9de6",
+              "status": "INFEASIBLE",
+              "seconds": 0.2550680830026977,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 36,
+          "offsets": [
+            3,
+            -1,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0785205503013262e-06,
+          "completion_seconds": 0.1683723329915665,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267387129155,
+            "native_mec": [
+              -0.00017926321165340556,
+              0.0001357762285934816,
+              2.9485267387129186
+            ],
+            "model_violation": 1.2713194336954667e-12,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1048
+          },
+          "continuous_geos_max_area": 1.000000886362919e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "c8c692678ed4cac951ce50c0495503e8210cf68bcee645b2047b1117266cef39",
+              "status": "INFEASIBLE",
+              "seconds": 0.07038029201794416,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "02c46c8511a022981c423d885c6755df432fde6d576cc454e98102682b6f5b67",
+              "status": "INFEASIBLE",
+              "seconds": 0.2526695000124164,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 37,
+          "offsets": [
+            3,
+            -2,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0785205503013262e-06,
+          "completion_seconds": 0.1673222910030745,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526734322995,
+            "native_mec": [
+              -0.00017932862043515928,
+              0.00013575479843946914,
+              2.9485267343229964
+            ],
+            "model_violation": 5.710171857490593e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1124
+          },
+          "continuous_geos_max_area": 1.0000008862421496e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "0dedcb0d43b7090eeed3ee44bb3d62fc0924c44f4b03eb08bb7f9b67f2365d61",
+              "status": "INFEASIBLE",
+              "seconds": 0.07002354203723371,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "a04d2956fe77d30870e4280284e7dc670a6a1f3dc7184bc79e4ccf892de8a4d1",
+              "status": "INFEASIBLE",
+              "seconds": 0.25106333300936967,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 38,
+          "offsets": [
+            1,
+            -2,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0912006136433063e-06,
+          "completion_seconds": 0.15823733300203457,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526650273326,
+            "native_mec": [
+              -0.00018136763737877475,
+              0.000135029883271659,
+              2.9485266502733287
+            ],
+            "model_violation": 2.7557115696175147e-13,
+            "relative_pin_error": 1.5265566588595902e-16,
+            "iterations": 150,
+            "calls": 927
+          },
+          "continuous_geos_max_area": 1.000000885601237e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "4d88f86781c66e06bb374661a8783a5bc0adaef8ce013a1a0957d470d2dcb34c",
+              "status": "INFEASIBLE",
+              "seconds": 0.0712865000241436,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "4f2dade191569c889b685d3288d1a31e5152c437e3d1ff275957df4049a0edf6",
+              "status": "INFEASIBLE",
+              "seconds": 0.28458937496179715,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 39,
+          "offsets": [
+            1,
+            -2,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0912006136433063e-06,
+          "completion_seconds": 0.1712086250190623,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485265868188284,
+            "native_mec": [
+              -0.00018143382557669722,
+              0.0001350717541583335,
+              2.948526586818831
+            ],
+            "model_violation": 3.5498849022593713e-13,
+            "relative_pin_error": 2.7755575615628914e-17,
+            "iterations": 150,
+            "calls": 1173
+          },
+          "continuous_geos_max_area": 1.0000008851778611e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "148269d44ffb2853ddf25f1f98d44beb0250136f5acb516e9e42c2d025d2f4f9",
+              "status": "INFEASIBLE",
+              "seconds": 0.07193070801440626,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "f0dd839caf1f4bc2d8ee754b244cada7b4db71a8fee30432879cb77b31cad863",
+              "status": "INFEASIBLE",
+              "seconds": 0.25138370896456763,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 40,
+          "offsets": [
+            1,
+            -2,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0912006136433063e-06,
+          "completion_seconds": 0.16751170804491267,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526610705915,
+            "native_mec": [
+              -0.00018140890941808173,
+              0.00013505599210697494,
+              2.9485266107059083
+            ],
+            "model_violation": 6.700182234568116e-13,
+            "relative_pin_error": 3.3306690738754696e-16,
+            "iterations": 150,
+            "calls": 1027
+          },
+          "continuous_geos_max_area": 1.0000008853131397e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "a28ce0e484d2bc86de2370d1fe6dcb880e50f9512f5f481235ebcf5200990a46",
+              "status": "INFEASIBLE",
+              "seconds": 0.070300874998793,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "23c8515ef6f529045ac56681abcdd410f01602ffd1e01a8e91a4cb8d1b796d26",
+              "status": "INFEASIBLE",
+              "seconds": 0.25110691698500887,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 41,
+          "offsets": [
+            1,
+            -2,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0912006136433063e-06,
+          "completion_seconds": 0.15221683302661404,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526689894625,
+            "native_mec": [
+              -0.00018132630914231666,
+              0.00013500373888591932,
+              2.9485266898946283
+            ],
+            "model_violation": 1.496648070743536e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 945
+          },
+          "continuous_geos_max_area": 1.000000885976777e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "b26e0ae529340c03040ddfcef26a2fbd644220d6e8c2372036b85545db504b12",
+              "status": "INFEASIBLE",
+              "seconds": 0.07157954096328467,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "4a86f4d9295dd417f65c455219f423fc7eecbb6e68f1822bc2727658ec5dea1c",
+              "status": "INFEASIBLE",
+              "seconds": 0.25431720801861957,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 42,
+          "offsets": [
+            1,
+            -2,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0912006136433063e-06,
+          "completion_seconds": 0.1468412500107661,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267533456074,
+            "native_mec": [
+              -0.00018126012460828976,
+              0.00013496187031586393,
+              2.948526753345612
+            ],
+            "model_violation": 2.9220530050817636e-13,
+            "relative_pin_error": 6.661338147750939e-16,
+            "iterations": 150,
+            "calls": 849
+          },
+          "continuous_geos_max_area": 1.000000886368263e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "c99a35080748cc8715f9e5a6494bee85a36a3d88b06fff8eaf51283fc2c3314c",
+              "status": "INFEASIBLE",
+              "seconds": 0.07173504098318517,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "26291f904cc4e191e7609e5229a2b01e38e4f0763cfc44241ad43539c53a140e",
+              "status": "INFEASIBLE",
+              "seconds": 0.2541522500105202,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 43,
+          "offsets": [
+            1,
+            -2,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0912006136433063e-06,
+          "completion_seconds": 0.17136120900977403,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266264885275,
+            "native_mec": [
+              -0.00018139244685459743,
+              0.00013504557783039495,
+              2.9485266264885315
+            ],
+            "model_violation": 2.3028084892200513e-12,
+            "relative_pin_error": 1.1102230246251565e-16,
+            "iterations": 150,
+            "calls": 1195
+          },
+          "continuous_geos_max_area": 1.0000014806091315e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "14738abfb6c645f3c27f218dc1423b46078f1673022673d8cc0a487269ea650b",
+              "status": "INFEASIBLE",
+              "seconds": 0.07112079102080315,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "9e5ddb0650b5921429a50974bc0daf7962cf8f396e82dff52b816e7eb8ed322c",
+              "status": "INFEASIBLE",
+              "seconds": 0.25432062498293817,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 44,
+          "offsets": [
+            1,
+            -2,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0912006136433063e-06,
+          "completion_seconds": 0.013598332996480167,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.9485265694450398,
+            "native_mec": [
+              -0.00018145194785231314,
+              0.00013508321836672166,
+              2.9485265694450433
+            ],
+            "model_violation": 4.33623993838068e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 17,
+            "calls": 55
+          },
+          "continuous_geos_max_area": 1.0000008856490111e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "b2ef3abe96317031f80e38a0bc34c47abaabf3274f737d281db7566025d3cfd1",
+              "status": "INFEASIBLE",
+              "seconds": 0.09041137504391372,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "b4188c47aba6976bf7c841142fb04d016ab9a23f457eecbd423d6d8f54121958",
+              "status": "INFEASIBLE",
+              "seconds": 0.31490712496452034,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 45,
+          "offsets": [
+            4,
+            -2,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0913749101077414e-06,
+          "completion_seconds": 0.169166291016154,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485269074198937,
+            "native_mec": [
+              -0.00017817239326247541,
+              0.00013603076831864014,
+              2.9485269074198968
+            ],
+            "model_violation": 2.7185840712147204e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1120
+          },
+          "continuous_geos_max_area": 1.0000008875075005e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "23d38ed50df59e3cd552dc018e90a9dce5df5922abda8e960921594aaf9101b2",
+              "status": "INFEASIBLE",
+              "seconds": 0.07032787497155368,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "730658572b2cda772b927dceee1cdf15201a49664d20f271e42b312017fc5c3f",
+              "status": "INFEASIBLE",
+              "seconds": 0.25060545798623934,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 46,
+          "offsets": [
+            4,
+            -2,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0913749101077414e-06,
+          "completion_seconds": 0.17157920898171142,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526843861955,
+            "native_mec": [
+              -0.00017823868937770493,
+              0.00013607270736856747,
+              2.948526843861958
+            ],
+            "model_violation": 3.299992927598901e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1226
+          },
+          "continuous_geos_max_area": 1.0000008871499688e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "fb4c5527d9ef994f1c33e95e1b8eb23335f9857e988806a7ad6b4d3aa46401a4",
+              "status": "INFEASIBLE",
+              "seconds": 0.0708115830202587,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "bdd7e9a33b87ac479b585502446849225faad778287a87e39c4414cb7a868583",
+              "status": "INFEASIBLE",
+              "seconds": 0.25270133395679295,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 47,
+          "offsets": [
+            4,
+            -2,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0913749101077414e-06,
+          "completion_seconds": 0.1524436249746941,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485268679648238,
+            "native_mec": [
+              -0.00017821354811986892,
+              0.00013605680296158162,
+              2.948526867964826
+            ],
+            "model_violation": 6.362274680496285e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 910
+          },
+          "continuous_geos_max_area": 1.0000008872380397e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "e769d2dae38bcef80a0f275efb0d1c891c649dd8d66c893f3a35f901ecae5e9f",
+              "status": "INFEASIBLE",
+              "seconds": 0.06973020802251995,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "c98e220974b65c2e4b4999e2ad2ae9be9f1e331336e21cac2317050235c3989b",
+              "status": "INFEASIBLE",
+              "seconds": 0.24959795898757875,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 48,
+          "offsets": [
+            4,
+            -2,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0913749101077414e-06,
+          "completion_seconds": 0.019301166001241654,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.9485269469297815,
+            "native_mec": [
+              -0.00017813118122785888,
+              0.00013600469750540967,
+              2.948526946929784
+            ],
+            "model_violation": 7.497744087091487e-14,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 23,
+            "calls": 64
+          },
+          "repairs": []
+        },
+        {
+          "serial": 49,
+          "offsets": [
+            4,
+            -2,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0913749101077414e-06,
+          "completion_seconds": 0.1631390830152668,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485270104836894,
+            "native_mec": [
+              -0.0001780648893203382,
+              0.00013596276111738081,
+              2.948527010483691
+            ],
+            "model_violation": 5.80125978885771e-13,
+            "relative_pin_error": 2.914335439641036e-16,
+            "iterations": 150,
+            "calls": 1063
+          },
+          "repairs": []
+        },
+        {
+          "serial": 50,
+          "offsets": [
+            4,
+            -2,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0913749101077414e-06,
+          "completion_seconds": 0.17412708298070356,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526883421258,
+            "native_mec": [
+              -0.0001781974257982124,
+              0.0001360466039508068,
+              2.9485268834212617
+            ],
+            "model_violation": 9.490304671974607e-13,
+            "relative_pin_error": 3.3306690738754696e-16,
+            "iterations": 150,
+            "calls": 1207
+          },
+          "continuous_geos_max_area": 1.000000887334287e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "4415303c101ceed65d65993f1c31ec0cc58a0b7e66ff5d1239f956adf98d8e13",
+              "status": "INFEASIBLE",
+              "seconds": 0.07099958305479959,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "2ff927dccdf886d7fc9cd4f6a530008f4017de15af20a578612429e28ee48e47",
+              "status": "INFEASIBLE",
+              "seconds": 0.25130429200362414,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 51,
+          "offsets": [
+            4,
+            -2,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.0913749101077414e-06,
+          "completion_seconds": 0.16896883404115215,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526819959083,
+            "native_mec": [
+              -0.00017826362202241243,
+              0.00013608847980609018,
+              2.9485268199590875
+            ],
+            "model_violation": 3.735384034422891e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1154
+          },
+          "continuous_geos_max_area": 1.0000008869315298e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "58b0dcc9159bd2d4c8fb7cfd0a0d49f6a3fb35c14f8b8a790d92326d43f6b4e1",
+              "status": "INFEASIBLE",
+              "seconds": 0.07152220804709941,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "a7d86e501163150cad329191529725d1415946985a05de4b698001395e7bb7a3",
+              "status": "INFEASIBLE",
+              "seconds": 0.25408949999837205,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 52,
+          "offsets": [
+            0,
+            3,
+            -1,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.1018014760114473e-06,
+          "completion_seconds": 0.15224945795489475,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485265867471586,
+            "native_mec": [
+              -0.00018210543232324676,
+              0.00013480324521530918,
+              2.9485265867471613
+            ],
+            "model_violation": 4.918547694310381e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 935
+          },
+          "continuous_geos_max_area": 1.0000008851649405e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "4d2f6bbb6d47142c90f72998d8dd2aa35e69feffb30e390f8738932ce63daf05",
+              "status": "INFEASIBLE",
+              "seconds": 0.07161629101028666,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "9b6722ed4643b0b093a235fe26fa7368f673e30dc92b35a20c98945e97e0b3f0",
+              "status": "INFEASIBLE",
+              "seconds": 0.25146379199577495,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 53,
+          "offsets": [
+            0,
+            3,
+            0,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.1018014760114473e-06,
+          "completion_seconds": 0.005441500048618764,
+          "completion": {
+            "success": false,
+            "message": "Positive directional derivative for linesearch",
+            "radius": 2.9485267198480805,
+            "native_mec": [
+              -0.00018196659749858748,
+              0.0001347154175171672,
+              2.948526719848089
+            ],
+            "model_violation": 1.5516533365979716e-11,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 7,
+            "calls": 3
+          },
+          "continuous_geos_max_area": 1.0000080538283335e-06,
+          "continuous_geos_bad_pairs": 27,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "36007cc81db5fb7436a6cfba8077ae25287f45e133ce7ab859b9e647cb188b88",
+              "status": "INFEASIBLE",
+              "seconds": 0.0719379999791272,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "1b07e57973ce4296a978f489656d876ea389f937c3073ca7a9a73b65d42f266b",
+              "status": "INFEASIBLE",
+              "seconds": 0.25350479199551046,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 54,
+          "offsets": [
+            0,
+            3,
+            -1,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.1018014760114473e-06,
+          "completion_seconds": 0.006562708993442357,
+          "completion": {
+            "success": false,
+            "message": "Positive directional derivative for linesearch",
+            "radius": 2.948526632878361,
+            "native_mec": [
+              -0.000182057313815754,
+              0.00013477280517268375,
+              2.948526632878367
+            ],
+            "model_violation": 1.2656780061903184e-12,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 9,
+            "calls": 6
+          },
+          "continuous_geos_max_area": 1.0000008844333863e-06,
+          "continuous_geos_bad_pairs": 25,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "d955357fa962e3d9ae7e243d79010fe56bda6943f933e15f21c4116147af198c",
+              "status": "INFEASIBLE",
+              "seconds": 0.07075416599400342,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "df155c082e081b247d7f418fde9d84e21749c1b50ae5a72c610c5681274e7257",
+              "status": "INFEASIBLE",
+              "seconds": 0.2527799579547718,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 55,
+          "offsets": [
+            0,
+            3,
+            -1,
+            1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.1018014760114473e-06,
+          "completion_seconds": 0.15482787502696738,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526626623152,
+            "native_mec": [
+              -0.00018206383849431705,
+              0.00013477693272870295,
+              2.948526626623155
+            ],
+            "model_violation": 3.9727231574021015e-13,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 951
+          },
+          "continuous_geos_max_area": 1.0000008854639433e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "f6bfec87befb0db40522ad33e2b99cf2ff562c658b0ea76238c94d515f14c7c6",
+              "status": "INFEASIBLE",
+              "seconds": 0.07279283303068951,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "23c4dd2a13b80d325b603a5ed4c6cd3583372cb60b8b9e60d229b155c077cd81",
+              "status": "INFEASIBLE",
+              "seconds": 0.25167041702661663,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 56,
+          "offsets": [
+            0,
+            3,
+            -2,
+            0
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.1018014760114473e-06,
+          "completion_seconds": 0.15876437502447516,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485266898404054,
+            "native_mec": [
+              -0.0001819978978809915,
+              0.00013473521832121915,
+              2.9485266898404077
+            ],
+            "model_violation": 4.038138197585322e-13,
+            "relative_pin_error": 3.3306690738754696e-16,
+            "iterations": 150,
+            "calls": 1091
+          },
+          "continuous_geos_max_area": 1.000000885923707e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "4e49f7f97d6bd664a3e6110281352c66312e50bbdceb720ac1387e7d06d2bdea",
+              "status": "INFEASIBLE",
+              "seconds": 0.0714202499948442,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "3204a0d870446b74dadcad5ca0abf0cfab0bc3022d56ca957634b4e13ee220a4",
+              "status": "INFEASIBLE",
+              "seconds": 0.2557817079941742,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 57,
+          "offsets": [
+            0,
+            3,
+            0,
+            2
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.1018014760114473e-06,
+          "completion_seconds": 0.16646595898782834,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485265634504767,
+            "native_mec": [
+              -0.00018212973261591374,
+              0.0001348186177190791,
+              2.9485265634504776
+            ],
+            "model_violation": 4.671006934971809e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1119
+          },
+          "continuous_geos_max_area": 1.000000884989e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "569f42ec57ee057c518dc88ca35443897792b02ede515ea4246c75b9fcdabc17",
+              "status": "INFEASIBLE",
+              "seconds": 0.07180679199518636,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "43d25652d6f38870adec273a750a4e64211de4677ee30d0aefca7606f376176d",
+              "status": "INFEASIBLE",
+              "seconds": 0.25423970801057294,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 58,
+          "offsets": [
+            0,
+            3,
+            1,
+            3
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.1018014760114473e-06,
+          "completion_seconds": 0.007024250051472336,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.9485268068189727,
+            "native_mec": [
+              -0.00018187587995267644,
+              0.00013465802908971258,
+              2.948526806818975
+            ],
+            "model_violation": 4.890230598864659e-15,
+            "relative_pin_error": 3.3306690738754696e-16,
+            "iterations": 8,
+            "calls": 28
+          },
+          "continuous_geos_max_area": 1.0000006953789903e-06,
+          "continuous_geos_bad_pairs": 23,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "8c4da9002fcfb39f847aa3306996f4a19b98ef5685088d78af357ddd9e5d6840",
+              "status": "INFEASIBLE",
+              "seconds": 0.06974654202349484,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "4fcab422ba4d3b781d1f0aa08ac14fd71dafeeab874de323550ab03b99b0dabe",
+              "status": "INFEASIBLE",
+              "seconds": 0.25024529098300263,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 59,
+          "offsets": [
+            0,
+            1,
+            -2,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.1279260890984774e-06,
+          "completion_seconds": 0.1795736250351183,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526641128345,
+            "native_mec": [
+              -0.00018217036347652378,
+              0.00013471870962020183,
+              2.9485266411283493
+            ],
+            "model_violation": 3.747729549061423e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 1063
+          },
+          "continuous_geos_max_area": 1.0000008855066243e-06,
+          "continuous_geos_bad_pairs": 28,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "516dbcc36214a6f5da1aab1fe09e190333cb1135b51527ea2c95b0477d1d09c4",
+              "status": "INFEASIBLE",
+              "seconds": 0.07366579200606793,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "0d3800d1c9b3f1618a16be4a8cba33e1a10aa5da96bf4eb9f45e0e1065ba58bc",
+              "status": "INFEASIBLE",
+              "seconds": 0.25517700001364574,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 60,
+          "offsets": [
+            1,
+            0,
+            -2,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.1279260890984774e-06,
+          "completion_seconds": 0.16216129198437557,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.9485267223785736,
+            "native_mec": [
+              -0.0001811707674954973,
+              0.00013503095721772995,
+              2.948526722378575
+            ],
+            "model_violation": 1.4613274933542197e-12,
+            "relative_pin_error": 2.220446049250313e-16,
+            "iterations": 150,
+            "calls": 1028
+          },
+          "continuous_geos_max_area": 1.0000008862048215e-06,
+          "continuous_geos_bad_pairs": 30,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "b2ee280c3e9861fdd9ada2458d519bdcc320964c4e5610a34a9a031fbce7d44a",
+              "status": "INFEASIBLE",
+              "seconds": 0.07151733298087493,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "69df7c9a531522b174bcb5747ee27810b1df7807d1f40ff06095d78620cb9a3e",
+              "status": "INFEASIBLE",
+              "seconds": 0.25363941700197756,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 61,
+          "offsets": [
+            1,
+            -1,
+            -2,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.1279260890984774e-06,
+          "completion_seconds": 0.153548915986903,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526718057562,
+            "native_mec": [
+              -0.00018123610354366104,
+              0.00013500948201869423,
+              2.9485267180575647
+            ],
+            "model_violation": 2.717413560323327e-13,
+            "relative_pin_error": 6.661338147750939e-16,
+            "iterations": 150,
+            "calls": 948
+          },
+          "continuous_geos_max_area": 1.000000886084059e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "9223b9131bfaf83464030ffbbeaa22e9d140041b1cdc066f6656ef21dbdea22d",
+              "status": "INFEASIBLE",
+              "seconds": 0.07201479200739413,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "6224a1b0f44ea8b6d2503587061b6eb4cf98a0179de2dd6b9ce81db0cc6065fb",
+              "status": "INFEASIBLE",
+              "seconds": 0.2523194160312414,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 62,
+          "offsets": [
+            1,
+            1,
+            -2,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.1279260890984774e-06,
+          "completion_seconds": 0.059050625015515834,
+          "completion": {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "radius": 2.948526726736997,
+            "native_mec": [
+              -0.00018110539290546943,
+              0.00013505240753863834,
+              2.9485267267369997
+            ],
+            "model_violation": 7.109367312136483e-14,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 62,
+            "calls": 307
+          },
+          "continuous_geos_max_area": 1.0000008861666008e-06,
+          "continuous_geos_bad_pairs": 29,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "64509f880a9e8f732a9aef642ddf20169e9aac7cdf6e6a1ddde009159614dacf",
+              "status": "INFEASIBLE",
+              "seconds": 0.07263662503100932,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "117044f7a6b114e015dfc74d272cfe0264f1df9e98803b9e1d084129c9c5b898",
+              "status": "INFEASIBLE",
+              "seconds": 0.25377041700994596,
+              "finite_exhausted": true
+            }
+          ]
+        },
+        {
+          "serial": 63,
+          "offsets": [
+            0,
+            2,
+            -2,
+            -1
+          ],
+          "initial_radius": 2.948526910829708,
+          "initial_deficit": 1.1279260890984774e-06,
+          "completion_seconds": 0.15429941698675975,
+          "completion": {
+            "success": false,
+            "message": "Iteration limit reached",
+            "radius": 2.948526645552536,
+            "native_mec": [
+              -0.00018210492092554827,
+              0.0001347401162468953,
+              2.9485266455525414
+            ],
+            "model_violation": 3.4820294173456566e-13,
+            "relative_pin_error": 4.440892098500626e-16,
+            "iterations": 150,
+            "calls": 936
+          },
+          "continuous_geos_max_area": 1.0000008856404883e-06,
+          "continuous_geos_bad_pairs": 27,
+          "repairs": [
+            {
+              "width": 1,
+              "domain_sha256": "6dbdad0d82fa64de6b96ec706c3f8b8e1735a0500a6bac28865d590437b04496",
+              "status": "INFEASIBLE",
+              "seconds": 0.07259279204299673,
+              "finite_exhausted": true
+            },
+            {
+              "width": 3,
+              "domain_sha256": "88138c17eeb8002256b2792b06393fe387edb8019364e73c866e36aca092a96c",
+              "status": "INFEASIBLE",
+              "seconds": 0.26613295899005607,
+              "finite_exhausted": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

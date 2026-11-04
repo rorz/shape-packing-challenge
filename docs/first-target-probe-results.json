@@ -1,0 +1,146 @@
+{
+  "plan": {
+    "scope": "Production probe using the known incumbent; not a blind benchmark or equal-budget method comparison",
+    "candidate": "/Users/rorz/repos/forks/shape-packing-challenge/solution.json",
+    "candidate_sha256": "cefac3368caae7f9dea0c4cdc0e87d869f3a9bd76ba75292b1cd4b7fff7c8fb9",
+    "starting_score": 2.948526950912552,
+    "leaderboard_sha256": "8a1eec8b0f48d674fd09d115e8465f295f1c5a8a8003c19d733dbfcf4145fcba",
+    "recorded_leader": 2.9485269238856113,
+    "score_cap": 2.9485269238656113,
+    "effective_qualification_cap": 2.9485269238756113,
+    "seed": 3111401,
+    "fit": {
+      "method": "local nonlinear least squares; target-assisted alignment",
+      "success": true,
+      "message": "`xtol` termination condition is satisfied.",
+      "evaluations": 16,
+      "rms_grid_units": 0.3149664987453246,
+      "max_xy_grid_units": 0.8109329068251014,
+      "max_angle_microradians": 0.6335799533907505,
+      "angle": 1.7022208665760594,
+      "translation": [
+        -0.00018177448460395248,
+        0.00013458544832055668
+      ],
+      "alpha": [
+        -0.0006449827192245668,
+        0.00014274506881882803
+      ],
+      "section": {
+        "raw": [
+          3.141569,
+          3.141593
+        ],
+        "alpha": [
+          -0.0006449827192245668,
+          0.00014274506881882803
+        ],
+        "radius": 2.948526566695304,
+        "violation": 2.5823746868895834e-13,
+        "residual": 9.955393422966376e-13,
+        "iterations": 6,
+        "min_stress": 0.023244981572455553
+      },
+      "seconds": 0.08535641699563712
+    },
+    "budgets": {
+      "native": 150,
+      "hybrid": 90
+    },
+    "exact_seconds_per_width": [
+      2,
+      4,
+      10
+    ],
+    "hypothesis": "Concentrate the shared native schedule around the newly verified packing; keep exact repair a minority of the fixed four-minute search budget"
+  },
+  "best_score": 2.948526950912552,
+  "arms": [
+    {
+      "method": "native",
+      "case": "first-target",
+      "best_score": 2.948526950912552,
+      "first_qualifying_seconds": null,
+      "censored_seconds": 150,
+      "distinct_valid_centers": 1,
+      "distinct_dihedral_valid_centers": 1,
+      "qualifying_centers": 0,
+      "new_qualifying_centers": 0,
+      "new_dihedral_qualifying_centers": 0,
+      "counts": {
+        "frames": 3028,
+        "rejected_frames": 0,
+        "proposals": 6201344,
+        "unique_evaluated": 4581561,
+        "branch_rejected": 0,
+        "duplicates": 1619783,
+        "ambiguous": 112,
+        "reference_checks": 21,
+        "reference_valid": 20,
+        "late_valid": 0,
+        "candidate_nominations": 0,
+        "queue_dropped": 0,
+        "qualified_repairs_skipped": 0,
+        "duplicate_domains": 0
+      },
+      "exact_seconds": 0.0,
+      "exact_budget_overrun": 0.0,
+      "stage_statuses": [],
+      "worker_seconds": 150.0091798339854,
+      "warmup_seconds": 0.03913883300265297,
+      "process_seconds": 151.14019874995574,
+      "parent_grading_seconds": 3.0391564169549383
+    },
+    {
+      "method": "hybrid",
+      "case": "first-target",
+      "best_score": 2.948526950912552,
+      "first_qualifying_seconds": null,
+      "censored_seconds": 90,
+      "distinct_valid_centers": 1,
+      "distinct_dihedral_valid_centers": 1,
+      "qualifying_centers": 0,
+      "new_qualifying_centers": 0,
+      "new_dihedral_qualifying_centers": 0,
+      "counts": {
+        "frames": 1698,
+        "rejected_frames": 0,
+        "proposals": 3477504,
+        "unique_evaluated": 2570180,
+        "branch_rejected": 0,
+        "duplicates": 907324,
+        "ambiguous": 68,
+        "reference_checks": 12,
+        "reference_valid": 12,
+        "late_valid": 0,
+        "candidate_nominations": 1,
+        "queue_dropped": 0,
+        "qualified_repairs_skipped": 0,
+        "duplicate_domains": 0
+      },
+      "exact_seconds": 5.613238624006044,
+      "exact_budget_overrun": 0.0,
+      "stage_statuses": [
+        {
+          "angle_width": 1,
+          "status": "INFEASIBLE",
+          "seconds": 0.2199612909462303
+        },
+        {
+          "angle_width": 3,
+          "status": "INFEASIBLE",
+          "seconds": 0.5848729580175132
+        },
+        {
+          "angle_width": 12,
+          "status": "INFEASIBLE",
+          "seconds": 4.808404375042301
+        }
+      ],
+      "worker_seconds": 90.03506249998463,
+      "warmup_seconds": 0.033690250013023615,
+      "process_seconds": 91.03082279098453,
+      "parent_grading_seconds": 1.8221007090178318
+    }
+  ]
+}
